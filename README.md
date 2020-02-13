@@ -16,7 +16,14 @@ refreshing github in unity modifies:
 will need to git add and commit and push
 
 
-to do via terminal:
+# to do via terminal:
 git add .
 git commit -m "message on the update you're doing, include the quotation marks"
 git push origin <your branch name, don't include the arrows>
+
+# to do via unity:
+
+
+
+
+
