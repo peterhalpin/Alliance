@@ -13,9 +13,117 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-02-13T14:48:19.061-05:00
+  lastUpdatedAtString: 2020-02-13T15:10:16.358-05:00
   initializedAtString: 2020-02-13T14:45:24.024-05:00
   log:
+  - commitID: 628143c11cc00cc2af7dbfc7b50dd643d4e97f9d
+    mergeA: 
+    mergeB: 
+    authorName: Manuel Cabrejos
+    authorEmail: manuelcabrejos97@gmail.com
+    commitEmail: manuelcabrejos97@gmail.com
+    commitName: Manuel Cabrejos
+    summary: README updated on instructions of updating via terminal
+    description: 
+    timeString: 2020-02-13T14:56:47.000-05:00
+    commitTimeString: 2020-02-13T14:56:47.000-05:00
+    changes:
+    - path: Alliance/Library/SourceAssetDB
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/branches.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/branches.yaml
+      projectPath: Library/gfu/cache/branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: README.md
+      fullPath: /Users/manuelcabrejos/Alliance/README.md
+      projectPath: ../README.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: c5bb1f10fd1a02a74c0d35f19b210ac9ffa3f116
+    mergeA: 
+    mergeB: 
+    authorName: Manuel Cabrejos
+    authorEmail: manuelcabrejos97@gmail.com
+    commitEmail: manuelcabrejos97@gmail.com
+    commitName: Manuel Cabrejos
+    summary: testing github updated via README
+    description: 
+    timeString: 2020-02-13T14:53:57.000-05:00
+    commitTimeString: 2020-02-13T14:53:57.000-05:00
+    changes:
+    - path: Alliance/Library/SourceAssetDB
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/branches.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/branches.yaml
+      projectPath: Library/gfu/cache/branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: README.md
+      fullPath: /Users/manuelcabrejos/Alliance/README.md
+      projectPath: ../README.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 2994bebf48a73c74de2a4969f9936b9b4234a760
+    mergeA: 
+    mergeB: 
+    authorName: Manuel Cabrejos
+    authorEmail: manuelcabrejos97@gmail.com
+    commitEmail: manuelcabrejos97@gmail.com
+    commitName: Manuel Cabrejos
+    summary: testing README changes
+    description: 
+    timeString: 2020-02-13T14:50:20.000-05:00
+    commitTimeString: 2020-02-13T14:50:20.000-05:00
+    changes:
+    - path: Alliance/Library/SourceAssetDB
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: README.md
+      fullPath: /Users/manuelcabrejos/Alliance/README.md
+      projectPath: ../README.md
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 0a56985532a2a21e47068f42061965419c8cb199
     mergeA: 
     mergeB: 
