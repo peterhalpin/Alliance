@@ -22,7 +22,11 @@ git commit -m "message on the update you're doing, include the quotation marks"
 git push origin <your branch name, don't include the arrows>
 
 # to do via unity:
-
+go to changes tab
+press ALL
+add commit summary
+press commit to
+press push
 
 
 
