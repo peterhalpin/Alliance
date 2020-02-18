@@ -13,9 +13,297 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-02-18T16:17:31.698-05:00
-  initializedAtString: 2020-02-18T16:17:31.698-05:00
+  lastUpdatedAtString: 2020-02-18T16:47:10.736-05:00
+  initializedAtString: 2020-02-18T16:47:10.736-05:00
   log:
+  - commitID: 142c3c37ba7845b8cb7e13050a6fd2233de0fe21
+    mergeA: 
+    mergeB: 
+    authorName: Manuel Cabrejos
+    authorEmail: manuelcabrejos97@gmail.com
+    commitEmail: manuelcabrejos97@gmail.com
+    commitName: Manuel Cabrejos
+    summary: updates
+    description: 
+    timeString: 2020-02-18T16:18:14.000-05:00
+    commitTimeString: 2020-02-18T16:18:14.000-05:00
+    changes:
+    - path: Alliance/Library/ArtifactDB
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ArtifactDB
+      projectPath: Library/ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/EditorInstance.json
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/EditorInstance.json
+      projectPath: Library/EditorInstance.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/SceneVisibilityState.asset
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/SceneVisibilityState.asset
+      projectPath: Library/SceneVisibilityState.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      projectPath: Library/ScriptAssemblies/BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      projectPath: Library/ScriptAssemblies/Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.Timeline.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.Timeline.dll
+      projectPath: Library/ScriptAssemblies/Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      projectPath: Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      projectPath: Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/UnityEditor.UI.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/UnityEditor.UI.dll
+      projectPath: Library/ScriptAssemblies/UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      projectPath: Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/ScriptAssemblies/UnityEngine.UI.dll
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/ScriptAssemblies/UnityEngine.UI.dll
+      projectPath: Library/ScriptAssemblies/UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/SourceAssetDB
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/SourceAssetDB
+      projectPath: Library/SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/gitlog.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/gitlog.yaml
+      projectPath: Library/gfu/cache/gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/gitstatusentries.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/gitstatusentries.yaml
+      projectPath: Library/gfu/cache/gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/gittrackingstatus.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/gittrackingstatus.yaml
+      projectPath: Library/gfu/cache/gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/gituser.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/gituser.yaml
+      projectPath: Library/gfu/cache/gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Library/gfu/cache/repoinfo.yaml
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/gfu/cache/repoinfo.yaml
+      projectPath: Library/gfu/cache/repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-0643b31eac62e45889d744120c77760f
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-0643b31eac62e45889d744120c77760f
+      projectPath: Temp/UnityTempFile-0643b31eac62e45889d744120c77760f
+      originalPath: Alliance/Temp/UnityTempFile-8642857b7a0c84b6dbb6b249f1267e62
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-073e969e60ac54fb3a4a165e421f1a1d
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-073e969e60ac54fb3a4a165e421f1a1d
+      projectPath: Temp/UnityTempFile-073e969e60ac54fb3a4a165e421f1a1d
+      originalPath: Alliance/Temp/UnityTempFile-cc61c5dfcebb440e2952f8256542dccf
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-1081ccdb3f3f74ecf96555eece56def3
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-1081ccdb3f3f74ecf96555eece56def3
+      projectPath: Temp/UnityTempFile-1081ccdb3f3f74ecf96555eece56def3
+      originalPath: Alliance/Temp/UnityTempFile-e6c6d7dd97eb74aba9e630d706e460db
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-2162f143f911446b581e4a164b6906e6
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-2162f143f911446b581e4a164b6906e6
+      projectPath: Temp/UnityTempFile-2162f143f911446b581e4a164b6906e6
+      originalPath: Alliance/Temp/UnityTempFile-0483ca1363ee14a0a931ab98d71b2961
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-24563f9bacfa444a7a346a2b44766415
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-24563f9bacfa444a7a346a2b44766415
+      projectPath: Temp/UnityTempFile-24563f9bacfa444a7a346a2b44766415
+      originalPath: Alliance/Temp/UnityTempFile-b1436ec9494b842e09355f167d141b3a
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-370d371812900403e9f62588f59eb614
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-370d371812900403e9f62588f59eb614
+      projectPath: Temp/UnityTempFile-370d371812900403e9f62588f59eb614
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-4611e844f78d144deb4b53d63643bfd8
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-4611e844f78d144deb4b53d63643bfd8
+      projectPath: Temp/UnityTempFile-4611e844f78d144deb4b53d63643bfd8
+      originalPath: Alliance/Temp/UnityTempFile-78e233eb737c941989e608074af999c5
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-52756df31dc1749aaa31e68ce15cac8b
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-52756df31dc1749aaa31e68ce15cac8b
+      projectPath: Temp/UnityTempFile-52756df31dc1749aaa31e68ce15cac8b
+      originalPath: Alliance/Temp/UnityTempFile-ec2c167824dfc4d1889c4a13d668efe3
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-53fb2874a8a2d42e495ef6fe26542ca9
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-53fb2874a8a2d42e495ef6fe26542ca9
+      projectPath: Temp/UnityTempFile-53fb2874a8a2d42e495ef6fe26542ca9
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-594bce8d6d0174a18ba8b532c182020e
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-594bce8d6d0174a18ba8b532c182020e
+      projectPath: Temp/UnityTempFile-594bce8d6d0174a18ba8b532c182020e
+      originalPath: Alliance/Temp/UnityTempFile-f94817612c31f4de4998b13e980bb290
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-7550d234316ec444db247f01615f93a5
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-7550d234316ec444db247f01615f93a5
+      projectPath: Temp/UnityTempFile-7550d234316ec444db247f01615f93a5
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-9a6beb9b6489e481888903840b42e2d1
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-9a6beb9b6489e481888903840b42e2d1
+      projectPath: Temp/UnityTempFile-9a6beb9b6489e481888903840b42e2d1
+      originalPath: Alliance/Temp/UnityTempFile-05765ca992d5e4107819dc40e2e0cc7d
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-bb0b5179b66de4df993e9d1a80800bda
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-bb0b5179b66de4df993e9d1a80800bda
+      projectPath: Temp/UnityTempFile-bb0b5179b66de4df993e9d1a80800bda
+      originalPath: Alliance/Temp/UnityTempFile-7995808f4f2d74cd2afce398875835f1
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-bc2c70552d3f54e8b810d55b92dd7b03
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-bc2c70552d3f54e8b810d55b92dd7b03
+      projectPath: Temp/UnityTempFile-bc2c70552d3f54e8b810d55b92dd7b03
+      originalPath: Alliance/Temp/UnityTempFile-c95fe8be437374204bd867c499e437a3
+      indexStatus: 6
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-c962354c3684f40e7ae67912572f9c8a
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-c962354c3684f40e7ae67912572f9c8a
+      projectPath: Temp/UnityTempFile-c962354c3684f40e7ae67912572f9c8a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance/Temp/UnityTempFile-d599a913771fb400eb4340f889bafabd
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Temp/UnityTempFile-d599a913771fb400eb4340f889bafabd
+      projectPath: Temp/UnityTempFile-d599a913771fb400eb4340f889bafabd
+      originalPath: Alliance/Temp/UnityTempFile-c0ca97a4feacf4e61b1a7adbc788b784
+      indexStatus: 6
+      workTreeStatus: 0
+  - commitID: 2b5016cbaed42afca500a3be88095823656258c1
+    mergeA: f566d2deb4c9a9ff70d1ba2a3c4b6c5bc877dffc
+    mergeB: 250a99aa683fbe197f7e0561b4ef0e1ff7b6b6be
+    authorName: mcabrejos24
+    authorEmail: manuelcabrejos97@gmail.com
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Merge pull request #3 from mcabrejos24/manuel
+    description: catching up to master
+    timeString: 2020-02-18T14:41:35.000-05:00
+    commitTimeString: 2020-02-18T14:41:35.000-05:00
+    changes: []
+  - commitID: 250a99aa683fbe197f7e0561b4ef0e1ff7b6b6be
+    mergeA: 
+    mergeB: 
+    authorName: Manuel Cabrejos
+    authorEmail: manuelcabrejos97@gmail.com
+    commitEmail: manuelcabrejos97@gmail.com
+    commitName: Manuel Cabrejos
+    summary: catching up to master
+    description: 
+    timeString: 2020-02-18T14:40:31.000-05:00
+    commitTimeString: 2020-02-18T14:40:31.000-05:00
+    changes:
+    - path: Alliance/Library/LastSceneManagerSetup.txt
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/LastSceneManagerSetup.txt
+      projectPath: Library/LastSceneManagerSetup.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance/Library/expandedItems
+      fullPath: /Users/manuelcabrejos/Alliance/Alliance/Library/expandedItems
+      projectPath: Library/expandedItems
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
   - commitID: f566d2deb4c9a9ff70d1ba2a3c4b6c5bc877dffc
     mergeA: 11389420d3ade94fa1dcd7ca26f909168cb0dc7c
     mergeB: 59082f681f3e54c86c7987b615e6bdb2a9a6d8ad
