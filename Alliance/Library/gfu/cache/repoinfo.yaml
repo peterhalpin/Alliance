@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2020-02-13T16:01:47.417-05:00
-  initializedAtString: 2020-02-13T16:01:01.834-05:00
+  lastUpdatedAtString: 2020-02-18T16:17:14.908-05:00
+  initializedAtString: 2020-02-18T16:17:14.908-05:00
   currentGitRemote:
     name: origin
     url: https://github.com/mcabrejos24/Alliance.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: dom
-    tracking: origin/dom
+    name: master
+    tracking: origin/master
   currentConfigBranch:
-    name: dom
+    name: master
     remote:
       name: origin
       url: https://github.com/mcabrejos24/Alliance.git
-    trackingBranch: dom
+    trackingBranch: master
   currentConfigRemote:
     name: origin
     url: https://github.com/mcabrejos24/Alliance.git
