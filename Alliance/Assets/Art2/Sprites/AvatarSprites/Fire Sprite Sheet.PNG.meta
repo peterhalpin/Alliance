@@ -1,0 +1,349 @@
+fileFormatVersion: 2
+guid: f5c7c79370eac2f4698de63cbb260a76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2025841462849059631
+    second: Fire Sprite Sheet_0
+  - first:
+      213: -8739133012207628550
+    second: Fire Sprite Sheet_1
+  - first:
+      213: -8948422739252581080
+    second: Fire Sprite Sheet_2
+  - first:
+      213: 7504107345361984519
+    second: Fire Sprite Sheet_3
+  - first:
+      213: -6955064269168212277
+    second: Fire Sprite Sheet_4
+  - first:
+      213: 5302867231105636792
+    second: Fire Sprite Sheet_5
+  - first:
+      213: 7437850757954854431
+    second: Fire Sprite Sheet_6
+  - first:
+      213: 6653049489989246539
+    second: Fire Sprite Sheet_7
+  - first:
+      213: 483753260630188676
+    second: Fire Sprite Sheet_8
+  - first:
+      213: 7824221738067800435
+    second: Fire Sprite Sheet_9
+  - first:
+      213: -4116035285601093512
+    second: Fire Sprite Sheet_10
+  - first:
+      213: 428520813710794022
+    second: Fire Sprite Sheet_11
+  - first:
+      213: 7415474595014692886
+    second: Fire Sprite Sheet_12
+  - first:
+      213: 1990820492861160970
+    second: Fire Sprite Sheet_13
+  - first:
+      213: 8421638019534098776
+    second: Fire Sprite Sheet_14
+  - first:
+      213: -7638608029238818894
+    second: Fire Sprite Sheet_15
+  - first:
+      213: 2332039945856464373
+    second: Fire Sprite Sheet_16
+  - first:
+      213: -1416778022994539573
+    second: Fire Sprite Sheet_17
+  - first:
+      213: -673521795085359242
+    second: Fire Sprite Sheet_18
+  - first:
+      213: 8281222628565138916
+    second: Fire Sprite Sheet_19
+  - first:
+      213: 9118207808639115635
+    second: Fire Sprite Sheet_20
+  - first:
+      213: 1359668448006774762
+    second: Fire Sprite Sheet_21
+  - first:
+      213: -3844439486120264579
+    second: Fire Sprite Sheet_22
+  - first:
+      213: 3253300932669214501
+    second: Fire Sprite Sheet_23
+  - first:
+      213: -2003686434726752898
+    second: Fire Sprite Sheet_24
+  - first:
+      213: -1634882806482042616
+    second: Fire Sprite Sheet_25
+  - first:
+      213: -5633034305476799741
+    second: Fire Sprite Sheet_26
+  - first:
+      213: 8033774137783031357
+    second: Fire Sprite Sheet_27
+  - first:
+      213: 7526550483110914266
+    second: Fire Sprite Sheet_28
+  - first:
+      213: -3318479588754628402
+    second: Fire Sprite Sheet_29
+  - first:
+      213: 1944719085506216540
+    second: Fire Sprite Sheet_30
+  - first:
+      213: -1253041163186738125
+    second: Fire Sprite Sheet_31
+  - first:
+      213: 4794883876321650135
+    second: Fire Sprite Sheet_32
+  - first:
+      213: -1500372239135432637
+    second: Fire Sprite Sheet_33
+  - first:
+      213: -7183426809437368822
+    second: Fire Sprite Sheet_34
+  - first:
+      213: -3060192361023573726
+    second: Fire Sprite Sheet_35
+  - first:
+      213: -1419069142022899804
+    second: Fire Sprite Sheet_36
+  - first:
+      213: 6782957590282146980
+    second: Fire Sprite Sheet_37
+  - first:
+      213: -8834313073805634865
+    second: Fire Sprite Sheet_38
+  - first:
+      213: 4263225943525294167
+    second: Fire Sprite Sheet_39
+  - first:
+      213: 814697868899847964
+    second: Fire Sprite Sheet_40
+  - first:
+      213: -2846531804469387247
+    second: Fire Sprite Sheet_41
+  - first:
+      213: 6544055141275539202
+    second: Fire Sprite Sheet_42
+  - first:
+      213: -4594114882271375072
+    second: Fire Sprite Sheet_43
+  - first:
+      213: 2032349192717419640
+    second: Fire Sprite Sheet_44
+  - first:
+      213: 5165825539114513128
+    second: Fire Sprite Sheet_45
+  - first:
+      213: -8153303875699644302
+    second: Fire Sprite Sheet_46
+  - first:
+      213: -5339979439080103523
+    second: Fire Sprite Sheet_47
+  - first:
+      213: -2064586164503486502
+    second: Fire Sprite Sheet_48
+  - first:
+      213: -420868456353242021
+    second: Fire Sprite Sheet_49
+  - first:
+      213: 6849628758593411133
+    second: Fire Sprite Sheet_50
+  - first:
+      213: -2927032172973897394
+    second: Fire Sprite Sheet_51
+  - first:
+      213: -7593775208818718238
+    second: Fire Sprite Sheet_52
+  - first:
+      213: -2330769124300617472
+    second: Fire Sprite Sheet_53
+  - first:
+      213: -3798801049146730059
+    second: Fire Sprite Sheet_54
+  - first:
+      213: -8161358566307835977
+    second: Fire Sprite Sheet_55
+  - first:
+      213: -1851136776870532605
+    second: Fire Sprite Sheet_56
+  - first:
+      213: -3715480709661609074
+    second: Fire Sprite Sheet_57
+  - first:
+      213: -2698101122731939610
+    second: Fire Sprite Sheet_58
+  - first:
+      213: 3947027348653746362
+    second: Fire Sprite Sheet_59
+  - first:
+      213: 2448380960870923079
+    second: Fire Sprite Sheet_60
+  - first:
+      213: -5070939033831063717
+    second: Fire Sprite Sheet_61
+  - first:
+      213: -8771816509349327252
+    second: Fire Sprite Sheet_62
+  - first:
+      213: 523293453800521033
+    second: Fire Sprite Sheet_63
+  - first:
+      213: 8709114378765420613
+    second: Fire Sprite Sheet_64
+  - first:
+      213: 7867685760895635424
+    second: Fire Sprite Sheet_65
+  - first:
+      213: 2022442663106627064
+    second: Fire Sprite Sheet_66
+  - first:
+      213: -997311935245290644
+    second: Fire Sprite Sheet_67
+  - first:
+      213: 5345891037349400775
+    second: Fire Sprite Sheet_68
+  - first:
+      213: 4414931404575116681
+    second: Fire Sprite Sheet_69
+  - first:
+      213: 732976031845126899
+    second: Fire Sprite Sheet_70
+  - first:
+      213: -1935481207565872432
+    second: Fire Sprite Sheet_71
+  - first:
+      213: 3795216549490139295
+    second: Fire Sprite Sheet_72
+  - first:
+      213: 4166474028451418419
+    second: Fire Sprite Sheet_73
+  - first:
+      213: 9045470620731955081
+    second: Fire Sprite Sheet_74
+  - first:
+      213: 966573476675374926
+    second: Fire Sprite Sheet_75
+  - first:
+      213: 319376422975321846
+    second: Fire Sprite Sheet_76
+  - first:
+      213: 8115517527066428033
+    second: Fire Sprite Sheet_77
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

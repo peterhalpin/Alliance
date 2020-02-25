@@ -8,6 +8,8 @@ TagManager:
   - FirePlayer
   - VisionPlayer
   - StrengthPlayer
+  - Door Bottom
+  - Door Top
   layers:
   - Default
   - TransparentFX

@@ -15,6 +15,12 @@ public class BottomSwitch : MonoBehaviour
         if(colliders.Count > 1){
             //make doors open
             print("Bottom Gate open");
+
+    
+
+           GameObject[] bottomDoor = GameObject.FindGameObjectsWithTag("Door Bottom");
+            Destroy(bottomDoor[0]);
+            Destroy(bottomDoor[1]);
         }
 
     }

@@ -13,21 +13,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2020-02-15T15:29:50.264-05:00
-  initializedAtString: 2020-02-15T15:19:43.509-05:00
+  lastUpdatedAtString: 2020-02-25T00:46:58.276-05:00
+  initializedAtString: 2020-02-24T23:15:42.299-05:00
   localBranches:
   - name: master
     tracking: origin/master
   - name: rohaid
     tracking: origin/rohaid
+  - name: rohaid2
+    tracking: origin/rohaid2
   remoteBranches:
-  - name: origin/dom
+  - name: origin/del
+    tracking: '[None]'
+  - name: origin/dom2
+    tracking: '[None]'
+  - name: origin/dom3
+    tracking: '[None]'
+  - name: origin/dylan2
     tracking: '[None]'
   - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/manuel2
     tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   - name: origin/rohaid
+    tracking: '[None]'
+  - name: origin/rohaid2
     tracking: '[None]'
   remotes:
   - name: origin
@@ -41,6 +53,7 @@ MonoBehaviour:
     keys:
     - master
     - rohaid
+    - rohaid2
     values:
     - name: master
       remote:
@@ -52,23 +65,53 @@ MonoBehaviour:
         name: origin
         url: https://github.com/mcabrejos24/Alliance.git
       trackingBranch: rohaid
+    - name: rohaid2
+      remote:
+        name: origin
+        url: https://github.com/mcabrejos24/Alliance.git
+      trackingBranch: rohaid2
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
-      - dom
+      - del
+      - dom2
+      - dom3
+      - dylan2
       - HEAD
+      - manuel2
       - master
       - rohaid
+      - rohaid2
     subKeyValues:
     - Values:
-      - name: dom
+      - name: del
+        remote:
+          name: origin
+          url: https://github.com/mcabrejos24/Alliance.git
+        trackingBranch: 
+      - name: dom2
+        remote:
+          name: origin
+          url: https://github.com/mcabrejos24/Alliance.git
+        trackingBranch: 
+      - name: dom3
+        remote:
+          name: origin
+          url: https://github.com/mcabrejos24/Alliance.git
+        trackingBranch: 
+      - name: dylan2
         remote:
           name: origin
           url: https://github.com/mcabrejos24/Alliance.git
         trackingBranch: 
       - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/mcabrejos24/Alliance.git
+        trackingBranch: 
+      - name: manuel2
         remote:
           name: origin
           url: https://github.com/mcabrejos24/Alliance.git
@@ -79,6 +122,11 @@ MonoBehaviour:
           url: https://github.com/mcabrejos24/Alliance.git
         trackingBranch: 
       - name: rohaid
+        remote:
+          name: origin
+          url: https://github.com/mcabrejos24/Alliance.git
+        trackingBranch: 
+      - name: rohaid2
         remote:
           name: origin
           url: https://github.com/mcabrejos24/Alliance.git
