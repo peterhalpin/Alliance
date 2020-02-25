@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: d6e88722b4d7121458a5352c24e189e5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7082716998143919516
+    second: XRay Sprite Sheet_0
+  - first:
+      213: -6540876086396759736
+    second: XRay Sprite Sheet_1
+  - first:
+      213: 8891305368110126022
+    second: XRay Sprite Sheet_2
+  - first:
+      213: -4674091306975611930
+    second: XRay Sprite Sheet_3
+  - first:
+      213: 2470325554951324633
+    second: XRay Sprite Sheet_4
+  - first:
+      213: -7353507400848848939
+    second: XRay Sprite Sheet_5
+  - first:
+      213: 6528960069649850503
+    second: XRay Sprite Sheet_6
+  - first:
+      213: 7257133376517092518
+    second: XRay Sprite Sheet_7
+  - first:
+      213: -4963268116209084513
+    second: XRay Sprite Sheet_8
+  - first:
+      213: 2990757929815202275
+    second: XRay Sprite Sheet_9
+  - first:
+      213: 569240774027290651
+    second: XRay Sprite Sheet_10
+  - first:
+      213: 8917229809019754239
+    second: XRay Sprite Sheet_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 3
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +106,285 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ab2018a6225bd90800000000000000
+      internalID: -7082716998143919516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841597ebad32a35a0800000000000000
+      internalID: -6540876086396759736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c35ab7cf13446b70800000000000000
+      internalID: 8891305368110126022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e33aff78ba422fb0800000000000000
+      internalID: -4674091306975611930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3817ef00c584220800000000000000
+      internalID: 2470325554951324633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7c23fbaf713f990800000000000000
+      internalID: -7353507400848848939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780603867968b9a50800000000000000
+      internalID: 6528960069649850503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4bee22b5486b460800000000000000
+      internalID: 7257133376517092518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97d550e1fdee1bb0800000000000000
+      internalID: -4963268116209084513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e951dfcd7e418920800000000000000
+      internalID: 2990757929815202275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18a09fc77956e700800000000000000
+      internalID: 569240774027290651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: XRay Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6952b044d50cb70800000000000000
+      internalID: 8917229809019754239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -13,9 +13,2647 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2020-02-25T00:47:02.454-05:00
-  initializedAtString: 2020-02-24T23:15:44.554-05:00
+  lastUpdatedAtString: 2020-02-25T12:01:59.016-05:00
+  initializedAtString: 2020-02-25T11:59:33.362-05:00
   log:
+  - commitID: fc926c833f0f4be2cdabdf8853f8a882f46934c4
+    mergeA: 
+    mergeB: 
+    authorName: Rohaid Bakheet
+    authorEmail: rohaidb1999@gmail.com
+    commitEmail: rohaidb1999@gmail.com
+    commitName: Rohaid Bakheet
+    summary: added door functionality and switch
+    description: 
+    timeString: 2020-02-25T00:50:01.000-05:00
+    commitTimeString: 2020-02-25T00:50:01.000-05:00
+    changes:
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Fire Sprite Sheet.PNG
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Fire
+        Sprite Sheet.PNG
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Fire Sprite Sheet.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Fire Sprite Sheet.PNG.meta
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Fire
+        Sprite Sheet.PNG.meta
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Fire Sprite Sheet.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\IMG_2216.PNG
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\IMG_2216.PNG
+      projectPath: Assets\Art2\Sprites\AvatarSprites\IMG_2216.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\IMG_2216.PNG.meta
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\IMG_2216.PNG.meta
+      projectPath: Assets\Art2\Sprites\AvatarSprites\IMG_2216.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Ice Sprite Sheet.PNG
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Ice
+        Sprite Sheet.PNG
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Ice Sprite Sheet.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Ice Sprite Sheet.PNG.meta
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Ice
+        Sprite Sheet.PNG.meta
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Ice Sprite Sheet.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Punch Sprite Sheet.PNG
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Punch
+        Sprite Sheet.PNG
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Punch Sprite Sheet.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Punch Sprite Sheet.PNG.meta
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Punch
+        Sprite Sheet.PNG.meta
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Punch Sprite Sheet.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Strength Sprite Sheet.PNG
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Strength
+        Sprite Sheet.PNG
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Strength Sprite Sheet.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\Strength Sprite Sheet.PNG.meta
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\Strength
+        Sprite Sheet.PNG.meta
+      projectPath: Assets\Art2\Sprites\AvatarSprites\Strength Sprite Sheet.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\XRay Sprite Sheet.PNG
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\XRay
+        Sprite Sheet.PNG
+      projectPath: Assets\Art2\Sprites\AvatarSprites\XRay Sprite Sheet.PNG
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\AvatarSprites\XRay Sprite Sheet.PNG.meta
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\AvatarSprites\XRay
+        Sprite Sheet.PNG.meta
+      projectPath: Assets\Art2\Sprites\AvatarSprites\XRay Sprite Sheet.PNG.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_0.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_0.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_0.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_1.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_1.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_1.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_10.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_10.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_10.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_11.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_11.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_11.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_12.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_12.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_12.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_13.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_13.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_13.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_14.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_14.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_14.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_15.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_15.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_15.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_16.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_16.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_16.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_17.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_17.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_17.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_18.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_18.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_18.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_19.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_19.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_19.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_2.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_2.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_2.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_20.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_20.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_20.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_21.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_21.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_21.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_22.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_22.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_22.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_23.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_23.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_23.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_24.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_24.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_24.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_25.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_25.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_25.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_26.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_26.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_26.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_27.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_27.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_27.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_28.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_28.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_28.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_29.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_29.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_29.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_3.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_3.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_3.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_30.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_30.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_30.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_31.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_31.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_31.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_32.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_32.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_32.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_33.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_33.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_33.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_34.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_34.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_34.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_35.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_35.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_35.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_36.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_36.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_36.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_37.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_37.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_37.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_38.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_38.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_38.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_39.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_39.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_39.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_4.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_4.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_4.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_40.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_40.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_40.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_41.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_41.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_41.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_42.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_42.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_42.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_43.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_43.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_43.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_44.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_44.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_44.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_45.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_45.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_45.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_46.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_46.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_46.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_47.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_47.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_47.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_48.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_48.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_48.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_49.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_49.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_49.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_5.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_5.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_5.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_50.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_50.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_50.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_51.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_51.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_51.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_52.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_52.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_52.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_53.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_53.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_53.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_6.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_6.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_6.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_7.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_7.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_7.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_8.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_8.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_8.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_9.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_9.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A1_ashlands_1_9.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_0.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_0.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_0.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_1.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_1.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_1.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_10.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_10.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_10.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_11.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_11.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_11.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_12.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_12.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_12.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_13.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_13.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_13.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_14.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_14.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_14.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_15.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_15.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_15.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_16.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_16.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_16.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_17.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_17.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_17.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_18.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_18.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_18.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_19.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_19.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_19.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_2.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_2.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_2.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_20.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_20.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_20.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_21.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_21.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_21.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_22.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_22.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_22.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_23.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_23.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_23.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_24.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_24.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_24.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_25.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_25.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_25.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_26.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_26.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_26.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_27.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_27.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_27.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_28.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_28.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_28.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_29.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_29.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_29.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_3.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_3.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_3.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_4.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_4.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_4.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_5.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_5.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_5.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_6.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_6.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_6.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_7.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_7.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_7.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_8.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_8.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_8.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_9.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_9.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A2_ashlands_1_9.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_0.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_0.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_0.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_1.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_1.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_1.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_10.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_10.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_10.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_100.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_100.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_100.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_101.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_101.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_101.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_102.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_102.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_102.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_103.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_103.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_103.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_104.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_104.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_104.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_105.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_105.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_105.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_11.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_11.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_11.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_110.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_110.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_110.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_111.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_111.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_111.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_112.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_112.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_112.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_113.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_113.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_113.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_114.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_114.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_114.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_115.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_115.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_115.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_116.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_116.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_116.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_117.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_117.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_117.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_12.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_12.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_12.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_13.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_13.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_13.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_14.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_14.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_14.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_15.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_15.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_15.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_16.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_16.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_16.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_17.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_17.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_17.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_18.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_18.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_18.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_19.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_19.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_19.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_2.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_2.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_2.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_20.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_20.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_20.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_21.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_21.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_21.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_22.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_22.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_22.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_23.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_23.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_23.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_24.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_24.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_24.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_25.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_25.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_25.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_26.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_26.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_26.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_27.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_27.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_27.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_28.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_28.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_28.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_29.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_29.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_29.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_3.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_3.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_3.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_30.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_30.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_30.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_31.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_31.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_31.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_32.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_32.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_32.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_33.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_33.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_33.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_34.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_34.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_34.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_35.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_35.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_35.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_36.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_36.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_36.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_37.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_37.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_37.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_38.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_38.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_38.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_39.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_39.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_39.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_4.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_4.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_4.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_40.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_40.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_40.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_41.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_41.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_41.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_42.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_42.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_42.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_43.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_43.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_43.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_44.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_44.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_44.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_45.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_45.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_45.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_46.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_46.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_46.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_5.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_5.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_5.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_50.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_50.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_50.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_51.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_51.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_51.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_52.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_52.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_52.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_53.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_53.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_53.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_54.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_54.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_54.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_55.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_55.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_55.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_56.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_56.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_56.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_57.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_57.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_57.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_58.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_58.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_58.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_59.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_59.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_59.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_6.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_6.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_6.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_60.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_60.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_60.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_61.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_61.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_61.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_62.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_62.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_62.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_63.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_63.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_63.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_64.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_64.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_64.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_65.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_65.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_65.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_66.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_66.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_66.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_67.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_67.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_67.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_68.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_68.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_68.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_69.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_69.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_69.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_7.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_7.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_7.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_74.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_74.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_74.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_75.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_75.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_75.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_76.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_76.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_76.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_77.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_77.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_77.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_8.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_8.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_8.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_82.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_82.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_82.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_83.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_83.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_83.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_84.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_84.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_84.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_85.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_85.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_85.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_86.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_86.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_86.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_87.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_87.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_87.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_88.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_88.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_88.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_89.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_89.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_89.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_9.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_9.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_9.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_90.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_90.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_90.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_91.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_91.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_91.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_92.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_92.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_92.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_93.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_93.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_93.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_94.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_94.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_94.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_95.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_95.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_95.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_96.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_96.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_96.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_97.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_97.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_97.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_98.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_98.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_98.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_99.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_99.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_A5_ashlands_1_99.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_0.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_0.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_0.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_1.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_1.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_1.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_10.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_10.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_10.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_100.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_100.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_100.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_101.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_101.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_101.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_102.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_102.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_102.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_103.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_103.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_103.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_104.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_104.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_104.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_105.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_105.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_105.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_106.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_106.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_106.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_107.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_107.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_107.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_108.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_108.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_108.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_109.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_109.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_109.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_11.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_11.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_11.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_110.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_110.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_110.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_111.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_111.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_111.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_112.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_112.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_112.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_113.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_113.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_113.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_114.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_114.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_114.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_115.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_115.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_115.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_116.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_116.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_116.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_117.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_117.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_117.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_118.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_118.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_118.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_119.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_119.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_119.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_12.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_12.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_12.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_120.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_120.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_120.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_121.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_121.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_121.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_122.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_122.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_122.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_123.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_123.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_123.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_124.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_124.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_124.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_125.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_125.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_125.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_126.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_126.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_126.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_127.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_127.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_127.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_128.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_128.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_128.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_129.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_129.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_129.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_13.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_13.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_13.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_130.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_130.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_130.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_131.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_131.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_131.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_132.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_132.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_132.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_133.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_133.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_133.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_134.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_134.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_134.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_135.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_135.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_135.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_136.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_136.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_136.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_137.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_137.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_137.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_138.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_138.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_138.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_139.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_139.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_139.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_14.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_14.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_14.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_140.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_140.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_140.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_141.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_141.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_141.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_142.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_142.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_142.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_143.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_143.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_143.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_144.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_144.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_144.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_145.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_145.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_145.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_146.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_146.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_146.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_147.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_147.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_147.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_148.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_148.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_148.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_149.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_149.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_149.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_15.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_15.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_15.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_150.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_150.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_150.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_151.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_151.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_151.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_152.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_152.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_152.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_153.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_153.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_153.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_154.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_154.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_154.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_155.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_155.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_155.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_156.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_156.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_156.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_157.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_157.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_157.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_158.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_158.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_158.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_159.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_159.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_159.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_16.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_16.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_16.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_160.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_160.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_160.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_161.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_161.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_161.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_162.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_162.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_162.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_163.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_163.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_163.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_164.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_164.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_164.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_165.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_165.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_165.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_166.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_166.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_166.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_167.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_167.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_167.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_168.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_168.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_168.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_169.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_169.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_169.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_17.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_17.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_17.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_170.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_170.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_170.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_171.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_171.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_171.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_172.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_172.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_172.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_173.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_173.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_173.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_174.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_174.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_174.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_175.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_175.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_175.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_176.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_176.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_176.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_177.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_177.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_177.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_178.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_178.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_178.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_179.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_179.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_179.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_18.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_18.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_18.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_180.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_180.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_180.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_181.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_181.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_181.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_182.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_182.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_182.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_183.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_183.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_183.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_184.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_184.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_184.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_185.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_185.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_185.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_186.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_186.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_186.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_187.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_187.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_187.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_188.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_188.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_188.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_189.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_189.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_189.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_19.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_19.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_19.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_190.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_190.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_190.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_191.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_191.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_191.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_192.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_192.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_192.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_193.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_193.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_193.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_194.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_194.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_194.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_195.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_195.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_195.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_196.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_196.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_196.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_197.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_197.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_197.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_198.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_198.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_198.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_199.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_199.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_199.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_2.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_2.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_2.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_20.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_20.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_20.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_200.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_200.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_200.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_201.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_201.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_201.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_202.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_202.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_202.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_203.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_203.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_203.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_204.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_204.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_204.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_21.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_21.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_21.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_22.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_22.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_22.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_23.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_23.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_23.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_24.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_24.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_24.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_25.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_25.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_25.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_26.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_26.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_26.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_27.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_27.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_27.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_28.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_28.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_28.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_29.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_29.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_29.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_3.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_3.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_3.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_30.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_30.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_30.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_31.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_31.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_31.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_32.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_32.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_32.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_33.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_33.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_33.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_34.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_34.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_34.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_35.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_35.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_35.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_36.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_36.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_36.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_37.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_37.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_37.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_38.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_38.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_38.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_39.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_39.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_39.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_4.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_4.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_4.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_40.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_40.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_40.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_41.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_41.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_41.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_42.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_42.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_42.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_43.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_43.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_43.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_44.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_44.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_44.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_45.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_45.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_45.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_46.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_46.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_46.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_47.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_47.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_47.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_48.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_48.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_48.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_49.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_49.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_49.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_5.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_5.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_5.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_50.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_50.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_50.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_51.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_51.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_51.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_52.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_52.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_52.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_53.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_53.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_53.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_54.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_54.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_54.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_55.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_55.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_55.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_56.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_56.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_56.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_57.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_57.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_57.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_58.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_58.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_58.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_59.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_59.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_59.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_6.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_6.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_6.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_60.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_60.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_60.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_61.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_61.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_61.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_62.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_62.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_62.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_63.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_63.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_63.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_64.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_64.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_64.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_65.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_65.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_65.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_66.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_66.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_66.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_67.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_67.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_67.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_68.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_68.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_68.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_69.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_69.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_69.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_7.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_7.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_7.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_70.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_70.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_70.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_71.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_71.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_71.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_72.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_72.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_72.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_73.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_73.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_73.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_74.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_74.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_74.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_75.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_75.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_75.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_76.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_76.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_76.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_77.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_77.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_77.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_78.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_78.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_78.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_79.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_79.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_79.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_8.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_8.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_8.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_80.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_80.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_80.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_81.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_81.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_81.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_82.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_82.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_82.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_83.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_83.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_83.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_84.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_84.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_84.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_85.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_85.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_85.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_86.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_86.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_86.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_87.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_87.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_87.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_88.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_88.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_88.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_89.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_89.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_89.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_9.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_9.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_9.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_90.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_90.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_90.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_91.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_91.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_91.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_92.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_92.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_92.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_93.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_93.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_93.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_94.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_94.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_94.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_95.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_95.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_95.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_96.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_96.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_96.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_97.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_97.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_97.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_98.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_98.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_98.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_99.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_99.asset
+      projectPath: Assets\Art2\Sprites\Environment\AshLandTiles\tf_B_ashlands_1_99.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Prefabs2\LeftDoor.prefab
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Prefabs2\LeftDoor.prefab
+      projectPath: Assets\Prefabs2\LeftDoor.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Prefabs2\RightDoor.prefab
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Prefabs2\RightDoor.prefab
+      projectPath: Assets\Prefabs2\RightDoor.prefab
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Scenes\TutorialLevel.unity
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Scenes\TutorialLevel.unity
+      projectPath: Assets\Scenes\TutorialLevel.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Scripts\BottomSwitch.cs
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Scripts\BottomSwitch.cs
+      projectPath: Assets\Scripts\BottomSwitch.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Assets\Scripts\TopSwitch.cs
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Assets\Scripts\TopSwitch.cs
+      projectPath: Assets\Scripts\TopSwitch.cs
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ArtifactDB
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ArtifactDB
+      projectPath: Library\ArtifactDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\CurrentLayout-default.dwlt
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\InspectorExpandedItems.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Rider.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.Timeline.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.Timeline.dll
+      projectPath: Library\ScriptAssemblies\Unity.Timeline.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      projectPath: Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\UnityEditor.UI.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\UnityEditor.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEditor.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\ScriptAssemblies\UnityEngine.UI.dll
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\ScriptAssemblies\UnityEngine.UI.dll
+      projectPath: Library\ScriptAssemblies\UnityEngine.UI.dll
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\SourceAssetDB
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\SourceAssetDB
+      projectPath: Library\SourceAssetDB
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\StateCache\SceneView\5e8031-mainStage.json
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\StateCache\SceneView\5e8031-mainStage.json
+      projectPath: Library\StateCache\SceneView\5e8031-mainStage.json
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: Alliance\ProjectSettings\TagManager.asset
+      fullPath: C:\Users\rohaidb\Documents\Projects\Alliance\Alliance\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: e25894491aef4cee54ec2eb75727239f74ecd945
     mergeA: 
     mergeB: 

@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: ee506474ff4ab7c42b9575f27e576393
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6696151849996094816
+    second: Strength Sprite Sheet_0
+  - first:
+      213: 6850693899311087530
+    second: Strength Sprite Sheet_1
+  - first:
+      213: -8374894530513729058
+    second: Strength Sprite Sheet_2
+  - first:
+      213: -8337976285716326593
+    second: Strength Sprite Sheet_3
+  - first:
+      213: 2946954795891883643
+    second: Strength Sprite Sheet_4
+  - first:
+      213: -5275627203396714817
+    second: Strength Sprite Sheet_5
+  - first:
+      213: -5006577500700106593
+    second: Strength Sprite Sheet_6
+  - first:
+      213: -9081673655844392357
+    second: Strength Sprite Sheet_7
+  - first:
+      213: 8642543690975631579
+    second: Strength Sprite Sheet_8
+  - first:
+      213: 8071112788505337319
+    second: Strength Sprite Sheet_9
+  - first:
+      213: -8617737168020775123
+    second: Strength Sprite Sheet_10
+  - first:
+      213: 6402877012435259177
+    second: Strength Sprite Sheet_11
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +76,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 4
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +106,285 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d871d31a28dec50800000000000000
+      internalID: 6696151849996094816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf7f5d0ecd821f50800000000000000
+      internalID: 6850693899311087530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed90e5debc566cb80800000000000000
+      internalID: -8374894530513729058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 180
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f375f30aebe894c80800000000000000
+      internalID: -8337976285716326593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ef442f5cfa5e820800000000000000
+      internalID: 2946954795891883643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbeb62e820539c6b0800000000000000
+      internalID: -5275627203396714817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90ae420a40158ab0800000000000000
+      internalID: -5006577500700106593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 120
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b523f514de967f180800000000000000
+      internalID: -9081673655844392357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8556062bb70f770800000000000000
+      internalID: 8642543690975631579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed19fc815a520070800000000000000
+      internalID: 8071112788505337319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fd07454b5a76880800000000000000
+      internalID: -8617737168020775123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strength Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 60
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fc7ba08b69bd850800000000000000
+      internalID: 6402877012435259177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
