@@ -10,6 +10,7 @@ TagManager:
   - StrengthPlayer
   - Door Bottom
   - Door Top
+  - Wall
   layers:
   - Default
   - TransparentFX
