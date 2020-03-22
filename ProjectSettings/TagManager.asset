@@ -11,6 +11,9 @@ TagManager:
   - Door Bottom
   - Door Top
   - Wall
+  - TL_Wall
+  - C_Wall
+  - BR_Wall
   layers:
   - Default
   - TransparentFX
