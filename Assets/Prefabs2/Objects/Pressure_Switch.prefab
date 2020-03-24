@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6856209163040822981}
   - component: {fileID: 6856209162222043187}
-  - component: {fileID: 6856209162222043184}
   - component: {fileID: 6856209162222043185}
+  - component: {fileID: 3074966047012567464}
   m_Layer: 0
-  m_Name: TL_P_Switch
+  m_Name: Pressure_Switch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,23 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6856209162222043184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6856209162222043198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0780c08edcde9d4b9fe38ae0675274d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchOn: {fileID: 2353747656548968877, guid: aed5cb6a66cd5124584afd75d81a41d2,
-    type: 3}
-  switchOff: {fileID: 6859074295327616174, guid: 4522b1775a25a4f4f98ea260d3f9f874,
-    type: 3}
-  isOn: 0
 --- !u!61 &6856209162222043185
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126,3 +109,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.44702172, y: 0.44608033}
   m_EdgeRadius: 0
+--- !u!114 &3074966047012567464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6856209162222043198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5ad3e7a49d22649ba18332203f72ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchOn: {fileID: 2353747656548968877, guid: aed5cb6a66cd5124584afd75d81a41d2,
+    type: 3}
+  switchOff: {fileID: 6859074295327616174, guid: 4522b1775a25a4f4f98ea260d3f9f874,
+    type: 3}
+  isOn: 0

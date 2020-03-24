@@ -14,6 +14,7 @@ TagManager:
   - TL_Wall
   - C_Wall
   - BR_Wall
+  - A
   layers:
   - Default
   - TransparentFX
@@ -50,4 +51,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 3074989635
+    locked: 0
+  - name: Switches
+    uniqueID: 384304001
+    locked: 0
+  - name: Players
+    uniqueID: 769774161
+    locked: 0
+  - name: Objects
+    uniqueID: 2131925091
     locked: 0

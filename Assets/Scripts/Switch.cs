@@ -9,10 +9,7 @@ using UnityEngine.Tilemaps;
   *setting scopes of variables is complicated
   */
 
-  //Pressure Switch, 
-    //Have it continously check if the Box/Strength is touching  in the update function
-      //if not then set the boolean value to false and have the tilemap the same
-      //if it is then "hide" the collider 2D
+ 
 public class Switch : MonoBehaviour
 {
 [SerializeField]
@@ -30,9 +27,9 @@ public class Switch : MonoBehaviour
         // code to have the switch in default appearance
         gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
         
+        //Easy reference to tilemaps
           var tilemaps = new Tilemap[3];
           tilemaps = FindObjectsOfType<Tilemap>();
-          
           for(int i = 0 ; i < tilemaps.Length ; i++ ){
             tilemapses.Add(tilemaps[i].name, tilemaps[i]);
           }
@@ -40,24 +37,11 @@ public class Switch : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col) {
         //changes switch to "on" appearance
         gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
-
-        string id = gameObject.name;
-        Tilemap ty;
-        Debug.Log(col.name);
-        if("TL_P_Switch" == id) {
-         ty =  tilemapses["TL_Wall"];
-        //  Debug.Log("Tilemap" + ty.name);
-         ty.ClearAllTiles();
-        } else if("TR_P_Switch" == id) {
-         ty = tilemapses["BR_Wall"];
-        //  Debug.Log("Tilemap" + ty.name);
-         ty.ClearAllTiles();
-        } else if ("BL_NP_Switch" == id){
-         ty = tilemapses["C_Wall"];
-        //  Debug.Log("Tilemap" + ty.name);
-         ty.ClearAllTiles();
-        }
         
+        //Remove Center Wall
+        Tilemap ty;
+        ty = tilemapses["C_Wall"];
+        ty.ClearAllTiles();
         isOn = true;
     }
 }
