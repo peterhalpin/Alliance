@@ -10,6 +10,7 @@ TagManager:
   - StrengthPlayer
   - Door Bottom
   - Door Top
+  - block
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - ice
   - grid
   - item
-  - 
+  - blocks
   - 
   - 
   - 
