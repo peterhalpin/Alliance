@@ -48,3 +48,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BG
+    uniqueID: 617424727
+    locked: 0
+  - name: Switches
+    uniqueID: 1945022443
+    locked: 0
+  - name: Players
+    uniqueID: 3706305629
+    locked: 0
+  - name: Objects
+    uniqueID: 39029223
+    locked: 0
+  - name: Walls
+    uniqueID: 1754814999
+    locked: 0
