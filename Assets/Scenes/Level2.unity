@@ -6770,6 +6770,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 4214767609593373886, guid: 5d560ab6c5a91b045a37f304516ea646,
+        type: 3}
+      propertyPath: m_TagString
+      value: block
+      objectReference: {fileID: 0}
     - target: {fileID: 8589571798373402374, guid: 5d560ab6c5a91b045a37f304516ea646,
         type: 3}
       propertyPath: m_SortingLayerID
