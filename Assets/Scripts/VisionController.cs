@@ -7,11 +7,13 @@ public class VisionController : MonoBehaviour
     public float speed = 2.5f;
     public AreaEffector2D a;
     public BoxCollider2D b;
+    public GameObject block;
     // Start is called before the first frame update
    void Start()
    {
       a = GetComponent<AreaEffector2D>();
       b = GetComponent<BoxCollider2D>();
+      block = GameObject.FindGameObjectWithTag("block");
       a.enabled = false;
       b.enabled = false;
    }
@@ -20,6 +22,8 @@ public class VisionController : MonoBehaviour
    {
       a.enabled = false;
       b.enabled = false;
+      block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
 
       if (Input.GetKey("j")){
          transform.position += Vector3.left * speed * Time.deltaTime;
