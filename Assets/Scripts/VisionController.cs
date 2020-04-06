@@ -8,20 +8,34 @@ public class VisionController : MonoBehaviour
     public AreaEffector2D a;
     public BoxCollider2D b;
     public GameObject block;
+    
+    public BoxCollider2D[] boxes;
     // Start is called before the first frame update
    void Start()
    {
       a = GetComponent<AreaEffector2D>();
-      b = GetComponent<BoxCollider2D>();
+      boxes = GetComponents<BoxCollider2D>();
+      
+
       block = GameObject.FindGameObjectWithTag("block");
+
       a.enabled = false;
-      b.enabled = false;
+      
    }
    // Update is called once per frame
    void Update()
    {
       a.enabled = false;
-      b.enabled = false;
+      
+      //left box
+      boxes[0].enabled = false;
+      //right box
+      boxes[1].enabled = false;
+      //top box
+      boxes[2].enabled = false;
+      //bottom box
+      boxes[3].enabled = false;
+      
       block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
 
@@ -39,7 +53,13 @@ public class VisionController : MonoBehaviour
         }
       if(Input.GetKey("space")){
          a.enabled = true;
-         b.enabled = true;
+         
+         boxes[0].enabled = true;
+         boxes[1].enabled = true;
+         boxes[2].enabled = true;
+         boxes[3].enabled = true;
+         
       }
    }
+   
 }
