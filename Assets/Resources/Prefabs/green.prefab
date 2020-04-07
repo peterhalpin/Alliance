@@ -105,6 +105,7 @@ MonoBehaviour:
   a: {fileID: 0}
   b: {fileID: 0}
   block: {fileID: 0}
+  boxes: []
 --- !u!50 &3125776103630375987
 Rigidbody2D:
   serializedVersion: 4
