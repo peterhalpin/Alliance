@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireController : MonoBehaviour
+public class FireController : MonoBehaviourPun
 {
     public float speed = 2.5f;
     // Start is called before the first frame update
@@ -12,17 +13,23 @@ public class FireController : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
-      if (Input.GetKey("f")){
-         transform.position += Vector3.left * speed * Time.deltaTime;
+       if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
+            return;
         }
-     if (Input.GetKey("h")){
-         transform.position += Vector3.right * speed * Time.deltaTime;
+
+
+        if (Input.GetKey(KeyCode.LeftArrow)){
+            transform.position += Vector3.left * speed * Time.deltaTime;
         }
-     if (Input.GetKey("t")){
-         transform.position += Vector3.up * speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.RightArrow)){
+            transform.position += Vector3.right * speed * Time.deltaTime;
         }
-     if (Input.GetKey("g")){
-         transform.position += Vector3.down * speed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.UpArrow)){
+            transform.position += Vector3.up * speed * Time.deltaTime;
         }
+        if (Input.GetKey(KeyCode.DownArrow)){
+            transform.position += Vector3.down * speed * Time.deltaTime;
+        }
+
    }
 }
