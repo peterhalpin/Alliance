@@ -30,17 +30,6 @@ public class FireController : MonoBehaviourPun
         if (Input.GetKey(KeyCode.DownArrow)){
             transform.position += Vector3.down * speed * Time.deltaTime;
         }
-    //   if (Input.GetKey("f")){
-    //      transform.position += Vector3.left * speed * Time.deltaTime;
-    //     }
-    //  if (Input.GetKey("h")){
-    //      transform.position += Vector3.right * speed * Time.deltaTime;
-    //     }
-    //  if (Input.GetKey("t")){
-    //      transform.position += Vector3.up * speed * Time.deltaTime;
-    //     }
-    //  if (Input.GetKey("g")){
-    //      transform.position += Vector3.down * speed * Time.deltaTime;
-    //     }
+
    }
 }
