@@ -14,6 +14,7 @@ public class VisionController : MonoBehaviourPun
     // Start is called before the first frame update
    void Start()
    {
+ 
       a = GetComponent<AreaEffector2D>();
       boxes = GetComponents<BoxCollider2D>();
       
@@ -26,13 +27,11 @@ public class VisionController : MonoBehaviourPun
    // Update is called once per frame
    void Update()
    {
-        if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
-            return;
-        }
+
 
         a.enabled = false;
         
-        //left box
+        left box
         boxes[0].enabled = false;
         //right box
         boxes[1].enabled = false;
@@ -42,6 +41,10 @@ public class VisionController : MonoBehaviourPun
         boxes[3].enabled = false;
         
         block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+
+        if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
+            return;
+        }
 
         if (Input.GetKey(KeyCode.LeftArrow)){
             transform.position += Vector3.left * speed * Time.deltaTime;
