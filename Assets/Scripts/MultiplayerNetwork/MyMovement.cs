@@ -10,9 +10,9 @@ public class MyMovement : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        if (!photonView.IsMine) {
-            this.enabled=false; //disable the movescript if photonview is not mine.
-        }
+        // if (!photonView.IsMine) {
+        //     this.enabled=false; //disable the movescript if photonview is not mine.
+        // }
     }
 
 }
