@@ -5965,6 +5965,16 @@ PrefabInstance:
       propertyPath: viewIdField
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4219326519030356591, guid: 60802872b3bcc084a91e5a805ce9c186,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -17.69011
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219326519030356591, guid: 60802872b3bcc084a91e5a805ce9c186,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 27.536434
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60802872b3bcc084a91e5a805ce9c186, type: 3}
 --- !u!4 &1565114873 stripped
