@@ -31,7 +31,7 @@ public class VisionController : MonoBehaviourPun
 
         a.enabled = false;
         
-        left box
+        //left box
         boxes[0].enabled = false;
         //right box
         boxes[1].enabled = false;
@@ -62,8 +62,11 @@ public class VisionController : MonoBehaviourPun
             a.enabled = true;
             
             boxes[0].enabled = true;
+    
             boxes[1].enabled = true;
+            
             boxes[2].enabled = true;
+
             boxes[3].enabled = true;
             
         }

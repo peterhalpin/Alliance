@@ -128,6 +128,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 292697308}
     m_Modifications:
+    - target: {fileID: 2722506272028570410, guid: 60802872b3bcc084a91e5a805ce9c186,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -11.131178
+      objectReference: {fileID: 0}
+    - target: {fileID: 2722506272028570410, guid: 60802872b3bcc084a91e5a805ce9c186,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 15.901253
+      objectReference: {fileID: 0}
     - target: {fileID: 3125776103630375984, guid: 60802872b3bcc084a91e5a805ce9c186,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -206,12 +216,12 @@ PrefabInstance:
     - target: {fileID: 4219326519030356591, guid: 60802872b3bcc084a91e5a805ce9c186,
         type: 3}
       propertyPath: m_Offset.x
-      value: 18.351671
+      value: 18.651596
       objectReference: {fileID: 0}
     - target: {fileID: 4219326519030356591, guid: 60802872b3bcc084a91e5a805ce9c186,
         type: 3}
       propertyPath: m_Size.x
-      value: 49.466732
+      value: 23.065306
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3125776103630375985, guid: 60802872b3bcc084a91e5a805ce9c186, type: 3}
@@ -5157,6 +5167,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &874954132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874954130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dde532a9ec7496da235f38c50b1c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  greenBoxes: []
+  green: {fileID: 0}
+  a: {fileID: 0}
 --- !u!1 &937663515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3125776103630375990, guid: 60802872b3bcc084a91e5a805ce9c186,
@@ -5179,6 +5204,7 @@ MonoBehaviour:
   a: {fileID: 0}
   b: {fileID: 0}
   block: {fileID: 874954130}
+  boxes: []
 --- !u!1 &956128236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9166275041678383633, guid: b10939216d46c2b48821ceb729fde4bf,
