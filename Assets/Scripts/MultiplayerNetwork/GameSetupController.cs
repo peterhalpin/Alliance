@@ -1,11 +1,16 @@
 ﻿using Photon.Pun;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class GameSetupController : MonoBehaviour
 {
+    
     // This script will be added to any multiplayer scene
     void Start()
     {
@@ -13,24 +18,23 @@ public class GameSetupController : MonoBehaviour
     }
 
     private void CreatePlayer()
-    {
+    {  
+
         Debug.Log("Creating Player");
         System.Random random = new System.Random();
-        int num = random.Next(1, 5);
-        if (num == 1) {
+        int player = random.Next(1, 5);
+        if (player == 1) {
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), new Vector3(-9, 6, 1), Quaternion.identity);
-        } else if (num == 2){
+        } else if (player == 2){
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), new Vector3(9, -6, 1), Quaternion.identity);
-        } else if (num == 3){
+        } else if (player == 3){
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(9, 6, 1), Quaternion.identity);
         } else {
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), new Vector3(-9, -6, 1), Quaternion.identity);
         }
 
-        // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), Vector3.zero, Quaternion.identity);
-        // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), new Vector3(-9, 6, 1), Quaternion.identity);
-
         
     }
+
 
 }
