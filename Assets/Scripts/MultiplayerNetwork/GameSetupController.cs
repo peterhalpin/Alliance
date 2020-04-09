@@ -8,10 +8,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-public class GameSetupController : MonoBehaviour
+public class GameSetupController : MonoBehaviourPun
 {
+
+    private InfoObject infoObject;
+    private Dictionary<string, string> players;
     
     // This script will be added to any multiplayer scene
+
+    private void Awake() {
+        infoObject = GameObject.FindObjectOfType<InfoObject>();
+        players = infoObject.GetCharacters();
+    }
+
     void Start()
     {
         CreatePlayer(); // Create a networked player object for each player that loads into the multiplayer scenes.
@@ -19,19 +28,22 @@ public class GameSetupController : MonoBehaviour
 
     private void CreatePlayer()
     {  
+        string userID = PhotonNetwork.AuthValues.UserId;
 
-        Debug.Log("Creating Player");
-        System.Random random = new System.Random();
-        int player = random.Next(1, 5);
-        if (player == 1) {
+     
+        if (players[userID] == "blek") {
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), new Vector3(-9, 6, 1), Quaternion.identity);
-        } else if (player == 2){
+        } else if (players[userID] == "blue"){
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), new Vector3(9, -6, 1), Quaternion.identity);
-        } else if (player == 3){
+        } else if (players[userID] == "green"){
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(9, 6, 1), Quaternion.identity);
         } else {
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), new Vector3(-9, -6, 1), Quaternion.identity);
         }
+
+
+        
+        
 
         
     }
