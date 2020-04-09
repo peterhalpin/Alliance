@@ -36,6 +36,7 @@ public class LobbyController : MonoBehaviourPunCallbacks
         Debug.Log("Creating room now");
         int randomRoomNumber = Random.Range(0, 10000);
         RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)roomSize };
+        roomOps.PublishUserId = true;
         PhotonNetwork.CreateRoom("Room" + randomRoomNumber, roomOps);
         Debug.Log(randomRoomNumber);
     }

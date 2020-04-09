@@ -33,5 +33,6 @@ MonoBehaviour:
   - DestroyRpc
   - RPC_SendTimer
   - ChoosingCharacter
+  - CharacterRemoteAssign
   DisableAutoOpenWizard: 1
   ShowSettings: 0
