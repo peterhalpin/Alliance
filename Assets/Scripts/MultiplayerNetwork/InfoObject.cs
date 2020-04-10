@@ -6,10 +6,11 @@ public class InfoObject : MonoBehaviour
 {
 
     private Dictionary<string, string> players;
+    private int level;
 
     private void Awake() {
         players = new Dictionary<string, string>();
-
+        level = 0;
         DontDestroyOnLoad(transform.gameObject);
     }
 
@@ -33,4 +34,15 @@ public class InfoObject : MonoBehaviour
     public Dictionary<string, string> GetCharacters() {
         return players;
     }
+
+    public void UpdateLevel(bool increaseOrDecrease) {
+        //if its true then increase, if false then decrease
+        if(increaseOrDecrease) {
+            level++;
+            return;
+        }
+        level--;
+
+    }
+
 }

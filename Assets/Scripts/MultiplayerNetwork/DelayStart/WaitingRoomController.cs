@@ -129,12 +129,18 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
              charTypes = charReload;
 
             // adding player id's to list of players variable: playerslist
+            playerslist.Clear();
             foreach(Player pl in PhotonNetwork.PlayerList) {
-                if(!playerslist.Contains(pl.UserId)) {
+                // if(!playerslist.Contains(pl.UserId)) {
                     playerslist.Add(pl.UserId);
-                }
+                // }
             }
+             Debug.LogError("here we are");
+            Debug.LogError(playerslist);
+            Debug.LogError("here we go");
             ChooseCharacters(playerslist, charTypes);
+           
+
           
         }
 
@@ -159,9 +165,11 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         
         // shuffles the player IDs
         players = Shuffle(players);
-       
+
+        map.Clear();
 
         foreach(string p in players) {
+
             map.Add(p, types.Dequeue());
         }
         

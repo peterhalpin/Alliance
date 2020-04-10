@@ -23,6 +23,10 @@ public class GameSetupController : MonoBehaviourPun
 
     void Start()
     {
+        Debug.LogWarning("in this btich");
+        Debug.LogWarning(players);
+        Debug.LogWarning("out this bitch");
+
         CreatePlayer(); // Create a networked player object for each player that loads into the multiplayer scenes.
     }
 
