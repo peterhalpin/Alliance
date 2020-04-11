@@ -9,34 +9,43 @@ using UnityEngine.UI;
 using System.Linq;
 
 
-
 public class GameSetupController : MonoBehaviourPun
 {
     private InfoObject infoObject;
     private Dictionary<string, string> players;
     private int level;
-    Vector3[] playerPosition;
+    private Vector3[] playerPosition;
+
+    // false if not testing and developing, true if so
+    private bool testing = false;
 
     // This script will be added to any multiplayer scene
     private void Awake() {
-        infoObject = GameObject.FindObjectOfType<InfoObject>();
-        players = infoObject.GetCharacters();
-        level = infoObject.GetLevel();
-        playerPosition = new Vector3[4];
+        // if the catch gets executed, then that means that we aren't loading the game properly, most likely because we are testing
+        try {
+            infoObject = GameObject.FindObjectOfType<InfoObject>();
+            players = infoObject.GetCharacters();
+            level = infoObject.GetLevel();
+            playerPosition = new Vector3[4];
+        } catch {
+            testing = true;
+        }
     }
 
     void Start() {       
-        SetLevelPositions(); // changing the starting positions of each character based on their levels
+        if (!testing) {
+            SetLevelPositions(); // changing the starting positions of each character based on their levels
+        }
         CreatePlayer(); // Create a networked player object for each player that loads into the multiplayer scenes.
     }
 
     private void SetLevelPositions() {
         // will need to add more conditionals as you add more levels and want players to spawn in different positions
         // POSITIONS:
-        // 0 == blek
-        // 1 == blue
-        // 2 == green
-        // 3 == red
+        // 0 == blek - strength character
+        // 1 == blue - ice character
+        // 2 == green - magnet character
+        // 3 == red - fire character
         // values passed into Vector3 need to be integers, otherwise it won't work
         // there might be a work around that though ^
         if(level == 1) {
@@ -47,7 +56,7 @@ public class GameSetupController : MonoBehaviourPun
         } else if (level == 2) {
             playerPosition[0] = new Vector3(3, 3, 100);
             playerPosition[1] = new Vector3(-9, 2, 100);
-            playerPosition[2] = new Vector3(0, 3, 100);
+            playerPosition[2] = new Vector3(0, 4, 100);
             playerPosition[3] = new Vector3(9, -6, 100);
         } else if (level == 3) {
             playerPosition[0] = new Vector3(-26, 8, 100);
@@ -66,16 +75,28 @@ public class GameSetupController : MonoBehaviourPun
     }
 
     private void CreatePlayer() {  
-        string userID = PhotonNetwork.AuthValues.UserId;
-        if (players[userID] == "blek") {
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
-        } else if (players[userID] == "blue"){
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
-        } else if (players[userID] == "green"){
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
+        if(!testing) {
+            string userID = PhotonNetwork.AuthValues.UserId;
+            if (players[userID] == "blek") {
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
+            } else if (players[userID] == "blue"){
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
+            } else if (players[userID] == "green"){
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
+            } else {
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
+            }
         } else {
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
+            // this will get run if we are testing
+            // change the color to whichever character you need
+            // change the Vector position to wherever you need the player to spawn
+            // the player positions correspoding to each character and each level are listed above in the SetLevelPositions method
+            // reference that when changing Vector position for each character
+            // comment the bottom line out of if you wish to just add the prefab on the scene
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(0, 4, 100), Quaternion.identity);
         }
+
+        
     }
 
 }

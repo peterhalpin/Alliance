@@ -15,7 +15,7 @@ public class Boxes : MonoBehaviour
             greenBoxes = green.GetComponents<BoxCollider2D>();
             a = green.GetComponent<AreaEffector2D>();
         } catch {
-            Debug.Log("Trying to find the magnet player but it isn't in the game: line: 14-16 in Boxes.cs");
+            Debug.Log("Trying to find the magnet player but it isn't in the game: lines: 14-16 in Boxes.cs");
         }
     }
 
