@@ -132,11 +132,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
                     playerslist.Add(pl.UserId);
                 // }
             }
-
-            ChooseCharacters(playerslist, charTypes);
-           
-
-          
+            ChooseCharacters(playerslist, charTypes);          
         }
 
     }

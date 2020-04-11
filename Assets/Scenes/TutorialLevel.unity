@@ -5760,6 +5760,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: tf_A5_ashlands_1_76
       objectReference: {fileID: 0}
+    - target: {fileID: 4246278235414861258, guid: f04ecb2d0e6c84a9ea74866202fc591f,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 39029223
+      objectReference: {fileID: 0}
+    - target: {fileID: 4246278235414861258, guid: f04ecb2d0e6c84a9ea74866202fc591f,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4246278235414861259, guid: f04ecb2d0e6c84a9ea74866202fc591f,
         type: 3}
       propertyPath: m_LocalPosition.x

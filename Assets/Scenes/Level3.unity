@@ -1267,9 +1267,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 39029223
-  m_SortingLayer: 4
-  m_SortingOrder: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -10
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -4328,7 +4328,7 @@ Transform:
   - {fileID: 1281617397}
   - {fileID: 1490084657}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &773453521
 GameObject:
@@ -4769,6 +4769,50 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 851499705}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &851499707 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7636770113028910393, guid: 401ee5f29ee590742a819245965b74ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 851499705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &851499708
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851499707}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 0.64}
+    newSize: {x: 1.28, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.64}
+  m_EdgeRadius: 0
+--- !u!114 &851499709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851499707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd5547a1a31646ceb1808c93525d213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &874954130 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4214767609593373886, guid: 5d560ab6c5a91b045a37f304516ea646,
@@ -22228,7 +22272,7 @@ PrefabInstance:
     - target: {fileID: 9070207077728166262, guid: 227e5596f6d1d44f59cd7695d77d54e4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9070207077728166262, guid: 227e5596f6d1d44f59cd7695d77d54e4,
         type: 3}

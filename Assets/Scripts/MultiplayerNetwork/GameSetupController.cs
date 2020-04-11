@@ -12,29 +12,21 @@ using System.Linq;
 
 public class GameSetupController : MonoBehaviourPun
 {
-
     private InfoObject infoObject;
     private Dictionary<string, string> players;
     private int level;
     Vector3[] playerPosition;
 
-    
-    
     // This script will be added to any multiplayer scene
-
     private void Awake() {
         infoObject = GameObject.FindObjectOfType<InfoObject>();
         players = infoObject.GetCharacters();
         level = infoObject.GetLevel();
-        // level = 1;
         playerPosition = new Vector3[4];
     }
 
     void Start() {       
-        // changing the starting positions of each character based on their levels
-        SetLevelPositions();
-
-
+        SetLevelPositions(); // changing the starting positions of each character based on their levels
         CreatePlayer(); // Create a networked player object for each player that loads into the multiplayer scenes.
     }
 
@@ -48,15 +40,15 @@ public class GameSetupController : MonoBehaviourPun
         // values passed into Vector3 need to be integers, otherwise it won't work
         // there might be a work around that though ^
         if(level == 1) {
-            playerPosition[0] = new Vector3(-9, 6, -100);
-            playerPosition[1] = new Vector3(9, -6, -100);
-            playerPosition[2] = new Vector3(9, 6, -100);
-            playerPosition[3] = new Vector3(-9, -6, -100);
+            playerPosition[0] = new Vector3(-9, 6, 100);
+            playerPosition[1] = new Vector3(9, -6, 100);
+            playerPosition[2] = new Vector3(9, 6, 100);
+            playerPosition[3] = new Vector3(-9, -6, 100);
         } else if (level == 2) {
-            playerPosition[0] = new Vector3(3, 3, -100);
-            playerPosition[1] = new Vector3(-9, 2, -100);
-            playerPosition[2] = new Vector3(0, 3, -100);
-            playerPosition[3] = new Vector3(9, -6, -100);
+            playerPosition[0] = new Vector3(3, 3, 100);
+            playerPosition[1] = new Vector3(-9, 2, 100);
+            playerPosition[2] = new Vector3(0, 3, 100);
+            playerPosition[3] = new Vector3(9, -6, 100);
         } else if (level == 3) {
             playerPosition[0] = new Vector3(-26, 8, 100);
             playerPosition[1] = new Vector3(-26, 2, 100);
@@ -73,34 +65,17 @@ public class GameSetupController : MonoBehaviourPun
         
     }
 
-
-    private void CreatePlayer()
-    {  
+    private void CreatePlayer() {  
         string userID = PhotonNetwork.AuthValues.UserId;
-
         if (players[userID] == "blek") {
-            // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
-
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
         } else if (players[userID] == "blue"){
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
         } else if (players[userID] == "green"){
-            // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
-
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
         } else {
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
         }
-
-
-        // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[0], Quaternion.identity);
-
-        
     }
-
-
-
-
-
 
 }
