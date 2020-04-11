@@ -23,13 +23,21 @@ public class FinalSwitch : MonoBehaviourPun
             colliders.Add(player);
         }
       
-        if(colliders.Count == 2){
+        if(colliders.Count == 4){
             if(PhotonNetwork.IsMasterClient){
                 myPhotonView.RPC("LevelCountUpdate", RpcTarget.All, true);
             }
-            SceneManager.LoadScene(sceneName: "Level2");
-            Debug.Log("shit again");
-            // myPhotonView.RPC("LoadNextLevel", RpcTarget.All, "Level2");
+            // changes based on what level we're currently on
+            // will need to add more as more levels are added
+            if(infoObject.GetLevel() == 2) {
+                SceneManager.LoadScene(sceneName: "Level2");
+            } else if (infoObject.GetLevel() == 3) {
+                SceneManager.LoadScene(sceneName: "Level3");
+            } else if (infoObject.GetLevel() == 4) {
+                SceneManager.LoadScene(sceneName: "Level4");
+            } else {
+                Debug.LogError("Level is possibly wrong, possibly error in incrementing or decrementing");
+            }
         }
 
     }
@@ -44,14 +52,7 @@ public class FinalSwitch : MonoBehaviourPun
         // updates on all players what level we're on
         infoObject.UpdateLevel(goingToNextLevel);
     }
-
-    // [PunRPC]
-    // private void LoadNextLevel(string levelName) {
-    //     SceneManager.LoadScene(sceneName: levelName);
-
-    // }
-
-
+    
 }
 
 
