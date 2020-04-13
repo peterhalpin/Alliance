@@ -5689,7 +5689,6 @@ PrefabInstance:
     - target: {fileID: 4818363825458127144, guid: 227e5596f6d1d44f59cd7695d77d54e4,
         type: 3}
       propertyPath: m_Name
-      value: Block
       value: GameSetup
       objectReference: {fileID: 0}
     - target: {fileID: 9070207077728166262, guid: 227e5596f6d1d44f59cd7695d77d54e4,
@@ -5759,7 +5758,7 @@ PrefabInstance:
     - target: {fileID: 4246278235414861257, guid: f04ecb2d0e6c84a9ea74866202fc591f,
         type: 3}
       propertyPath: m_Name
-      value: tf_A5_ashlands_1_76
+      value: Block
       objectReference: {fileID: 0}
     - target: {fileID: 4246278235414861258, guid: f04ecb2d0e6c84a9ea74866202fc591f,
         type: 3}
