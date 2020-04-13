@@ -24,10 +24,10 @@ public class Boxes : MonoBehaviour
             a.forceAngle = 180;
         }
         if(col == greenBoxes[2]){
-            a.forceAngle = 90;
+            a.forceAngle = 270;
         }
         if(col == greenBoxes[3]){
-            a.forceAngle = 270;
+            a.forceAngle = 90;
         }
     }
 }
