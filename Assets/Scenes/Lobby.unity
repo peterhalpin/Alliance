@@ -943,7 +943,7 @@ PrefabInstance:
     - target: {fileID: 1234606168035521885, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}
       propertyPath: minPlayersToStart
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1234606168035521885, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}

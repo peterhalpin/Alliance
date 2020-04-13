@@ -8,10 +8,11 @@ public class TopSwitch : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D player)
     {
-        if(!colliders.Contains(player)){
+        
+        if(!colliders.Contains(player) && player.name != "Boulder" && player.name != "Block"){
             colliders.Add(player);
         }
-        print("enter top: "+ player);
+        
         if(colliders.Count > 1){
             //make doors open
             print("Top Gate open");
@@ -23,6 +24,6 @@ public class TopSwitch : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D player){
         colliders.Remove(player);
-        print("leave top: "+ player);
+        
     }
 }
