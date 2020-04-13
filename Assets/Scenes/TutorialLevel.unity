@@ -5689,6 +5689,7 @@ PrefabInstance:
     - target: {fileID: 4818363825458127144, guid: 227e5596f6d1d44f59cd7695d77d54e4,
         type: 3}
       propertyPath: m_Name
+      value: Block
       value: GameSetup
       objectReference: {fileID: 0}
     - target: {fileID: 9070207077728166262, guid: 227e5596f6d1d44f59cd7695d77d54e4,
