@@ -4,26 +4,13 @@ using UnityEngine;
 
 public class InfoObject : MonoBehaviour
 {
-
     private Dictionary<string, string> players;
     private int level;
 
     private void Awake() {
         players = new Dictionary<string, string>();
-        level = 0;
+        level = 1;
         DontDestroyOnLoad(transform.gameObject);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-   
     }
 
     public void UpdatePlayerList(Dictionary<string, string> map) {
@@ -35,14 +22,18 @@ public class InfoObject : MonoBehaviour
         return players;
     }
 
-    public void UpdateLevel(bool increaseOrDecrease) {
+    public void UpdateLevel(bool increaseOrDecreaseLevelCount) {
         //if its true then increase, if false then decrease
-        if(increaseOrDecrease) {
+        if(increaseOrDecreaseLevelCount) {
             level++;
-            return;
+        } else {
+            // this is here in the case we want to implement going back a level, but we won't need it for now
+            level--;
         }
-        level--;
+    }
 
+    public int GetLevel() {
+        return level;
     }
 
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
+//IMPORTANT: Object names have to match EXACTLY with the strings provided. If they do not, the switches will not work.
 public class Pressure_Switch : MonoBehaviour
 {
     [SerializeField]
@@ -15,7 +17,6 @@ public class Pressure_Switch : MonoBehaviour
     private Dictionary<string, Tilemap> tilemapses = new Dictionary<string, Tilemap>();
     private TileBase dirtTile;
     private TileBase wallTile;
-    // Start is called before the first frame update
     void Start()
     {
         //Set default appearance
@@ -37,7 +38,7 @@ public class Pressure_Switch : MonoBehaviour
 
     //Switching the tiles of the wall to dirt when pressure is there
     void OnTriggerEnter2D(Collider2D col){
-        if(col.name == "STRENGTH"){
+        if(col.name == "blek(Clone)"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
            var ty = tilemapses["TL_Wall"];
             ty.SwapTile(wallTile, dirtTile);
@@ -52,7 +53,7 @@ public class Pressure_Switch : MonoBehaviour
    //Switching the tiles to wall when pressure is removed
      void OnTriggerExit2D(Collider2D col) {
               Debug.Log(col.name);
-          if(col.name == "STRENGTH"){
+          if(col.name == "blek(Clone)"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
             isOn = false;
             var ty = tilemapses["TL_Wall"];

@@ -938,7 +938,7 @@ PrefabInstance:
     - target: {fileID: 1234606168035521885, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}
       propertyPath: maxWaitTime
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1234606168035521885, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}
@@ -948,7 +948,7 @@ PrefabInstance:
     - target: {fileID: 1234606168035521885, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}
       propertyPath: maxFullGameWaitTime
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7066238019313711066, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}

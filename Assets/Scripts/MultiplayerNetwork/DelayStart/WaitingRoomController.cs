@@ -1,8 +1,5 @@
 ﻿using Photon.Pun;
 using Photon.Realtime;
-
-
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -135,13 +132,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
                     playerslist.Add(pl.UserId);
                 // }
             }
-             Debug.LogError("here we are");
-            Debug.LogError(playerslist);
-            Debug.LogError("here we go");
-            ChooseCharacters(playerslist, charTypes);
-           
-
-          
+            ChooseCharacters(playerslist, charTypes);          
         }
 
     }

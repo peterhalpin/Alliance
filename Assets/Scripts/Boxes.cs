@@ -10,9 +10,13 @@ public class Boxes : MonoBehaviour
     public AreaEffector2D a;
 
     void Start(){
-        green = GameObject.FindWithTag("VisionPlayer");
-        greenBoxes = green.GetComponents<BoxCollider2D>();
-        a = green.GetComponent<AreaEffector2D>();
+        try {
+            green = GameObject.FindWithTag("VisionPlayer");
+            greenBoxes = green.GetComponents<BoxCollider2D>();
+            a = green.GetComponent<AreaEffector2D>();
+        } catch {
+            Debug.Log("Trying to find the magnet player but it isn't in the game: lines: 14-16 in Boxes.cs");
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)
