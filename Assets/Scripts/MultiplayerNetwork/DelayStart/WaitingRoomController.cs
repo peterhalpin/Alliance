@@ -71,8 +71,6 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         fullGameTimer = maxFullGameWaitTime;
         notFullGameTimer = maxWaitTime;
         timerToStartGame = maxWaitTime;
-        Debug.Log("under");
-        Debug.LogWarning(myPhotonView);;
 
         
         charTypes.Enqueue("blek");

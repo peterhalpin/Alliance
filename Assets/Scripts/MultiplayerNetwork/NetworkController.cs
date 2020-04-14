@@ -7,10 +7,12 @@ public class NetworkController : MonoBehaviourPunCallbacks
 {    
     // Start is called before the first frame update
     void Start() {
-        PhotonNetwork.ConnectUsingSettings(); //Connects to Photon master servers
+        if (!PhotonNetwork.IsConnected)
+            PhotonNetwork.ConnectUsingSettings(); //Connects to Photon master servers
     }
 
     public override void OnConnectedToMaster() {
         Debug.Log("We are now connected to the " + PhotonNetwork.CloudRegion + " server!");
+        PhotonNetwork.JoinLobby();
     }
 }
