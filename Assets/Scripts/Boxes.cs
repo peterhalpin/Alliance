@@ -1,26 +1,44 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boxes : MonoBehaviour
+public class Boxes : MonoBehaviourPun
 {
+    private string userID;
+    private Dictionary<string, string> players;
     private List<Collider2D> colliders = new List<Collider2D>();
+    private PhotonView myPhotonView;
+    private InfoObject infoObject;
+    private BlockController blockcontroller;
+    private bool called;
+    
     public BoxCollider2D[] greenBoxes;
     public GameObject green;
     public AreaEffector2D a;
 
-    void Start(){
-        try {
+
+    private void Awake() {
+        blockcontroller = GameObject.FindObjectOfType<BlockController>();
+        called = false;
+    }
+
+    private void Start() {
+        try {   
             green = GameObject.FindWithTag("VisionPlayer");
             greenBoxes = green.GetComponents<BoxCollider2D>();
             a = green.GetComponent<AreaEffector2D>();
         } catch {
-            Debug.Log("Trying to find the magnet player but it isn't in the game: lines: 14-16 in Boxes.cs");
-        }
+            Debug.Log("If the message (Is In Game!) appears, then ignore this: Trying to find the magnet player but it isn't in the game: lines: 14-16 in Boxes.cs, this is the error but if you just load the magnet player then it will be fixed.");
+        }   
     }
 
     void OnTriggerEnter2D(Collider2D col)
     {
+        green = GameObject.FindWithTag("VisionPlayer");
+        greenBoxes = green.GetComponents<BoxCollider2D>();
+        a = green.GetComponent<AreaEffector2D>();
+    
         if(col == greenBoxes[0]){
             a.forceAngle = 0;
         }
@@ -34,4 +52,6 @@ public class Boxes : MonoBehaviour
             a.forceAngle = 90;
         }
     }
+
+
 }

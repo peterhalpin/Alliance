@@ -15,7 +15,6 @@ public class InfoObject : MonoBehaviour
 
     public void UpdatePlayerList(Dictionary<string, string> map) {
         players = map;
-
     }
 
     public Dictionary<string, string> GetCharacters() {

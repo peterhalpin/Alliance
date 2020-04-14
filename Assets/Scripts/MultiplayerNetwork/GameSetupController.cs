@@ -71,7 +71,6 @@ public class GameSetupController : MonoBehaviourPun
         } else {
             Debug.LogError("Error setting player positions!");
         }
-        
     }
 
     private void CreatePlayer() {  
@@ -81,6 +80,7 @@ public class GameSetupController : MonoBehaviourPun
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
             } else if (players[userID] == "blue"){
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
+
             } else if (players[userID] == "green"){
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
             } else {
@@ -93,10 +93,7 @@ public class GameSetupController : MonoBehaviourPun
             // the player positions correspoding to each character and each level are listed above in the SetLevelPositions method
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(0, 4, 100), Quaternion.identity);
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(-5, 5, 100), Quaternion.identity);
         }
-
-        
     }
-
 }

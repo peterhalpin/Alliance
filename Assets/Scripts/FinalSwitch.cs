@@ -16,7 +16,6 @@ public class FinalSwitch : MonoBehaviourPun
         myPhotonView = GetComponent<PhotonView>();
     }
 
-
     void OnTriggerEnter2D(Collider2D player)
     {
         if(!colliders.Contains(player)){
@@ -45,7 +44,6 @@ public class FinalSwitch : MonoBehaviourPun
     void OnTriggerExit2D(Collider2D player){
         colliders.Remove(player);
     }
-
 
     [PunRPC]
     private void LevelCountUpdate(bool goingToNextLevel) {

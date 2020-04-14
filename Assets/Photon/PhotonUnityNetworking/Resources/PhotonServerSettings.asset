@@ -34,5 +34,10 @@ MonoBehaviour:
   - DestroyRpc
   - LevelCountUpdate
   - RPC_SendTimer
+  - setBlockVariablesForAll
+  - moveBoxForOtherPlayers
+  - UpdateBlockForEveyone
+  - UpdateBlockForEveryone
+  - PullObjectsForEveryone
   DisableAutoOpenWizard: 1
   ShowSettings: 0

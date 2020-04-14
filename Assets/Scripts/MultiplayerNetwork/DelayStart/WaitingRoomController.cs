@@ -71,6 +71,8 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         fullGameTimer = maxFullGameWaitTime;
         notFullGameTimer = maxWaitTime;
         timerToStartGame = maxWaitTime;
+        Debug.Log("under");
+        Debug.LogWarning(myPhotonView);;
 
         
         charTypes.Enqueue("blek");
@@ -117,20 +119,17 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
 
 
         // send master clients countdown timer to all other players in order to sync
-        if(PhotonNetwork.IsMasterClient)
-        {
+        if(PhotonNetwork.IsMasterClient) {
             myPhotonView.RPC("RPC_SendTimer", RpcTarget.Others, timerToStartGame);
 
 
-             Queue<string> charReload = new Queue<string>(new[] {"blek", "blue", "red", "green"});
-             charTypes = charReload;
+            Queue<string> charReload = new Queue<string>(new[] {"blek", "blue", "red", "green"});
+            charTypes = charReload;
 
             // adding player id's to list of players variable: playerslist
             playerslist.Clear();
             foreach(Player pl in PhotonNetwork.PlayerList) {
-                // if(!playerslist.Contains(pl.UserId)) {
-                    playerslist.Add(pl.UserId);
-                // }
+                playerslist.Add(pl.UserId);
             }
             ChooseCharacters(playerslist, charTypes);          
         }
@@ -194,7 +193,6 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     
     private void Update() 
     {
-
         WaitingForMorePlayers();
     }
 
