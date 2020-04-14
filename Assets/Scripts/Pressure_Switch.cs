@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 //IMPORTANT: Object names have to match EXACTLY with the strings provided. If they do not, the switches will not work.
-public class Pressure_Switch : MonoBehaviour
-{
-    [SerializeField]
+public class Pressure_Switch : MonoBehaviour {
+  
+  [SerializeField]
   GameObject switchOn;
-[SerializeField]
+  [SerializeField]
   GameObject switchOff;
-    public bool isOn = false;
+  public bool isOn = false;
 
     public GameObject SwitchOn { get => switchOn; set => switchOn = value; }
     public GameObject SwitchOff { get => switchOff; set => switchOff = value; }
