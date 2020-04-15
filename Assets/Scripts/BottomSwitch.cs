@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class BottomSwitch : MonoBehaviour
 {
-    private List<Collider2D> colliders = new List<Collider2D>();
+    private List<Collider2D> colliders;
+    private bool isDestroyed;
 
+    private void Awake() {
+        colliders = new List<Collider2D>();
+        isDestroyed = false;
+    }
+    
     void OnTriggerEnter2D(Collider2D player)
     {
         if(!colliders.Contains(player)){
             colliders.Add(player);
         }
-        print("enter bottom: "+ player);
-        if(colliders.Count > 1){
-            //make doors open
-            print("Top Gate Open");
 
-           GameObject[] bottomDoor = GameObject.FindGameObjectsWithTag("Door Bottom");
+        if(colliders.Count > 1 && !isDestroyed){
+            isDestroyed = true;
+            //make doors open
+
+            GameObject[] bottomDoor = GameObject.FindGameObjectsWithTag("Door Bottom");
             Destroy(bottomDoor[0]);
             Destroy(bottomDoor[1]);
         }
@@ -25,6 +31,5 @@ public class BottomSwitch : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D player){
         colliders.Remove(player);
-        print("leave bottom: "+ player);
     }
 }

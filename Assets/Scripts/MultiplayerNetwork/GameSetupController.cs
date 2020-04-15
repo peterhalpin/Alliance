@@ -69,6 +69,7 @@ public class GameSetupController : MonoBehaviourPun
             playerPosition[2] = new Vector3(0, 0, 100);
             playerPosition[3] = new Vector3(0, 0, 100);
         } else {
+            print(level);
             Debug.LogError("Error setting player positions!");
         }
     }
@@ -79,12 +80,16 @@ public class GameSetupController : MonoBehaviourPun
             if (players[userID] == "blek") {
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
             } else if (players[userID] == "blue"){
-                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
+                // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
+
 
             } else if (players[userID] == "green"){
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
             } else {
-                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
+                // PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
+
             }
         } else {
             // this will get run if we are testing
