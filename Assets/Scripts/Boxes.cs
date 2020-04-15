@@ -16,6 +16,8 @@ public class Boxes : MonoBehaviourPun
     public BoxCollider2D[] greenBoxes;
     public GameObject green;
     public AreaEffector2D a;
+    public CapsuleCollider2D cap;
+    public Rigidbody2D rb;
 
 
     private void Awake() {
@@ -38,19 +40,41 @@ public class Boxes : MonoBehaviourPun
         green = GameObject.FindWithTag("VisionPlayer");
         greenBoxes = green.GetComponents<BoxCollider2D>();
         a = green.GetComponent<AreaEffector2D>();
+        cap = green.GetComponent<CapsuleCollider2D>();
+        rb = green.GetComponent<Rigidbody2D>();
+        
     
         if(col == greenBoxes[0]){
             a.forceAngle = 0;
+            rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if(col == greenBoxes[1]){
             a.forceAngle = 180;
+            rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if(col == greenBoxes[2]){
             a.forceAngle = 270;
+            rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         if(col == greenBoxes[3]){
             a.forceAngle = 90;
+            rb.isKinematic = true;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
+
+        
+        
     }
 
 
