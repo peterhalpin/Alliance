@@ -94,6 +94,9 @@ public class GameSetupController : MonoBehaviourPun
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
             PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(0, 4, 100), Quaternion.identity);
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), new Vector3(0, 4, 100), Quaternion.identity);
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), new Vector3(0, 4, 100), Quaternion.identity);
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), new Vector3(0, 4, 100), Quaternion.identity);
         }
 
         

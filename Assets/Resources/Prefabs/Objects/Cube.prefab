@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2594077380280283406}
   - component: {fileID: 8589571798373402374}
   - component: {fileID: 4753008304467753358}
+  - component: {fileID: 440462510571575598}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -108,3 +109,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51424694, y: 0.3731897}
   m_EdgeRadius: 0
+--- !u!50 &440462510571575598
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4214767609593373886}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 200
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
