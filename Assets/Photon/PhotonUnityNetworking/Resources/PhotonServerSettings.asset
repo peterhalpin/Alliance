@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AppSettings:
     AppIdRealtime: 74adc932-72d5-4667-9186-1db7e20f1866
-    AppIdChat: 
+    AppIdChat: a6158b28-c73c-4c44-aa95-0629e3a5bf1d
     AppIdVoice: 
     AppVersion: 
-    UseNameServer: 1
+    UseNameServer: 0
     FixedRegion: 
     Server: 
     Port: 0
@@ -32,13 +32,8 @@ MonoBehaviour:
   - CharacterRemoteAssign
   - ClickRpc
   - DestroyRpc
-  - LevelCountUpdate
-  - RPC_SendTimer
-  - setBlockVariablesForAll
-  - moveBoxForOtherPlayers
-  - UpdateBlockForEveyone
-  - UpdateBlockForEveryone
   - PullObjectsForEveryone
-  - UpdateLevelForEveryone
+  - RPC_SendTimer
+  - UpdateBlockForEveryone
   DisableAutoOpenWizard: 1
   ShowSettings: 1
