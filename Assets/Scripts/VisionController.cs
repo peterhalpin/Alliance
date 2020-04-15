@@ -52,6 +52,7 @@ public class VisionController : MonoBehaviourPun
    // Update is called once per frame
    private void Update() {
 
+        
         a.enabled = false;
        
         //left box
@@ -87,12 +88,14 @@ public class VisionController : MonoBehaviourPun
         }
 
         if (Input.GetKey(KeyCode.LeftArrow)){
+            GetComponent<Rigidbody2D>().isKinematic = false;
             transform.position += Vector3.left * speed * Time.deltaTime;
             animator.SetFloat("MoveX", -.5f);
             animator.SetFloat("MoveY", 0);
             direction = 4;
         }
         if (Input.GetKey(KeyCode.RightArrow)){
+            GetComponent<Rigidbody2D>().isKinematic = false;
             transform.position += Vector3.right * speed * Time.deltaTime;
             animator.SetFloat("MoveX", .5f);
             animator.SetFloat("MoveY", 0);
@@ -105,6 +108,7 @@ public class VisionController : MonoBehaviourPun
             direction = 1;
         }
         if (Input.GetKey(KeyCode.DownArrow)){
+            GetComponent<Rigidbody2D>().isKinematic = false;
             transform.position += Vector3.down * speed * Time.deltaTime;
             animator.SetFloat("MoveX", 0);
             animator.SetFloat("MoveY", -.5f);
