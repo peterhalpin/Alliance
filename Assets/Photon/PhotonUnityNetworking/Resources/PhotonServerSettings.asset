@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppSettings:
-    AppIdRealtime: 74adc932-72d5-4667-9186-1db7e20f1866
+    AppIdRealtime: 
     AppIdChat: 
     AppIdVoice: 
     AppVersion: 
@@ -33,11 +33,8 @@ MonoBehaviour:
   - ClickRpc
   - DestroyRpc
   - LevelCountUpdate
-  - RPC_SendTimer
-  - setBlockVariablesForAll
-  - moveBoxForOtherPlayers
-  - UpdateBlockForEveyone
-  - UpdateBlockForEveryone
   - PullObjectsForEveryone
+  - RPC_SendTimer
+  - UpdateBlockForEveryone
   DisableAutoOpenWizard: 1
   ShowSettings: 0
