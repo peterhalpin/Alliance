@@ -94,7 +94,7 @@ public class GameSetupController : MonoBehaviourPun
             // the player positions correspoding to each character and each level are listed above in the SetLevelPositions method
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(-5, 5, 100), Quaternion.identity);
+            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(-9, -12, 100), Quaternion.identity);
         }
     }
 }
