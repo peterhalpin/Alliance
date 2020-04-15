@@ -6,17 +6,16 @@ using UnityEngine;
 
 public class RoomListingMenu : MonoBehaviourPunCallbacks
 {
+    private List<RoomListing> _listings = new List<RoomListing>();    
     [SerializeField]
     private Transform _content;
     [SerializeField]
     private RoomListing _roomListing;
 
-    private List<RoomListing> _listings = new List<RoomListing>();
-
     public override void OnRoomListUpdate(List<RoomInfo> roomList) {
         foreach (RoomInfo info in roomList) {
             // Removed from rooms list
-            if (info.RemovedFromList) {
+            if (info.RemovedFromList || !info.IsOpen) {
                 int index = _listings.FindIndex(x => x.RoomInfo.Name == info.Name);
                 if (index != -1) {
                     Destroy(_listings[index].gameObject);
@@ -25,15 +24,24 @@ public class RoomListingMenu : MonoBehaviourPunCallbacks
             } 
             //  Added to roooms list
             else {
-                RoomListing listing = Instantiate(_roomListing, _content);
-                if (listing != null) {
-                    listing.SetRoomInfo(info);
-                    _listings.Add(listing);
-                }
+                int index = _listings.FindIndex(x => x.RoomInfo.Name == info.Name);
+                if (index == -1) {
+                    RoomListing listing = Instantiate(_roomListing, _content);
+                    if (listing != null) {
+                        listing.SetRoomInfo(info);
+                        _listings.Add(listing);
+                    }
+                } else {
+                    // we can modify a listing here (a listed room)
+                    // _listings[index].whatever so .modify or whatever
+                }       
             }
         }
+    }
 
-
+    public override void OnJoinedRoom() {
+        _content.DestroyChildren();
+        _listings.Clear();
     }
 
 }

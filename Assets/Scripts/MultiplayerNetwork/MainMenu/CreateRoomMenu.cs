@@ -23,8 +23,7 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsConnected) {
             return;
         }
-        // RoomOptions options = new RoomOptions();
-        // options.MaxPlayers = 4;
+
         RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)roomSize };
         roomOps.PublishUserId = true;
 
