@@ -21,5 +21,6 @@ public class RoomController : MonoBehaviourPunCallbacks
     {
         Debug.Log("joined waiting room");
         SceneManager.LoadScene(waitingRoomSceneIndex);
+
     }
 }
