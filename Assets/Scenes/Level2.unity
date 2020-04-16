@@ -308,6 +308,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8551632386619936887, guid: bc009bf9ac90a1b4a9f2a948e637ad2a,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc009bf9ac90a1b4a9f2a948e637ad2a, type: 3}
 --- !u!4 &35975693 stripped
@@ -334,7 +339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &50892501
 Transform:
   m_ObjectHideFlags: 0
@@ -6024,6 +6029,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1496826541}
     m_Modifications:
+    - target: {fileID: 3074966047012567464, guid: bedea15a8253a00409cc0e6d30d17eb7,
+        type: 3}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6856209162222043187, guid: bedea15a8253a00409cc0e6d30d17eb7,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -6407,12 +6417,12 @@ PrefabInstance:
     - target: {fileID: 1059392413884018386, guid: 401ee5f29ee590742a819245965b74ed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.62
+      value: 0.62
       objectReference: {fileID: 0}
     - target: {fileID: 1059392413884018386, guid: 401ee5f29ee590742a819245965b74ed,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1059392413884018386, guid: 401ee5f29ee590742a819245965b74ed,
         type: 3}

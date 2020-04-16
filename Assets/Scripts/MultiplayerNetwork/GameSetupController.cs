@@ -29,6 +29,7 @@ public class GameSetupController : MonoBehaviourPun
             playerPosition = new Vector3[4];
         } catch {
             testing = true;
+            print("app we're testing");
         }
     }
 
@@ -76,6 +77,7 @@ public class GameSetupController : MonoBehaviourPun
 
     private void CreatePlayer() {  
         if(!testing) {
+            print("ok we're getting somewhere");
             string userID = PhotonNetwork.AuthValues.UserId;
             if (players[userID] == "blek") {
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
@@ -85,7 +87,6 @@ public class GameSetupController : MonoBehaviourPun
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
             } else {
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
-
             }
         } else {
             // this will get run if we are testing
