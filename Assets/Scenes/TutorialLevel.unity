@@ -651,6 +651,7 @@ GameObject:
   - component: {fileID: 449587809}
   - component: {fileID: 449587808}
   - component: {fileID: 449587807}
+  - component: {fileID: 449587811}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -738,6 +739,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &449587811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449587806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7894d2501456148f29fe77133a7eb35f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mins: 0
+  secs: 0
+  minutes: 
+  seconds: 
 --- !u!1 &625015826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8804698403797692562, guid: 9da3a77f9ebd8ea4d8d1ff3f01f99b4e,
@@ -5584,7 +5601,6 @@ GameObject:
   - component: {fileID: 1996601837}
   - component: {fileID: 1996601839}
   - component: {fileID: 1996601838}
-  - component: {fileID: 1996601840}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -5651,22 +5667,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996601836}
   m_CullTransparentMesh: 0
---- !u!114 &1996601840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996601836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7894d2501456148f29fe77133a7eb35f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mins: 0
-  secs: 0
-  minutes: 
-  seconds: 
 --- !u!1 &2023391060
 GameObject:
   m_ObjectHideFlags: 0
