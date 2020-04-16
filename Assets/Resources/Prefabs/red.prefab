@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7393017848222343462}
   - component: {fileID: 7393017848222343463}
   - component: {fileID: 7393017848222343460}
+  - component: {fileID: 8386796716996226936}
   m_Layer: 10
   m_Name: red
   m_TagString: FirePlayer
@@ -34,7 +35,7 @@ Transform:
   m_GameObject: {fileID: 7393017848222343461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.16, y: -5.74216, z: 100}
-  m_LocalScale: {x: 0.08, y: 0.08, z: -10}
+  m_LocalScale: {x: 0.062, y: 0.062, z: -10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -144,7 +145,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7393017848222343461}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -234,3 +235,19 @@ MonoBehaviour:
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!70 &8386796716996226936
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7393017848222343461}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 9, y: 16}
+  m_Direction: 0

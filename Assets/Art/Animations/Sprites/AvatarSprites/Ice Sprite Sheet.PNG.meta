@@ -137,10 +137,10 @@ TextureImporter:
       name: Ice Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 180
-        width: 58
-        height: 60
+        x: 16
+        y: 184
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,10 +158,10 @@ TextureImporter:
       name: Ice Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 180
-        width: 58
-        height: 60
+        x: 72
+        y: 185
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +179,10 @@ TextureImporter:
       name: Ice Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 120
-        y: 180
-        width: 58
-        height: 60
+        x: 129
+        y: 184
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       name: Ice Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 182
-        y: 180
-        width: 58
-        height: 60
+        x: 184
+        y: 184
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: Ice Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 120
-        width: 58
-        height: 60
+        x: 16
+        y: 128
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +242,10 @@ TextureImporter:
       name: Ice Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 60
-        y: 120
-        width: 58
-        height: 60
+        x: 72
+        y: 128
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,10 +263,10 @@ TextureImporter:
       name: Ice Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 120
-        y: 120
-        width: 58
-        height: 60
+        x: 129
+        y: 128
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +284,10 @@ TextureImporter:
       name: Ice Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 180
-        y: 120
-        width: 58
-        height: 60
+        x: 184
+        y: 128
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +305,10 @@ TextureImporter:
       name: Ice Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 60
-        width: 58
-        height: 60
+        x: 16
+        y: 73
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,10 +326,10 @@ TextureImporter:
       name: Ice Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 60
-        y: 60
-        width: 58
-        height: 60
+        x: 72
+        y: 73
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: Ice Sprite Sheet_10
       rect:
         serializedVersion: 2
-        x: 120
-        y: 60
-        width: 58
-        height: 60
+        x: 129
+        y: 73
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: Ice Sprite Sheet_11
       rect:
         serializedVersion: 2
-        x: 180
-        y: 60
-        width: 58
-        height: 60
+        x: 184
+        y: 73
+        width: 31
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

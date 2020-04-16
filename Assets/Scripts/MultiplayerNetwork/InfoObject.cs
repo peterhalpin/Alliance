@@ -33,11 +33,12 @@ public class InfoObject : MonoBehaviourPun
     }
 
     public void UpdateLevel(bool increaseOrDecreaseLevelCount) {
-        Debug.Log("here we are");
+        Debug.Log("before: " + level);
         //if its true then increase, if false then decrease
         // myPhotonView.RPC("UpdateLevelForEveryone", RpcTarget.All, increaseOrDecreaseLevelCount);
         if(increaseOrDecreaseLevelCount) {
             level++;
+        Debug.Log("after: " + level);
         } else {
             // this is here in the case we want to implement going back a level, but won't need for now, maybe in future versions
             // for whoever picks this project up
@@ -49,19 +50,5 @@ public class InfoObject : MonoBehaviourPun
         // this updates the level 0 because we're going to the main menu
         level = 0;
     }
-
-    // [PunRPC]
-    // private void UpdateLevelForEveryone(bool incOrDec) {
-    //     if(incOrDec) {
-    //         level++;
-    //     } else {
-    //         // this is here in the case we want to implement going back a level, but won't need for now, maybe in future versions
-    //         // for whoever picks this project up
-    //         level--;
-    //     }
-    // }
-
-
-
 
 }
