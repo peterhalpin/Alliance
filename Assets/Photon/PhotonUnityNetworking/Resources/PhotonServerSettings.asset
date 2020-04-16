@@ -17,13 +17,15 @@ MonoBehaviour:
     AppIdChat: a6158b28-c73c-4c44-aa95-0629e3a5bf1d
     AppIdVoice: 
     AppVersion: 
-    UseNameServer: 0
+    UseNameServer: 1
     FixedRegion: 
     Server: 
     Port: 0
     Protocol: 0
+    AuthMode: 0
     EnableLobbyStatistics: 0
-    NetworkLogging: 1
+    NetworkLogging: 0
+  DevRegion: us
   PunLogging: 0
   EnableSupportLogger: 0
   RunInBackground: 1
@@ -37,3 +39,4 @@ MonoBehaviour:
   - UpdateBlockForEveryone
   DisableAutoOpenWizard: 1
   ShowSettings: 1
+  DevRegionSetOnce: 1

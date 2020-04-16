@@ -159,6 +159,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     public void DelayCancel()
     {
         // public function paired to cancel button in waiting room scene
+        Destroy(infoObject.gameObject);
         PhotonNetwork.LeaveRoom(true);
         SceneManager.LoadScene(menuSceneIndex);
     }

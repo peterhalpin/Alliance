@@ -11,10 +11,22 @@ public class Pressure_Switch_2 : MonoBehaviour
   GameObject switchOn;
 [SerializeField]
   GameObject switchOff;
-    public bool isOn = false;
+
+    //State of all switches 
+      /*
+      *ison1 -> P1
+      *ison2 -> P2
+      *ison3 -> P3_A
+      *ison4 -> P3_B
+      */
+    public bool ison1 = false;
+    public bool ison2 = false;
+    public bool ison3 = false;
+    public bool ison4 = false;
     public GameObject SwitchOn { get => switchOn; set => switchOn = value; }
     public GameObject SwitchOff { get => switchOff; set => switchOff = value; }
     private Dictionary<string, Tilemap> tilemapses = new Dictionary<string, Tilemap>();
+    private Dictionary<string, GameObject> switches_dict = new Dictionary<string, GameObject>();
     private TileBase dirtTile;
     private TileBase wallTile;
     // Start is called before the first frame update
@@ -24,13 +36,18 @@ public class Pressure_Switch_2 : MonoBehaviour
          gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
          
          //List of tilemaps to easily reference
-         var tilemaps = new Tilemap[11];
+         var tilemaps = new Tilemap[10];
          tilemaps = FindObjectsOfType<Tilemap>();
           for(int i = 0 ; i < tilemaps.Length ; i++ ){
             tilemapses.Add(tilemaps[i].name, tilemaps[i]);
           }
-          
 
+          //Adds All Switches so I don't have to spend time searching 
+          switches_dict.Add("P1",GameObject.Find("P1"));
+          switches_dict.Add("P2",GameObject.Find("P2"));
+          switches_dict.Add("PA",GameObject.Find("P3_A"));
+          switches_dict.Add("PB",GameObject.Find("P3_B"));
+          
           //Setting tiles to swith dirt/wall
           var tilemapA = tilemapses["Ground"];
           //Use Mouse Pointer Tool to click on tile and get coordinates
@@ -41,27 +58,49 @@ public class Pressure_Switch_2 : MonoBehaviour
         
     }
 
+  
+
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col){
         if(col.name == "Rock"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
-           var ty = tilemapses["MT_Wall"];
-            ty.SwapTile(wallTile, dirtTile);
+          ison3 = true;
+          if(switches_dict["PB"].GetComponent<Pressure_Switch_2>().ison4){
+            var ty = tilemapses["MT_Wall"];
+            ty.SwapTile(wallTile,dirtTile);
+            var tz = tilemapses["MB_WALL"];
+            tz.SwapTile(wallTile,dirtTile);
+          }
         }
         if(col.name == "Cube"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
-           var ty = tilemapses["MB_Wall"];
-            ty.SwapTile(wallTile, dirtTile);
+          ison4 = true;
+          if(switches_dict["PA"].GetComponent<Pressure_Switch_2>().ison3){
+            var ty = tilemapses["MT_Wall"];
+            ty.SwapTile(wallTile,dirtTile);
+            var tz = tilemapses["MB_Wall"];
+            tz.SwapTile(wallTile,dirtTile);
+          }
+          
         }
         if(col.name == "blue(Clone)"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
-           var ty = tilemapses["BL_Wall"];
+           ison2 = true;
+            if(switches_dict["P1"].GetComponent<Pressure_Switch_2>().ison1){
+            var ty = tilemapses["BL_Wall"];
             ty.SwapTile(wallTile, dirtTile);
+            var tz = tilemapses["BR_Wall"];
+            tz.SwapTile(wallTile, dirtTile);}
         }
         if(col.name == "red(Clone)"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
-           var ty = tilemapses["BR_Wall"];
+           ison1 = true;
+           if(switches_dict["P2"].GetComponent<Pressure_Switch_2>().ison2){
+             var ty = tilemapses["BL_Wall"];
             ty.SwapTile(wallTile, dirtTile);
+            var tz = tilemapses["BR_Wall"];
+            tz.SwapTile(wallTile, dirtTile); }
+            
         }
     }
 
@@ -69,27 +108,35 @@ public class Pressure_Switch_2 : MonoBehaviour
               Debug.Log(col.name);
           if(col.name == "Rock"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
-            isOn = false;
+            ison3 = false;
             var ty = tilemapses["MT_Wall"];
             ty.SwapTile(dirtTile, wallTile);
+            var tz = tilemapses["MB_Wall"];
+            tz.SwapTile(dirtTile, wallTile);
          }
          if(col.name == "Cube"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
-            isOn = false;
+            ison4 = false;
             var ty = tilemapses["MB_Wall"];
             ty.SwapTile(dirtTile, wallTile);
+            var tz = tilemapses["MT_Wall"];
+            tz.SwapTile(dirtTile, wallTile);
          }
          if(col.name == "blue(Clone)"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
-            isOn = false;
+            ison2 = false;
             var ty = tilemapses["BL_Wall"];
             ty.SwapTile(dirtTile, wallTile);
+            var tz = tilemapses["BR_Wall"];
+            tz.SwapTile(dirtTile, wallTile);
          }
          if(col.name == "red(Clone)"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
-            isOn = false;
+            ison1 = false;
             var ty = tilemapses["BR_Wall"];
             ty.SwapTile(dirtTile, wallTile);
+            var tz = tilemapses["BL_Wall"];
+            tz.SwapTile(dirtTile, wallTile);
          }
      }
 }
