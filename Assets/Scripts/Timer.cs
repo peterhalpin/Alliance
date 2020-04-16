@@ -26,7 +26,8 @@ public class Timer : MonoBehaviour
     }
 
     void OnGUI(){
-        style = new GUIStyle(GUI.skin.button);
+        //style = new GUIStyle(GUI.skin.button);
+        style = new GUIStyle();
         style.fontSize = 24;
         
         mins = Mathf.Floor(timer / 60);
