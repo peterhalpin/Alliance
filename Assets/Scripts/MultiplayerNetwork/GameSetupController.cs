@@ -17,7 +17,7 @@ public class GameSetupController : MonoBehaviourPun
     private Vector3[] playerPosition;
 
     // false if not testing and developing, true if so
-    private bool testing = false;
+    private bool testing;
 
     // This script will be added to any multiplayer scene
     private void Awake() {
@@ -27,6 +27,7 @@ public class GameSetupController : MonoBehaviourPun
             players = infoObject.GetCharacters();
             level = infoObject.GetLevel();
             playerPosition = new Vector3[4];
+            testing = false;
         } catch {
             testing = true;
         }
