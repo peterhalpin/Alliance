@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Timer : MonoBehaviour
+public class TimerController : MonoBehaviour
 {
-    public static float timer;
-    public float mins;
-    public float secs;
-    public string minutes;
-    public string seconds;
+    private static float timer;
+    private float mins;
+    private float secs;
+    private string minutes;
+    private string seconds;
     private GUIStyle style;
     
     //public static bool timeStarted = false;
@@ -49,4 +49,13 @@ public class Timer : MonoBehaviour
         GUI.Label(new Rect(10, 10, 150, 100), "Time: " + minutes + ":"+seconds, style);
         
     }    
+
+    public string GetMinutes() {
+        return minutes;
+    }
+
+    public string GetSeconds() {
+        return seconds;
+    }
+
 }

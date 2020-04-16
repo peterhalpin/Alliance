@@ -22,7 +22,6 @@ public class LeaveGame : MonoBehaviourPunCallbacks
         if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
             if (Input.GetKey("left shift") && Input.GetKey("q") && shiftEscCount == 0){ //input.GetKey("a");
                 shiftEscCount = 1;
-                // SceneManager.MoveGameObjectToScene(infoObject.gameObject, SceneManager.GetActiveScene());
                 infoObject.GoToMainMenu();
                 Destroy(infoObject.gameObject);
                 SceneManager.LoadScene(0);
