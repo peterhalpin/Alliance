@@ -29,11 +29,10 @@ public class GameSetupController : MonoBehaviourPun
             playerPosition = new Vector3[4];
         } catch {
             testing = true;
-            print("app we're testing");
         }
     }
 
-    void Start() {       
+    private void Start() {       
         if (!testing) {
             SetLevelPositions(); // changing the starting positions of each character based on their levels
         }
@@ -95,7 +94,8 @@ public class GameSetupController : MonoBehaviourPun
             // the player positions correspoding to each character and each level are listed above in the SetLevelPositions method
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
-            PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), new Vector3(-9, -12, 100), Quaternion.identity);
+            Object varPrefab = Resources.Load("Prefabs/green", typeof(GameObject));
+            Instantiate(varPrefab, new Vector3(0, 4, 100), Quaternion.identity);
         }
     }
 }

@@ -16,11 +16,15 @@ public class LeaveGame : MonoBehaviourPunCallbacks
     }
 
     private void Update() {
+        if(Input.GetKey("q") && Input.GetKey("left shift")) {
+            print("shitface");
+        }
         // if the player presses the shift and escape key, then we will be brought back to the main menu scene
         if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
-            if (Input.GetKey("left shift") && Input.GetKey(KeyCode.Escape) && shiftEscCount == 0){
+            if (Input.GetKey("left shift") && Input.GetKey("q") && shiftEscCount == 0){ //input.GetKey("a");
                 shiftEscCount = 1;
                 // SceneManager.MoveGameObjectToScene(infoObject.gameObject, SceneManager.GetActiveScene());
+                infoObject.GoToMainMenu();
                 Destroy(infoObject.gameObject);
                 SceneManager.LoadScene(0);
                 PhotonNetwork.LeaveRoom(true);
