@@ -9,7 +9,6 @@ public class NetworkController : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start() {
         if (!PhotonNetwork.IsConnected)
-            print("fuck");
             // this automatically connects to the US server
             // go to Photon/PhotonUnityNetworking/Resrouces and and its in PhotonServerSettings
             // if you click Edit WhiteList, you acn see that you can edit which regions to connect to

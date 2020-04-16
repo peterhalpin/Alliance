@@ -2823,4 +2823,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a56cdadffe1844b5a87a5f1bff6557c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitingRoomSceneIndex: 2
+  waitingRoomSceneIndex: 1

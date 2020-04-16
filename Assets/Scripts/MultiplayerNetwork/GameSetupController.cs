@@ -76,7 +76,6 @@ public class GameSetupController : MonoBehaviourPun
 
     private void CreatePlayer() {  
         if(!testing) {
-            print("ok we're getting somewhere");
             string userID = PhotonNetwork.AuthValues.UserId;
             if (players[userID] == "blek") {
                 PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
