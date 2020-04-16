@@ -43,7 +43,7 @@ public class Pressure_Switch : MonoBehaviour {
            var ty = tilemapses["TL_Wall"];
             ty.SwapTile(wallTile, dirtTile);
         }
-        if(col.name == "Block"){
+        if(col.name == "Cube"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
            var ty = tilemapses["BR_Wall"];
             ty.SwapTile(wallTile, dirtTile);
