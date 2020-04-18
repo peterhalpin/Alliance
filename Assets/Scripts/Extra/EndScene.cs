@@ -14,7 +14,8 @@ public class EndScene : MonoBehaviour
     private string seconds;
 
     private TimerController timerController;
-    public InfoObject infoObject;
+    private InfoObject infoObject;
+    private ChatHandler chatHandler; 
 
 
     private void Awake() {
@@ -22,7 +23,8 @@ public class EndScene : MonoBehaviour
             timerController = GameObject.FindObjectOfType<TimerController>();
             minutes = timerController.GetMinutes();
             seconds = timerController.GetSeconds();
-            infoObject = GameObject.FindObjectOfType<InfoObject>();       
+            infoObject = GameObject.FindObjectOfType<InfoObject>();   
+            chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
         }
         catch {
             Debug.Log("Cannot find timer, must be because you are testing and are not loading the game from tutorial.");
@@ -39,6 +41,7 @@ public class EndScene : MonoBehaviour
         infoObject.GoToMainMenu();
         Destroy(infoObject.gameObject);
         Destroy(timerController.gameObject);
+        Destroy(chatHandler.gameObject);
         SceneManager.LoadScene(0);
         PhotonNetwork.LeaveRoom(true);
         Debug.Log("Going back to the main menu!");
