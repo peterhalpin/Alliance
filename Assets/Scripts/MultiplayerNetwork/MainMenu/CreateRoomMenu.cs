@@ -13,6 +13,12 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
     [SerializeField]
     public int roomSize; //manually set the number of players in the room at one time.
 
+    private ChatController chatController;
+
+    private void Awake() {
+        chatController = GameObject.FindObjectOfType<ChatController>();        
+    }
+
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
@@ -28,6 +34,10 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
         roomOps.PublishUserId = true;
 
         PhotonNetwork.JoinOrCreateRoom(_roomName.text, roomOps, TypedLobby.Default);
+
+        chatController.SetTeamName(_roomName.text);
+
+
     }
 
     public override void OnCreatedRoom() {

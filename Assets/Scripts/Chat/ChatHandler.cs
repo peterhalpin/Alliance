@@ -15,24 +15,44 @@ using Photon.Pun;
 public class ChatHandler : MonoBehaviour, IChatClientListener
 {
 
+    // [SerializeField]
+    // private Text _roomName;
+    // private string roomName;
+    private string chatChannelName;
+
+
     public ChatClient myChatClient;         //main "connection point" to chat API
+    public ChatChannel channel;
     public InputField playerName;
     public Text connectionState;
-    string worldChat;
     public InputField msgInput;
     public Text msgBox;
 
     public GameObject introPanel;
     public GameObject chatPanel;
 
+    private ChatController chatController;
+    
+
+    // public void SetChannelName() {
+
+    // }
+
 
     // Start is called before the first frame update
+
+    private void Awake() {
+        chatController = GameObject.FindObjectOfType<ChatController>();      
+        chatChannelName = chatController.GetTeamName();  
+    }
+
+    
     void Start()
     {
         DontDestroyOnLoad(transform.gameObject);
         Application.runInBackground = true;
         connectionState.text = "Starting...";
-        worldChat = "world";
+        // worldChat = "world";
 
     }
 
@@ -54,8 +74,15 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     public void Connect()
     {
+        // print(_roomName.text);
         myChatClient = new ChatClient(this);
-        print(playerName.text);
+        // channel = new ChatChannel(roomName);
+        channel = new ChatChannel(chatChannelName);
+        print(channel);
+        myChatClient.ChatRegion = "US";
+        // chatChannelName = roomName;        
+        // channel.ChatChannel("hero");
+        // print(playerName.text);
         myChatClient.Connect("a6158b28-c73c-4c44-aa95-0629e3a5bf1d", "1.0", new AuthenticationValues(playerName.text));
         connectionState.text = "Connecting to Chat";
     }
@@ -64,10 +91,16 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     {
         introPanel.SetActive(false);
         chatPanel.SetActive(true);
+        // chatPanel.Interactable(false);
         connectionState.text = "Connected!";
-        myChatClient.Subscribe(new string[] { worldChat });
+        // myChatClient.Subscribe(new string[] { _roomName.text });
+        myChatClient.Subscribe(chatChannelName);        
+
+        // myChatClient.Subscribe(new string[] { worldChat });
         myChatClient.SetOnlineStatus(ChatUserStatus.Online);
-        myChatClient.PublishMessage(worldChat, "Joined the chat!");
+        myChatClient.PublishMessage(chatChannelName, "Joined the chat!");
+        // Destroy(chatController.gameObject);        
+
     }
 
     public void OnDisconnected()
@@ -77,7 +110,7 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     public void SendMessage()
     {
-        myChatClient.PublishMessage(worldChat, msgInput.text);
+        myChatClient.PublishMessage(chatChannelName, msgInput.text);
         msgInput.text = "";
     }
 
@@ -137,6 +170,10 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         {
             myChatClient.Disconnect();
         }
+    }
+
+    public void DisconnectFromChat() {
+        OnApplicationQuit();
     }
 
 }

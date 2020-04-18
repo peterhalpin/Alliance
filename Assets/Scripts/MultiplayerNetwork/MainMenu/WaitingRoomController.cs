@@ -26,6 +26,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     private int playerCount;
     private int roomSize;
 
+
     
     //bool values for if the timer can count down and if the game is starting
     private bool readyToStart;
@@ -41,7 +42,12 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     private List<string> playerslist;
     private Dictionary<string, string> map;
     private Queue<string> charTypes;
+
+    // these two objects are prefabs that are in the scene
+    // its how you transfer variables/data from one object to the next
     private InfoObject infoObject;
+    private ChatController chatController;
+    private ChatHandler chatHandler;
 
     // Start is called before the first frame update
     private void Awake() {
@@ -49,7 +55,8 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         map = new Dictionary<string, string>();
         charTypes = new Queue<string>();
         infoObject = GameObject.FindObjectOfType<InfoObject>();
-
+        chatController = GameObject.FindObjectOfType<ChatController>();
+        chatHandler = GameObject.FindObjectOfType<ChatHandler>();
     }
 
     private void Start()
@@ -151,6 +158,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsMasterClient) {
             return;
         }
+        Destroy(chatController.gameObject);        
         // closes the current room so now one else joins
         PhotonNetwork.CurrentRoom.IsOpen = false;
         //only the master client calls this because the method itself loads it for all players because we enabled PhotonNetwork.AutomaticallySyncScene for this game
@@ -161,6 +169,8 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     {
         // public function paired to cancel button in waiting room scene
         Destroy(infoObject.gameObject);
+        Destroy(chatController.gameObject);
+        Destroy(chatHandler.gameObject);
         PhotonNetwork.LeaveRoom(true);
         SceneManager.LoadScene(menuSceneIndex);
     }
