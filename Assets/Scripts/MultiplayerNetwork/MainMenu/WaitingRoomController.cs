@@ -168,6 +168,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     public void DelayCancel()
     {
         // public function paired to cancel button in waiting room scene
+        chatHandler.DisconnectFromChat();
         Destroy(infoObject.gameObject);
         Destroy(chatController.gameObject);
         Destroy(chatHandler.gameObject);
