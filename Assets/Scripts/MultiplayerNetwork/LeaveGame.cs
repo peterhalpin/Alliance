@@ -11,11 +11,13 @@ public class LeaveGame : MonoBehaviourPunCallbacks
 
     private InfoObject infoObject;
     private ChatHandler chatHandler; 
+    private TimerController timerController;
 
 
     private void Awake() {
         infoObject = GameObject.FindObjectOfType<InfoObject>();   
         chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
+        timerController = GameObject.FindObjectOfType<TimerController>();
         shiftEscCount = 0; 
     }
 
@@ -28,6 +30,7 @@ public class LeaveGame : MonoBehaviourPunCallbacks
                 chatHandler.DisconnectFromChat();
                 Destroy(infoObject.gameObject);
                 Destroy(chatHandler.gameObject);
+                Destroy(timerController.gameObject);
                 SceneManager.LoadScene(0);
                 PhotonNetwork.LeaveRoom(true);
                 Debug.Log("Leaving the photon room");
