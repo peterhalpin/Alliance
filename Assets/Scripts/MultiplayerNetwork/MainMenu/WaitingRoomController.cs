@@ -90,6 +90,13 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         string tempTimer = string.Format("{0:00}", timerToStartGame);
         timerToStartDisplay.text = tempTimer;
         // if the countdown timer reaches 0 the game will then start
+        if(timerToStartGame <= 1f) {
+            // if less than a second create random username
+            // this if statement and not below because not all screens sync to the exact 0 time
+            if (chatHandler.playerName.text == "") {
+                chatHandler.ConnectRandomUserName();
+            }
+        }
         if (timerToStartGame <= 0f) {
             if (startingGame) {
                 return;

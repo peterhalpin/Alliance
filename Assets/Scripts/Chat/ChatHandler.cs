@@ -31,6 +31,9 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     public GameObject introPanel;
     public GameObject chatPanel;
 
+    public GameObject playerReadyDisplay;
+    public Text playerReadyText;
+
     private ChatController chatController;
     
 
@@ -42,8 +45,13 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     // Start is called before the first frame update
 
     private void Awake() {
-        chatController = GameObject.FindObjectOfType<ChatController>();      
-        chatChannelName = chatController.GetTeamName();  
+        try {
+            chatController = GameObject.FindObjectOfType<ChatController>();      
+            chatChannelName = chatController.GetTeamName();  
+        } catch {
+            Debug.Log("Must have loaded lobby scene while testing, not in actualy GAME MODE");
+        }
+        
     }
 
     
@@ -52,8 +60,6 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         DontDestroyOnLoad(transform.gameObject);
         Application.runInBackground = true;
         connectionState.text = "Starting...";
-        // worldChat = "world";
-
     }
 
     // Update is called once per frame
@@ -74,23 +80,29 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     public void Connect()
     {
-        // print(_roomName.text);
         myChatClient = new ChatClient(this);
-        // channel = new ChatChannel(roomName);
         channel = new ChatChannel(chatChannelName);
-        print(channel);
         myChatClient.ChatRegion = "US";
         // chatChannelName = roomName;        
         // channel.ChatChannel("hero");
         // print(playerName.text);
         myChatClient.Connect("a6158b28-c73c-4c44-aa95-0629e3a5bf1d", "1.0", new AuthenticationValues(playerName.text));
         connectionState.text = "Connecting to Chat";
+    } 
+
+    public void ConnectRandomUserName() {
+        System.Random rand = new System.Random();
+        int randNum = rand.Next(0, 100000);
+        playerName.text = "RandomPlayer" + randNum;
+        Connect();
     }
 
     public void OnConnected()
     {
         introPanel.SetActive(false);
         chatPanel.SetActive(true);
+        playerReadyText.text = playerName.text + " is ready to play!";
+        playerReadyDisplay.SetActive(true);
         // chatPanel.Interactable(false);
         connectionState.text = "Connected!";
         // myChatClient.Subscribe(new string[] { _roomName.text });
