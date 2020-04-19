@@ -26,6 +26,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     private int playerCount;
     private int roomSize;
 
+
     
     //bool values for if the timer can count down and if the game is starting
     private bool readyToStart;
@@ -41,7 +42,12 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     private List<string> playerslist;
     private Dictionary<string, string> map;
     private Queue<string> charTypes;
+
+    // these two objects are prefabs that are in the scene
+    // its how you transfer variables/data from one object to the next
     private InfoObject infoObject;
+    private ChatController chatController;
+    private ChatHandler chatHandler;
 
     // Start is called before the first frame update
     private void Awake() {
@@ -49,7 +55,8 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         map = new Dictionary<string, string>();
         charTypes = new Queue<string>();
         infoObject = GameObject.FindObjectOfType<InfoObject>();
-
+        chatController = GameObject.FindObjectOfType<ChatController>();
+        chatHandler = GameObject.FindObjectOfType<ChatHandler>();
     }
 
     private void Start()
@@ -83,6 +90,13 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         string tempTimer = string.Format("{0:00}", timerToStartGame);
         timerToStartDisplay.text = tempTimer;
         // if the countdown timer reaches 0 the game will then start
+        if(timerToStartGame <= 1f) {
+            // if less than a second create random username
+            // this if statement and not below because not all screens sync to the exact 0 time
+            if (chatHandler.playerName.text == "") {
+                chatHandler.ConnectRandomUserName();
+            }
+        }
         if (timerToStartGame <= 0f) {
             if (startingGame) {
                 return;
@@ -97,7 +111,8 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         // displays player count
         // triggers countdown timer
         playerCount = PhotonNetwork.PlayerList.Length;
-        roomSize = PhotonNetwork.CurrentRoom.MaxPlayers;
+        // roomSize = PhotonNetwork.CurrentRoom.MaxPlayers;
+        roomSize = 2;
         roomCountDisplay.text = playerCount + ":" + roomSize;
         if(playerCount == roomSize) {
             readyToStart = true;
@@ -150,6 +165,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         if (!PhotonNetwork.IsMasterClient) {
             return;
         }
+        Destroy(chatController.gameObject);        
         // closes the current room so now one else joins
         PhotonNetwork.CurrentRoom.IsOpen = false;
         //only the master client calls this because the method itself loads it for all players because we enabled PhotonNetwork.AutomaticallySyncScene for this game
@@ -159,7 +175,10 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     public void DelayCancel()
     {
         // public function paired to cancel button in waiting room scene
+        chatHandler.DisconnectFromChat();
         Destroy(infoObject.gameObject);
+        Destroy(chatController.gameObject);
+        Destroy(chatHandler.gameObject);
         PhotonNetwork.LeaveRoom(true);
         SceneManager.LoadScene(menuSceneIndex);
     }

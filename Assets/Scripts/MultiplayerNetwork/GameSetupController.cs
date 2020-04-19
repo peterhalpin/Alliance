@@ -79,13 +79,13 @@ public class GameSetupController : MonoBehaviourPun
         if(!testing) {
             string userID = PhotonNetwork.AuthValues.UserId;
             if (players[userID] == "blek") {
-                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blek"), playerPosition[0], Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs/Characters", "blek"), playerPosition[0], Quaternion.identity);
             } else if (players[userID] == "blue"){
-                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "blue"), playerPosition[1], Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs/Characters", "blue"), playerPosition[1], Quaternion.identity);
             } else if (players[userID] == "green"){
-                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "green"), playerPosition[2], Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs/Characters", "green"), playerPosition[2], Quaternion.identity);
             } else {
-                PhotonNetwork.Instantiate(Path.Combine("Prefabs", "red"), playerPosition[3], Quaternion.identity);
+                PhotonNetwork.Instantiate(Path.Combine("Prefabs/Characters", "red"), playerPosition[3], Quaternion.identity);
             }
         } else {
             // this will get run if we are testing

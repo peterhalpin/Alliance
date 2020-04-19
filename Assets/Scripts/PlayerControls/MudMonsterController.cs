@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿
+using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MudMonsterController : MonoBehaviour
+public class MudMonsterController : MonoBehaviourPun
 {
      public float speed;
 
@@ -21,6 +23,13 @@ public class MudMonsterController : MonoBehaviour
         position.x = position.x + Time.deltaTime * speed;
         
         rigidbody2D.MovePosition(position);
-        
+
+
+         if(PhotonNetwork.IsMasterClient) {
+
+        }
+
+
+
     }
 }

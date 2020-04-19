@@ -9,11 +9,17 @@ public class LeaveGame : MonoBehaviourPunCallbacks
     private PhotonView myPhotonView;
     private int shiftEscCount;
 
-    public InfoObject infoObject;
+    private InfoObject infoObject;
+    private ChatHandler chatHandler; 
+    private TimerController timerController;
+    private GameData gameData;
 
 
     private void Awake() {
-        infoObject = GameObject.FindObjectOfType<InfoObject>();       
+        infoObject = GameObject.FindObjectOfType<InfoObject>();   
+        chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
+        timerController = GameObject.FindObjectOfType<TimerController>();
+        gameData = GameObject.FindObjectOfType<GameData>();
         shiftEscCount = 0; 
     }
 
@@ -23,7 +29,11 @@ public class LeaveGame : MonoBehaviourPunCallbacks
             if (Input.GetKey("left shift") && Input.GetKey("q") && shiftEscCount == 0){ //input.GetKey("a");
                 shiftEscCount = 1;
                 infoObject.GoToMainMenu();
+                chatHandler.DisconnectFromChat();
                 Destroy(infoObject.gameObject);
+                Destroy(chatHandler.gameObject);
+                Destroy(timerController.gameObject);
+                Destroy(gameData.gameObject);
                 SceneManager.LoadScene(0);
                 PhotonNetwork.LeaveRoom(true);
                 Debug.Log("Leaving the photon room");
