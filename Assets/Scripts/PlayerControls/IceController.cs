@@ -8,11 +8,13 @@ public class IceController : MonoBehaviourPun
     public float speed = 2.5f;
     public int direction = 3;
     public BoxCollider2D[] boxes;
+    public Vector3 startPos;
     Animator animator;
     //RigidBody2D rb;
 
     void Start()
     {
+        startPos = transform.position;
         boxes = GetComponents<BoxCollider2D>();
         //rb = GetComponent<RigidBody2D>();
         animator = GetComponent<Animator>();
@@ -106,4 +108,5 @@ public class IceController : MonoBehaviourPun
             
         }
    }
+  
 }

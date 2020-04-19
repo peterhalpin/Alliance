@@ -9,9 +9,11 @@ public class StrengthController : MonoBehaviourPun
     public Animator animator;
     public int direction = 3;
      public BoxCollider2D[] boxes;
+    public Vector3 startPos;
     // Start is called before the first frame update
    void Start()
    {
+       startPos = transform.position;
        animator = GetComponent<Animator>();
        boxes = GetComponents<BoxCollider2D>();
         for(int i=0; i < boxes.Length ; i++){
@@ -108,4 +110,5 @@ public class StrengthController : MonoBehaviourPun
         }
 
    }
+ 
 }
