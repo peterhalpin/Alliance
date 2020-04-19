@@ -49,8 +49,9 @@ public class Pressure_Switch_2 : MonoBehaviour
           switches_dict.Add("PB",GameObject.Find("P3_B"));
           
           //Setting tiles to swith dirt/wall
-          var tilemapA = tilemapses["Ground"];
           //Use Mouse Pointer Tool to click on tile and get coordinates
+          var tilemapA = tilemapses["Ground"];
+          
           dirtTile =  tilemapA.GetTile(new Vector3Int(-38,12,0));
           var tilemapB = tilemapses["BL_Wall"];  
           wallTile = tilemapB.GetTile(new Vector3Int(-25,12,0));

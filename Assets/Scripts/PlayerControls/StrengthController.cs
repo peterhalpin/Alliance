@@ -8,14 +8,22 @@ public class StrengthController : MonoBehaviourPun
     public float speed = 2.5f;
     public Animator animator;
     public int direction = 3;
+     public BoxCollider2D[] boxes;
     // Start is called before the first frame update
    void Start()
    {
        animator = GetComponent<Animator>();
+       boxes = GetComponents<BoxCollider2D>();
+        for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
    }
    // Update is called once per frame
    void Update()
    {
+       for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
         //idle up
         if(direction == 1){
             animator.SetFloat("MoveX", .1f);
@@ -68,31 +76,30 @@ public class StrengthController : MonoBehaviourPun
         }
         if(Input.GetKey("space")){
            
-
             ///up
             if(direction == 1){
-                
+                boxes[2].enabled = true;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", .5f);
             }
 
             //right
             if(direction == 2){
-               
+                boxes[1].enabled = true;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", .5f);
             }
 
             //down
             if(direction == 3){
-                
+                boxes[3].enabled = true;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", -.5f);
             }
 
             //left
             if(direction == 4){
-            
+                boxes[0].enabled = true;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", -.5f);
             }
