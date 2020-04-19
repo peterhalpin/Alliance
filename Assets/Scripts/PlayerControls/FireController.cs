@@ -81,25 +81,21 @@ public class FireController : MonoBehaviourPun
                 //up
                 if(direction == 1){
                     boxes[2].enabled = true;
-                    Debug.Log("up box activated");
                 }
 
                 //right
                 if(direction == 2){
                     boxes[1].enabled = true;
-                    Debug.Log("right box activated");
                 }
 
                 //down
                 if(direction == 3){
                     boxes[3].enabled = true;
-                    Debug.Log("down box activated");
                 }
 
                 //left
                 if(direction == 4){
                     boxes[0].enabled = true;
-                    Debug.Log("left box activated");
                 }
             
         }
