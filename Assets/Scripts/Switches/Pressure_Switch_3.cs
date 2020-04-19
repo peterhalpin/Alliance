@@ -40,7 +40,7 @@ public class Pressure_Switch_3 : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col){
         if(col.name == "Cube"){
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
-           var ty = tilemapses["L_Wall"];
+           var ty = tilemapses["R_Switch_Wall"];
             ty.SwapTile(wallTile, dirtTile);
             isOn=true;
         }
@@ -52,7 +52,7 @@ public class Pressure_Switch_3 : MonoBehaviour
          if(col.name == "Cube"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
             isOn = false;
-            var ty = tilemapses["L_Wall"];
+            var ty = tilemapses["R_Switch_Wall"];
             ty.SwapTile(dirtTile, wallTile);
          }
      }

@@ -10,8 +10,12 @@ private TileBase fireTile;
 private TileBase brickTile;
 
 private TileBase grassTile;
+private bool isDestroyed;
 private void Awake() {
+
         isDestroyed = false;
+
+    //filling out dictionary of all tilemaps
         var tilemaps = FindObjectsOfType<Tilemap>();
           for(int i = 0 ; i < tilemaps.Length ; i++ ){
             tilemapses.Add(tilemaps[i].name, tilemaps[i]);
@@ -23,11 +27,11 @@ private void Awake() {
         brickTile = tilemapses["1B"].GetTile(new Vector3Int(-27,9,0));
         grassTile = tilemapses["1G"].GetTile(new Vector3Int(30,9,0));
     }
-    private bool isDestroyed;
 
 void OnTriggerEnter2D(Collider2D player){
 
         var tilemapname = gameObject.name.Substring(1);
+
 
         if(player.name == "blue" && tilemapname == "F" ){
             isDestroyed = true;
@@ -44,11 +48,6 @@ void OnTriggerEnter2D(Collider2D player){
             tilemapses[gameObject.name].SwapTile(grassTile,dirtTile);
         }
           
-            //make doors open
-            
-            // GameObject[] bottomDoor = GameObject.FindGameObjectsWithTag("Door Bottom");
-            // Destroy(bottomDoor[0]);
-            // Destroy(bottomDoor[1]);
         }
 
 
