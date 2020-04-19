@@ -8,15 +8,23 @@ public class FireController : MonoBehaviourPun
     public float speed = 2.5f;
     public Animator animator;
     public int direction = 3;
+     public BoxCollider2D[] boxes;
     // Start is called before the first frame update
    void Start()
    {
+       boxes = GetComponents<BoxCollider2D>();
        animator = GetComponent<Animator>();
+       for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
    }
    // Update is called once per frame
    void Update()
    {
 
+    for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
        //idle up
         if(direction == 1){
             animator.SetFloat("MoveX", .1f);
@@ -66,6 +74,34 @@ public class FireController : MonoBehaviourPun
             animator.SetFloat("MoveX", 0);
             animator.SetFloat("MoveY", -.5f);
             direction = 3;
+        }
+
+        if(Input.GetKey("space")){
+
+                //up
+                if(direction == 1){
+                    boxes[2].enabled = true;
+                    Debug.Log("up box activated");
+                }
+
+                //right
+                if(direction == 2){
+                    boxes[1].enabled = true;
+                    Debug.Log("right box activated");
+                }
+
+                //down
+                if(direction == 3){
+                    boxes[3].enabled = true;
+                    Debug.Log("down box activated");
+                }
+
+                //left
+                if(direction == 4){
+                    boxes[0].enabled = true;
+                    Debug.Log("left box activated");
+                }
+            
         }
 
    }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 3131810220142709121, guid: 7f9e3a5d3e2f91941b6969590b498b3d,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.49803925, b: 0, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -34,4 +34,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 0
+  m_ColliderType: 2
