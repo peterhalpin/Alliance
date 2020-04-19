@@ -16,6 +16,7 @@ public class EndScene : MonoBehaviour
     private TimerController timerController;
     private InfoObject infoObject;
     private ChatHandler chatHandler; 
+    private GameData gameData;
 
 
     private void Awake() {
@@ -25,6 +26,7 @@ public class EndScene : MonoBehaviour
             seconds = timerController.GetSeconds();
             infoObject = GameObject.FindObjectOfType<InfoObject>();   
             chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
+            gameData = GameData.FindObjectOfType<GameData>();
         }
         catch {
             Debug.Log("Cannot find timer, must be because you are testing and are not loading the game from tutorial.");
@@ -37,11 +39,17 @@ public class EndScene : MonoBehaviour
         _time.text = "Finished in: " + minutes + ":" + seconds;
     }
 
+    public void SendData() {
+        // this is where we write the code to send all of the game data to the database
+    }
+
     public void OnClick() {
+        SendData();
         infoObject.GoToMainMenu();
         Destroy(infoObject.gameObject);
         Destroy(timerController.gameObject);
         Destroy(chatHandler.gameObject);
+        Destroy(gameData.gameObject);
         SceneManager.LoadScene(0);
         PhotonNetwork.LeaveRoom(true);
         Debug.Log("Going back to the main menu!");

@@ -23,6 +23,7 @@ public class TimerController : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+        // print(timer);
     }
 
     void OnGUI(){
@@ -56,6 +57,10 @@ public class TimerController : MonoBehaviour
 
     public string GetSeconds() {
         return seconds;
+    }
+
+    public float GetTime() {
+        return timer;
     }
 
 }
