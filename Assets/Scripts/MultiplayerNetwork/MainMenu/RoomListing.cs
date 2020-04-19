@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 
 public class RoomListing : MonoBehaviour, IPointerClickHandler
 {
+    public ChatController chatController;
 
     [SerializeField]
     private Text _text;
@@ -17,7 +18,9 @@ public class RoomListing : MonoBehaviour, IPointerClickHandler
     public RoomInfo RoomInfo {get; private set;}
 
     private void Awake() {
+        chatController = GameObject.FindObjectOfType<ChatController>();        
         clickCount = 0;
+
     }
 
 
@@ -30,6 +33,7 @@ public class RoomListing : MonoBehaviour, IPointerClickHandler
     {
         if (clickCount == 0) {
             clickCount++;
+            chatController.SetTeamName(RoomInfo.Name);
             PhotonNetwork.JoinRoom(RoomInfo.Name);
         } else {
             if (eventData.clickCount >= 2) {
