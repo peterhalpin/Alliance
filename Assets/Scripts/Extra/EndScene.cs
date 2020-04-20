@@ -18,6 +18,8 @@ public class EndScene : MonoBehaviour
     private ChatHandler chatHandler; 
     private GameData gameData;
 
+    private bool testing;
+
 
     private void Awake() {
         try {
@@ -27,9 +29,18 @@ public class EndScene : MonoBehaviour
             infoObject = GameObject.FindObjectOfType<InfoObject>();   
             chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
             gameData = GameData.FindObjectOfType<GameData>();
+            testing = false;
+            if(timerController == null) {
+                testing = true;
+                print("You must be testing!!!");
+            } else {
+                print("You must NOT be testing!!!");
+            } 
         }
         catch {
             Debug.Log("Cannot find timer, must be because you are testing and are not loading the game from tutorial.");
+            testing = true;
+            print("You must be testing!!!");
         }
     }
 
@@ -44,14 +55,19 @@ public class EndScene : MonoBehaviour
     }
 
     public void OnClick() {
-        SendData();
-        infoObject.GoToMainMenu();
-        Destroy(infoObject.gameObject);
-        Destroy(timerController.gameObject);
-        Destroy(chatHandler.gameObject);
-        Destroy(gameData.gameObject);
-        SceneManager.LoadScene(0);
-        PhotonNetwork.LeaveRoom(true);
+        if(!testing) {
+            SendData();
+            infoObject.GoToMainMenu();
+            Destroy(infoObject.gameObject);
+            Destroy(timerController.gameObject);
+            Destroy(chatHandler.gameObject);
+            Destroy(gameData.gameObject);
+            SceneManager.LoadScene(0);
+            PhotonNetwork.LeaveRoom(true);
+        } else {
+            SceneManager.LoadScene(0);            
+        }
+
         Debug.Log("Going back to the main menu!");
     }
 

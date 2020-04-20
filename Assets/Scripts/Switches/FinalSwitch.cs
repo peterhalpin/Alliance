@@ -22,9 +22,12 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         try {
-            testing = false;
             infoObject = GameObject.FindObjectOfType<InfoObject>();
             myPhotonView = GetComponent<PhotonView>();
+            testing = false;
+            if(infoObject == null) {
+                testing = true;
+            }
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData = GameObject.FindObjectOfType<GameData>();
             timerController = GameObject.FindObjectOfType<TimerController>();
@@ -39,10 +42,15 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
 
     void OnTriggerEnter2D(Collider2D player)
     {
-        //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
-        gameData.ActivateSwitchTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
-        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
-        //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+        try {
+            //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+            gameData.ActivateSwitchTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
+            gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
+            //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+        } catch {
+            Debug.Log("Game data not collected because you are testing or gameData object was not created.");
+        }
+
         if(!colliders.Contains(player)){
             colliders.Add(player);
         }
@@ -87,6 +95,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
                 } else if (sceneName == "Level4") { // end scene
                     SceneManager.LoadScene("EndScene");
                 } else {
+                    print("Scene Name: " + sceneName);
                     Debug.LogError("Error loading the next scence or trouble with pressing the final switch.");
                 }
             }
@@ -94,11 +103,14 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
     }
 
     void OnTriggerExit2D(Collider2D player){
+        if(!testing) {
+            //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+            gameData.DeactivateSwitchTime(currentScene.name + " FinalSwitch left by " + player.name, timerController.GetTime());
+            gameData.GameInteraction(currentScene.name + " Player " + player.name + " got OFF the FINAL switch", timerController.GetTime());
+            //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+        }
         colliders.Remove(player);
-        //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
-        gameData.DeactivateSwitchTime(currentScene.name + " FinalSwitch left by " + player.name, timerController.GetTime());
-        gameData.GameInteraction(currentScene.name + " Player " + player.name + " got OFF the FINAL switch", timerController.GetTime());
-        //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+
     }
 
     private void UpdateLevel(int sceneIndexNum) {

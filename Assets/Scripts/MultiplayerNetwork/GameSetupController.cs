@@ -105,7 +105,7 @@ public class GameSetupController : MonoBehaviourPun
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
             Object varPrefab = Resources.Load("Prefabs/Characters/red", typeof(GameObject));
-            Instantiate(varPrefab, new Vector3(0, 4, 100), Quaternion.identity);
+            Instantiate(varPrefab, new Vector3(30, 12, 100), Quaternion.identity);
             
         }
     }
