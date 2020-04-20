@@ -47,7 +47,7 @@ public class MudMonsterController : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
-        if(PhotonNetwork.IsMasterClient) {
+        // if(PhotonNetwork.IsMasterClient) {
             if(moveLeft){
                 if(transform.position.x >= -6.75){
                     transform.position += Vector3.left * speed * Time.deltaTime;
@@ -97,7 +97,7 @@ public class MudMonsterController : MonoBehaviourPun
             }
             //rigidbody2D.MovePosition(position);
             rigidbody2D.MovePosition(position);
-        }
+        // }
 
 
     }
