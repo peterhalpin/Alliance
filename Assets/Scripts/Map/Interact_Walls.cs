@@ -33,17 +33,17 @@ void OnTriggerEnter2D(Collider2D player){
         var tilemapname = gameObject.name.Substring(1);
 
 
-        if(player.name == "blue" && tilemapname == "F" ){
+        if(player.name == "blue(Clone)" && tilemapname == "F" ){
             isDestroyed = true;
             tilemapses[gameObject.name].SwapTile(fireTile,dirtTile);
         }
 
-        if(player.name == "blek" && tilemapname == "B" ){
+        if(player.name == "blek(Clone)" && tilemapname == "B" ){
             isDestroyed = true;
             tilemapses[gameObject.name].SwapTile(brickTile,dirtTile);
         }
 
-        if(player.name == "red" && tilemapname == "G" ){
+        if(player.name == "red(Clone)" && tilemapname == "G" ){
             isDestroyed = true;
             tilemapses[gameObject.name].SwapTile(grassTile,dirtTile);
         }

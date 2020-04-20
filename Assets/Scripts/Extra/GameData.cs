@@ -84,6 +84,10 @@ public class GameData : MonoBehaviour
         gameInteraction.Add(logCount + ": " + interaction, time);
     }
 
+    public Dictionary<string, float> GetFullLog() {
+        return gameInteraction;
+    } 
+
 
     
 

@@ -78,7 +78,7 @@ public class GameSetupController : MonoBehaviourPun
             playerPosition[0] = new Vector3(-27, 12, 100); // strength
             playerPosition[1] = new Vector3(27, -7, 100); // ice
             playerPosition[2] = new Vector3(-30, -7, 100); // magnet
-            playerPosition[3] = new Vector3(30, 12, 100); // fire
+            playerPosition[3] = new Vector3(30, 14, 100); // fire
         } else {
             print(level);
             Debug.LogError("Error setting player positions!");
@@ -104,8 +104,8 @@ public class GameSetupController : MonoBehaviourPun
             // the player positions correspoding to each character and each level are listed above in the SetLevelPositions method
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
-            Object varPrefab = Resources.Load("Prefabs/Characters/red", typeof(GameObject));
-            Instantiate(varPrefab, new Vector3(30, 12, 100), Quaternion.identity);
+            Object varPrefab = Resources.Load("Prefabs/Characters/magnet", typeof(GameObject));
+            Instantiate(varPrefab, new Vector3(-30, -7, 100), Quaternion.identity);
             
         }
     }

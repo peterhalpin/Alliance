@@ -52,6 +52,7 @@ public class EndScene : MonoBehaviour
 
     public void SendData() {
         // this is where we write the code to send all of the game data to the database
+        Debug.LogWarning(gameData.GetFullLog());;
     }
 
     public void OnClick() {
