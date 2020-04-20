@@ -13,7 +13,12 @@ public class LeaveGame : MonoBehaviourPunCallbacks
     private ChatHandler chatHandler; 
     private TimerController timerController;
     private GameData gameData;
+    // private string name;
+     
 
+    [SerializeField]
+    private Camera m_camera;
+    
 
     private void Awake() {
         infoObject = GameObject.FindObjectOfType<InfoObject>();   
@@ -21,6 +26,20 @@ public class LeaveGame : MonoBehaviourPunCallbacks
         timerController = GameObject.FindObjectOfType<TimerController>();
         gameData = GameObject.FindObjectOfType<GameData>();
         shiftEscCount = 0; 
+        // name =  this.name;
+
+    }
+
+    private void Start() {
+        // print(name);
+        if(PhotonNetwork.IsConnected) {
+            myPhotonView = GetComponent<PhotonView>();
+            if (!myPhotonView.IsMine) {
+                this.GetComponentInChildren<Camera>().enabled = false;
+            }
+            
+        }
+
     }
 
     private void Update() {
