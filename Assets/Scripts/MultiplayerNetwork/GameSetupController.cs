@@ -96,6 +96,7 @@ public class GameSetupController : MonoBehaviourPun
             // comment the bottom line out of if you wish to just add the prefab on the scene
             Object varPrefab = Resources.Load("Prefabs/Characters/red", typeof(GameObject));
             Instantiate(varPrefab, new Vector3(0, 4, 100), Quaternion.identity);
+            
         }
     }
 }

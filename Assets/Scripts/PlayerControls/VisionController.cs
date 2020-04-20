@@ -11,7 +11,7 @@ public class VisionController : MonoBehaviourPun
     private BlockController blockcontroller;
     private string userID;
     private bool testing;
-
+    public Vector3 startPos;
 
     public float speed = 2.5f;
     public AreaEffector2D a;
@@ -42,6 +42,7 @@ public class VisionController : MonoBehaviourPun
     // Start is called before the first frame update
    void Start()
    {
+        startPos = transform.position;
       a = GetComponent<AreaEffector2D>();      
       animator = GetComponent<Animator>();
       boxes = GetComponents<BoxCollider2D>();
@@ -181,6 +182,7 @@ public class VisionController : MonoBehaviourPun
             }
         }
    }
+  
 
 }
     
