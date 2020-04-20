@@ -11,6 +11,7 @@ TagManager:
   - Door Bottom
   - Door Top
   - block
+  - MudMonster
   layers:
   - Default
   - TransparentFX
@@ -24,10 +25,10 @@ TagManager:
   - vision
   - fire
   - ice
+  - mud
   - grid
   - item
   - blocks
-  - 
   - 
   - 
   - 

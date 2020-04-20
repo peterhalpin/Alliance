@@ -16,11 +16,16 @@ public class GameSetupController : MonoBehaviourPun
     private int level;
     private Vector3[] playerPosition;
 
+    private Scene currentScene;
+
+
     // false if not testing and developing, true if so
     private bool testing;
 
     // This script will be added to any multiplayer scene
     private void Awake() {
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
         // if the catch gets executed, then that means that we aren't loading the game properly, most likely because we are testing
         try {
             infoObject = GameObject.FindObjectOfType<InfoObject>();
@@ -49,26 +54,30 @@ public class GameSetupController : MonoBehaviourPun
         // 3 == red - fire character
         // values passed into Vector3 need to be integers, otherwise it won't work
         // there might be a work around that though ^
-        if(level == 1) {
-            playerPosition[0] = new Vector3(-9, 6, 100);
-            playerPosition[1] = new Vector3(9, -6, 100);
-            playerPosition[2] = new Vector3(9, 6, 100);
-            playerPosition[3] = new Vector3(-9, -6, 100);
-        } else if (level == 2) {
-            playerPosition[0] = new Vector3(3, 3, 100);
-            playerPosition[1] = new Vector3(-9, 2, 100);
-            playerPosition[2] = new Vector3(0, 4, 100);
-            playerPosition[3] = new Vector3(9, -6, 100);
-        } else if (level == 3) {
-            playerPosition[0] = new Vector3(-26, 8, 100);
-            playerPosition[1] = new Vector3(-26, 2, 100);
-            playerPosition[2] = new Vector3(-26, -7, 100);
-            playerPosition[3] = new Vector3(-26, -13, 100);
-        } else if (level == 4) {
-            playerPosition[0] = new Vector3(0, 0, 100);
-            playerPosition[1] = new Vector3(0, 0, 100);
-            playerPosition[2] = new Vector3(0, 0, 100);
-            playerPosition[3] = new Vector3(0, 0, 100);
+        // if(level == 1) {
+        if(sceneName == "TutorialLevel") { 
+            playerPosition[0] = new Vector3(-9, 6, 100); // strength
+            playerPosition[1] = new Vector3(9, -5, 100); // ice
+            playerPosition[2] = new Vector3(9, 6, 100); // magnet
+            playerPosition[3] = new Vector3(-9, -6, 100); // fire
+        // } else if (level == 2) {
+        } else if (sceneName == "Level2") {
+            playerPosition[0] = new Vector3(11, 7, 100); // strength
+            playerPosition[1] = new Vector3(-8, 6, 100); // ice
+            playerPosition[2] = new Vector3(0, 6, 100); // magnet
+            playerPosition[3] = new Vector3(12, -6, 100); // fire
+        // } else if (level == 3) {
+        } else if (sceneName == "Level3") { 
+            playerPosition[0] = new Vector3(-23, 9, 100); // strength
+            playerPosition[1] = new Vector3(-23, -5, 100); // ice
+            playerPosition[2] = new Vector3(-23, -12, 100); // magnet
+            playerPosition[3] = new Vector3(-23, 3, 100); // fire
+        // } else if (level == 4) {
+        } else if (sceneName == "Level4") { 
+            playerPosition[0] = new Vector3(-27, 12, 100); // strength
+            playerPosition[1] = new Vector3(27, -7, 100); // ice
+            playerPosition[2] = new Vector3(-30, -7, 100); // magnet
+            playerPosition[3] = new Vector3(30, 12, 100); // fire
         } else {
             print(level);
             Debug.LogError("Error setting player positions!");
@@ -96,6 +105,7 @@ public class GameSetupController : MonoBehaviourPun
             // comment the bottom line out of if you wish to just add the prefab on the scene
             Object varPrefab = Resources.Load("Prefabs/Characters/red", typeof(GameObject));
             Instantiate(varPrefab, new Vector3(0, 4, 100), Quaternion.identity);
+            
         }
     }
 }

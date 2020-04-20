@@ -8,10 +8,12 @@ public class FireController : MonoBehaviourPun
     public float speed = 2.5f;
     public Animator animator;
     public int direction = 3;
-     public BoxCollider2D[] boxes;
+    public BoxCollider2D[] boxes;
+    public Vector3 startPos;
     // Start is called before the first frame update
    void Start()
    {
+       startPos = transform.position;
        boxes = GetComponents<BoxCollider2D>();
        animator = GetComponent<Animator>();
        for(int i=0; i < boxes.Length ; i++){
@@ -101,4 +103,5 @@ public class FireController : MonoBehaviourPun
         }
 
    }
+
 }

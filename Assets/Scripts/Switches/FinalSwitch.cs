@@ -14,10 +14,13 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
     private GameData gameData;
     private TimerController timerController;
     private Scene currentScene;
+    string sceneName;
 
     private bool testing;
 
     private void Awake() {
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
         try {
             testing = false;
             infoObject = GameObject.FindObjectOfType<InfoObject>();
@@ -25,7 +28,6 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData = GameObject.FindObjectOfType<GameData>();
             timerController = GameObject.FindObjectOfType<TimerController>();
-            currentScene = SceneManager.GetActiveScene();
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         } catch {
             Debug.Log("We must be testing");
@@ -52,19 +54,23 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
                 gameData.FinishLevelTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
                 gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
                  //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
-                if(infoObject.GetLevel() == 1) { //go to level 2
+                // if(infoObject.GetLevel() == 1) { //go to level 2
+                if(sceneName == "TutorialLevel") { //go to level 2
                     colliders.Clear();
                     infoObject.UpdateLevel(true);
                     UpdateLevel(3);
-                } else if (infoObject.GetLevel() == 2) { // go to level 3
+                // } else if (infoObject.GetLevel() == 2) { // go to level 3
+                } else if (sceneName == "Level2") { // go to level 3
                     colliders.Clear();
                     infoObject.UpdateLevel(true);
                     UpdateLevel(4);
-                } else if (infoObject.GetLevel() == 3) { // go to level 4
+                // } else if (infoObject.GetLevel() == 3) { // go to level 4
+                } else if (sceneName == "Level3") { // go to level 4
                     colliders.Clear();
                     infoObject.UpdateLevel(true);
                     UpdateLevel(5);
-                } else if (infoObject.GetLevel() == 4) { // end scene
+                // } else if (infoObject.GetLevel() == 4) { // end scene
+                } else if (sceneName == "Level4") { // end scene
                     colliders.Clear();
                     infoObject.UpdateLevel(true);
                     UpdateLevel(6);
@@ -72,8 +78,6 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
                     Debug.LogError("Level is possibly wrong, possibly error in incrementing or decrementing the infoOjbect level attribute.");
                 }
             } else {
-                Scene currentScene = SceneManager.GetActiveScene();
-                string sceneName = currentScene.name;
                 if(sceneName == "TutorialLevel") { //go to level 2
                     SceneManager.LoadScene("Level2");
                 } else if (sceneName == "Level2") { // go to level 3
