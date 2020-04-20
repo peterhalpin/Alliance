@@ -33,14 +33,19 @@ public class MudMonsterController : MonoBehaviourPun
         moveRight = false;
         moveDown = false;
         moveUp = false;
-        strPlayer = GameObject.FindWithTag("StrengthPlayer");
-        strPos = strPlayer.transform.position;
-        magPlayer = GameObject.FindWithTag("VisionPlayer");
-        magPos = magPlayer.transform.position;
-        icePlayer = GameObject.FindWithTag("IcePlayer");
-        icePos = icePlayer.transform.position;
-        firePlayer = GameObject.FindWithTag("FirePlayer");
-        firePos = firePlayer.transform.position;
+        try {
+            strPlayer = GameObject.FindWithTag("StrengthPlayer");
+            strPos = strPlayer.transform.position;
+            magPlayer = GameObject.FindWithTag("VisionPlayer");
+            magPos = magPlayer.transform.position;
+            icePlayer = GameObject.FindWithTag("IcePlayer");
+            icePos = icePlayer.transform.position;
+            firePlayer = GameObject.FindWithTag("FirePlayer");
+            firePos = firePlayer.transform.position;
+        } catch {
+            Debug.Log("Testing mode!");
+        }
+        
 
     }
 
@@ -96,7 +101,7 @@ public class MudMonsterController : MonoBehaviourPun
                 }
             }
             //rigidbody2D.MovePosition(position);
-            rigidbody2D.MovePosition(position);
+            // rigidbody2D.MovePosition(position);
         // }
 
 
