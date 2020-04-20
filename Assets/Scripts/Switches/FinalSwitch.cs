@@ -54,9 +54,10 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         if(!colliders.Contains(player)){
             colliders.Add(player);
         }
+        print(colliders.Count);
         // changes based on what level we're currently on
         // will need to add more as more levels are added
-        if(colliders.Count == 2) {
+        if(colliders.Count == 4) {
             if(!testing) {
                 //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
                 gameData.FinishLevelTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());

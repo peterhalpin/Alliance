@@ -111,8 +111,8 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         // displays player count
         // triggers countdown timer
         playerCount = PhotonNetwork.PlayerList.Length;
-        // roomSize = PhotonNetwork.CurrentRoom.MaxPlayers;
-        roomSize = 2;
+        roomSize = PhotonNetwork.CurrentRoom.MaxPlayers;
+        // roomSize = 2;
         roomCountDisplay.text = playerCount + ":" + roomSize;
         if(playerCount == roomSize) {
             readyToStart = true;
@@ -178,7 +178,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         chatHandler.DisconnectFromChat();
         Destroy(infoObject.gameObject);
         Destroy(chatController.gameObject);
-        Destroy(chatHandler.gameObject);
+        Destroy(chatHandler.gameObject);        
         PhotonNetwork.LeaveRoom(true);
         SceneManager.LoadScene(menuSceneIndex);
     }
