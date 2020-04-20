@@ -17,6 +17,7 @@ public class GameSetupController : MonoBehaviourPun
     private Vector3[] playerPosition;
 
     private Scene currentScene;
+    private string sceneName;
 
 
     // false if not testing and developing, true if so
