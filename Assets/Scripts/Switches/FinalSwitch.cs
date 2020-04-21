@@ -54,7 +54,9 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         if(!colliders.Contains(player)){
             colliders.Add(player);
         }
+        print(colliders);
         print(colliders.Count);
+
         // changes based on what level we're currently on
         // will need to add more as more levels are added
         if(colliders.Count == 4) {

@@ -18,9 +18,11 @@ public class IceController : MonoBehaviourPun
         boxes = GetComponents<BoxCollider2D>();
         //rb = GetComponent<RigidBody2D>();
         animator = GetComponent<Animator>();
-        for(int i=0; i < boxes.Length ; i++){
-            boxes[i].enabled = false;
-        }
+        // for(int i=0; i < boxes.Length ; i++){
+        //     boxes[i].enabled = false;
+        // }
+        print(gameObject.name); 
+
        
     }
     // Update is called once per frame

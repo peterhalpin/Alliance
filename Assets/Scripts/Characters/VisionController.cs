@@ -43,11 +43,13 @@ public class VisionController : MonoBehaviourPun
    void Start()
    {
         startPos = transform.position;
-      a = GetComponent<AreaEffector2D>();      
-      animator = GetComponent<Animator>();
-      boxes = GetComponents<BoxCollider2D>();
-      block = GameObject.FindGameObjectWithTag("block");
-      a.enabled = false;
+        a = GetComponent<AreaEffector2D>();      
+        animator = GetComponent<Animator>();
+        boxes = GetComponents<BoxCollider2D>();
+        block = GameObject.FindGameObjectWithTag("block");
+        a.enabled = false;
+        print(gameObject.name); 
+
    }
 
    // Update is called once per frame
