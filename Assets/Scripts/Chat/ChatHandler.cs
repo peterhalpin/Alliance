@@ -14,10 +14,6 @@ using Photon.Pun;
 
 public class ChatHandler : MonoBehaviour, IChatClientListener
 {
-
-    // [SerializeField]
-    // private Text _roomName;
-    // private string roomName;
     private string chatChannelName;
 
 
@@ -35,11 +31,7 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     public Text playerReadyText;
 
     private ChatController chatController;
-    
-
-    // public void SetChannelName() {
-
-    // }
+    public LogHandler logHandler;
 
 
     // Start is called before the first frame update
@@ -47,9 +39,9 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     private void Awake() {
         try {
             chatController = GameObject.FindObjectOfType<ChatController>();      
-            chatChannelName = chatController.GetTeamName();  
+            chatChannelName = chatController.GetTeamName();
         } catch {
-            Debug.Log("Must have loaded lobby scene while testing, not in actualy GAME MODE");
+            Debug.Log("Must have loaded lobby scene while testing, not in actual GAME MODE");
         }
         
     }
@@ -76,6 +68,13 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
             connectionState.text = "Offline";
         }
 
+        //Enter to submit chat
+        if (msgInput.text != "" && Input.GetKey(KeyCode.Return))
+        {
+            SendMessage();
+        }
+
+
     }
 
     public void Connect()
@@ -83,9 +82,6 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         myChatClient = new ChatClient(this);
         channel = new ChatChannel(chatChannelName);
         myChatClient.ChatRegion = "US";
-        // chatChannelName = roomName;        
-        // channel.ChatChannel("hero");
-        // print(playerName.text);
         myChatClient.Connect("a6158b28-c73c-4c44-aa95-0629e3a5bf1d", "1.0", new AuthenticationValues(playerName.text));
         connectionState.text = "Connecting to Chat";
     } 
@@ -103,15 +99,15 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         chatPanel.SetActive(true);
         playerReadyText.text = playerName.text + " is ready to play!";
         playerReadyDisplay.SetActive(true);
-        // chatPanel.Interactable(false);
         connectionState.text = "Connected!";
-        // myChatClient.Subscribe(new string[] { _roomName.text });
         myChatClient.Subscribe(chatChannelName);        
 
-        // myChatClient.Subscribe(new string[] { worldChat });
         myChatClient.SetOnlineStatus(ChatUserStatus.Online);
         myChatClient.PublishMessage(chatChannelName, "Joined the chat!");
-        // Destroy(chatController.gameObject);        
+
+        //Create new Log file (loghander script handles duplicate files)
+        logHandler.CreateText(chatChannelName);
+        logHandler.LogMessage("System", playerName.text + " Joined the chat!");
 
     }
 
@@ -123,7 +119,13 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     public void SendMessage()
     {
         myChatClient.PublishMessage(chatChannelName, msgInput.text);
+        logHandler.LogMessage(playerName.text, msgInput.text);
         msgInput.text = "";
+    }
+
+    public void PrintMessage(string message)
+    {
+        msgBox.text += message + "\n";
     }
 
     public void OnGetMessages(string channelName, string[] senders, object[] messages)
@@ -175,6 +177,9 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     {
 
     }
+
+    //methods for detecting scene changes
+    
 
     void OnApplicationQuit()
     {
