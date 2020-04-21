@@ -78,7 +78,7 @@ public class GameSetupController : MonoBehaviourPun
             playerPosition[3] = new Vector3(-23, 3, 100); // fire
         // } else if (level == 4) {
         } else if (sceneName == "Level4") { 
-            playerPosition[0] = new Vector3(-27, 12, 100); // strength
+            playerPosition[0] = new Vector3(-27, 14, 100); // strength
             playerPosition[1] = new Vector3(27, -7, 100); // ice
             playerPosition[2] = new Vector3(-30, -7, 100); // magnet
             playerPosition[3] = new Vector3(30, 14, 100); // fire
