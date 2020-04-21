@@ -23,7 +23,7 @@ public class Pressure_Switch_3 : MonoBehaviour
          gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
          
          //List of tilemaps to easily reference
-         var tilemaps = new Tilemap[5];
+         var tilemaps = new Tilemap[37];
          tilemaps = FindObjectsOfType<Tilemap>();
           for(int i = 0 ; i < tilemaps.Length ; i++ ){
             tilemapses.Add(tilemaps[i].name, tilemaps[i]);
@@ -31,7 +31,7 @@ public class Pressure_Switch_3 : MonoBehaviour
 
           //Setting tiles to swith dirt/wall
           var tilemapA = tilemapses["BG"];
-          dirtTile =  tilemapA.GetTile(new Vector3Int(-36,16,0));
+          dirtTile =  tilemapA.GetTile(new Vector3Int(-33,17,0));
           var tilemapB = tilemapses["C_Wall"];
           wallTile = tilemapB.GetTile(new Vector3Int(-20,13,0));
     }
@@ -52,8 +52,8 @@ public class Pressure_Switch_3 : MonoBehaviour
          if(col.name == "Cube"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
             isOn = false;
-            var ty = tilemapses["R_Switch_Wall"];
-            ty.SwapTile(dirtTile, wallTile);
+            var tz = tilemapses["R_Switch_Wall"];
+            tz.SwapTile(dirtTile, wallTile);
          }
      }
 }

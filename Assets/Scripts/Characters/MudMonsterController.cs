@@ -12,16 +12,23 @@ public class MudMonsterController : MonoBehaviourPun
     public bool moveRight;
     public bool moveDown;
     public bool moveUp;
-    public GameObject magPlayer;
-    public GameObject firePlayer;
-    public GameObject icePlayer;
-    public GameObject strPlayer;
-    public Vector3 magPos;
-    public Vector3 icePos;
-    public Vector3 firePos;
-    public Vector3 strPos;
+    // public GameObject magPlayer;
+    // public GameObject firePlayer;
+    // public GameObject icePlayer;
+    // public GameObject strPlayer;
+    // public Vector3 magPos;
+    // public Vector3 icePos;
+    // public Vector3 firePos;
+    // public Vector3 strPos;
+
+    //indicates what phase 
+    public int phase;
 
     Rigidbody2D rigidbody2D;
+
+[SerializeField]
+  GameObject secondphase;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,15 +40,18 @@ public class MudMonsterController : MonoBehaviourPun
         moveRight = false;
         moveDown = false;
         moveUp = false;
+        phase = 0;
         try {
-            strPlayer = GameObject.FindWithTag("StrengthPlayer");
-            strPos = strPlayer.transform.position;
-            magPlayer = GameObject.FindWithTag("VisionPlayer");
-            magPos = magPlayer.transform.position;
-            icePlayer = GameObject.FindWithTag("IcePlayer");
-            icePos = icePlayer.transform.position;
-            firePlayer = GameObject.FindWithTag("FirePlayer");
-            firePos = firePlayer.transform.position;
+            // Don't really need this
+
+            // strPlayer = GameObject.FindWithTag("StrengthPlayer");
+            // strPos = strPlayer.transform.position;
+            // magPlayer = GameObject.FindWithTag("VisionPlayer");
+            // magPos = magPlayer.transform.position;
+            // icePlayer = GameObject.FindWithTag("IcePlayer");
+            // icePos = icePlayer.transform.position;
+            // firePlayer = null;
+            // firePos = firePlayer.transform.position;
         } catch {
             Debug.Log("Testing mode!");
         }
@@ -103,26 +113,62 @@ public class MudMonsterController : MonoBehaviourPun
             //rigidbody2D.MovePosition(position);
             // rigidbody2D.MovePosition(position);
         // }
-
+        if(phase == 0){
+                // pause function
+        }
+        if(phase == 2){
+                // pause function 
+        }
 
     }
 
+
+//Changed to find at runtime
     void OnCollisionEnter2D(Collision2D col){
-        
-        if(col.gameObject == firePlayer){
-            firePlayer.transform.position = firePos;
+        var name = col.gameObject.name;
+        if(name == "red(Clone)"){
+            GameObject.Find("red(Clone)").transform.position = new Vector3(30, 14, 100);
         }
-        if(col.gameObject == icePlayer){
-            icePlayer.transform.position = icePos;
+        if(name == "blue(Clone)"){
+            GameObject.Find("blue(Clone)").transform.position = new Vector3(27, -7, 100); 
         }
-        if(col.gameObject == magPlayer){
-            magPlayer.transform.position = magPos;
+        if(name == "green(Clone)"){
+            GameObject.Find("green(Clone)").transform.position = new Vector3(-30, -7, 100);
         }
-        if(col.gameObject == strPlayer){
-            strPlayer.transform.position = strPos;
+        if(name == "blek(Clone)"){
+            GameObject.Find("blek(Clone)").transform.position = new Vector3(-27, 14, 100);
         }
-        
         
 
     }
+
+    //Interactions with Monster
+    void OnTriggerEnter2D(Collider2D player){
+
+        if(player.name == "ice(Clone)" && phase == 0 ){
+            phase++;
+            //pause 
+            
+        }
+
+        if(player.name == "blek(Clone)" && phase == 1 ){
+            phase++;
+         gameObject.GetComponent<SpriteRenderer>().sprite = secondphase.GetComponent<SpriteRenderer>().sprite;
+        }
+
+        if(player.name == "green(Clone)" && phase == 2 ){
+            phase++;
+            //pause
+        }
+
+        if(player.name == "fire(Clone)" && phase == 3 ){
+            phase++;
+            Destroy(gameObject);
+        }
+
+          
+        }
+
+
 }
+
