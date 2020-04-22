@@ -132,4 +132,14 @@ public class FireController : MonoBehaviourPun
 
    }
 
+void OnTriggerEnter2D(Collider2D player){
+
+        if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
+            var monster=  GameObject.Find("Mud_Monster");
+            Destroy(monster);
+        }
+    
+    }
+    
+
 }

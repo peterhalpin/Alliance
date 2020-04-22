@@ -12,6 +12,12 @@ public class MudMonsterController : MonoBehaviourPun
     public bool moveRight;
     public bool moveDown;
     public bool moveUp;
+    public bool timerOn;
+
+    public bool moveLefttemp;
+    public bool moveRighttemp;
+    public bool moveUptemp;
+    public bool moveDowntemp;
     // public GameObject magPlayer;
     // public GameObject firePlayer;
     // public GameObject icePlayer;
@@ -27,7 +33,9 @@ public class MudMonsterController : MonoBehaviourPun
     Rigidbody2D rigidbody2D;
 
 [SerializeField]
-  GameObject secondphase;
+  public GameObject secondphase;
+    private float waitTime = 5.0f;
+    private float timer = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +49,11 @@ public class MudMonsterController : MonoBehaviourPun
         moveDown = false;
         moveUp = false;
         phase = 0;
+        timerOn = false;
+        moveLefttemp = false;
+        moveRighttemp = false;
+        moveUptemp = false;
+        moveDowntemp = false;
         try {
             // Don't really need this
 
@@ -62,6 +75,38 @@ public class MudMonsterController : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
+            if (phase == 1 || phase == 3) {
+                if (timerOn == false){
+                var curr = phase;
+                moveLefttemp = moveLeft;
+                moveRighttemp = moveRight;
+                moveUptemp = moveUp;
+                moveDowntemp = moveDown;
+                moveLeft = false;
+                 moveRight = false;
+                 moveUp = false;
+                 moveDown = false;
+                }
+                
+                timerOn = true;
+
+                 timer += Time.deltaTime;
+                 
+                 if (timer > waitTime){
+            // Remove the recorded 2 seconds.
+                timer = timer - waitTime;
+                moveLeft = moveLefttemp;
+                moveRight = moveRighttemp;
+                moveUp = moveUptemp;
+                moveDown = moveDowntemp;
+                if(phase != 2 || phase != 4 ){
+                    //testing
+                    // phase--;
+                }
+                timerOn = false;
+        }
+
+            }
         // if(PhotonNetwork.IsMasterClient) {
             if(moveLeft){
                 if(transform.position.x >= -6.75){
@@ -113,12 +158,6 @@ public class MudMonsterController : MonoBehaviourPun
             //rigidbody2D.MovePosition(position);
             // rigidbody2D.MovePosition(position);
         // }
-        if(phase == 0){
-                // pause function
-        }
-        if(phase == 2){
-                // pause function 
-        }
 
     }
 
@@ -143,31 +182,7 @@ public class MudMonsterController : MonoBehaviourPun
     }
 
     //Interactions with Monster
-    void OnTriggerEnter2D(Collider2D player){
-
-        if(player.name == "ice(Clone)" && phase == 0 ){
-            phase++;
-            //pause 
-            
-        }
-
-        if(player.name == "blek(Clone)" && phase == 1 ){
-            phase++;
-         gameObject.GetComponent<SpriteRenderer>().sprite = secondphase.GetComponent<SpriteRenderer>().sprite;
-        }
-
-        if(player.name == "green(Clone)" && phase == 2 ){
-            phase++;
-            //pause
-        }
-
-        if(player.name == "fire(Clone)" && phase == 3 ){
-            phase++;
-            Destroy(gameObject);
-        }
-
-          
-        }
+    
 
 
 }
