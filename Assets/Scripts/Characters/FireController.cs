@@ -10,21 +10,41 @@ public class FireController : MonoBehaviourPun
     public int direction = 3;
     public BoxCollider2D[] boxes;
     public Vector3 startPos;
-    // Start is called before the first frame update
+
+    private BlockController blockcontroller;
+    private bool testing;
+
+
    void Start()
    {
-       startPos = transform.position;
-       boxes = GetComponents<BoxCollider2D>();
-       animator = GetComponent<Animator>();
-       for(int i=0; i < boxes.Length ; i++){
+        print(gameObject.name); 
+
+        startPos = transform.position;
+        boxes = GetComponents<BoxCollider2D>();
+        animator = GetComponent<Animator>();
+        for(int i=0; i < boxes.Length ; i++){
             boxes[i].enabled = false;
         }
+        blockcontroller = GameObject.FindObjectOfType<BlockController>();        
+        if(PhotonNetwork.IsConnected && blockcontroller != null) {
+            testing = false;
+        } else {
+            testing = true;
+        }
+        // try {
+        //     testing = false;
+        //     if(blockcontroller == null) {
+        //         testing = true;
+        //     }
+        // } catch {
+        //     testing = true;
+        // }
    }
    // Update is called once per frame
    void Update()
    {
 
-    for(int i=0; i < boxes.Length ; i++){
+        for(int i=0; i < boxes.Length ; i++){
             boxes[i].enabled = false;
         }
        //idle up
@@ -83,21 +103,29 @@ public class FireController : MonoBehaviourPun
                 //up
                 if(direction == 1){
                     boxes[2].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(2, gameObject.name);                    
                 }
 
                 //right
                 if(direction == 2){
                     boxes[1].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(1, gameObject.name);          
                 }
 
                 //down
                 if(direction == 3){
                     boxes[3].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(3, gameObject.name);          
                 }
 
                 //left
                 if(direction == 4){
                     boxes[0].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(0, gameObject.name);          
                 }
             
         }

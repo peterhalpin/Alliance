@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 59c331b0a69ca47bf955369f451985b7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5332999308504539696
+    second: steelmonster_Sheet_0
+  - first:
+      213: 3742874516142580572
+    second: steelmonster_Sheet_1
+  - first:
+      213: 2298235648060153565
+    second: steelmonster_Sheet_2
+  - first:
+      213: -7687078069452075375
+    second: steelmonster_Sheet_3
+  - first:
+      213: 1810370053618605624
+    second: steelmonster_Sheet_4
+  - first:
+      213: -1110753070436449480
+    second: steelmonster_Sheet_5
+  - first:
+      213: 4068530016900106036
+    second: steelmonster_Sheet_6
+  - first:
+      213: 7685289968251337737
+    second: steelmonster_Sheet_7
+  - first:
+      213: 935068440445950274
+    second: steelmonster_Sheet_8
+  - first:
+      213: 6534409941423050004
+    second: steelmonster_Sheet_9
+  - first:
+      213: 5093165148731499286
+    second: steelmonster_Sheet_10
+  - first:
+      213: 3574210128485076828
+    second: steelmonster_Sheet_11
+  - first:
+      213: 805312239831112118
+    second: steelmonster_Sheet_12
+  - first:
+      213: -2609423017305370726
+    second: steelmonster_Sheet_13
+  - first:
+      213: 5700024325446949284
+    second: steelmonster_Sheet_14
+  - first:
+      213: 7261624660300968515
+    second: steelmonster_Sheet_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +88,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,9 +118,369 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: steelmonster_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddde2562616df5b0800000000000000
+      internalID: -5332999308504539696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.64396566, y: 0.46410894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c536a85ba8c51f330800000000000000
+      internalID: 3742874516142580572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 192
+        width: 65
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dded3c43529f4ef10800000000000000
+      internalID: 2298235648060153565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 191
+        width: 62
+        height: 65
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 62, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e0d954933025590800000000000000
+      internalID: -7687078069452075375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 192
+        width: 77
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e11f5d8f9bf1910800000000000000
+      internalID: 1810370053618605624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833067ba7ffc590f0800000000000000
+      internalID: -1110753070436449480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 128
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437485f8e72567830800000000000000
+      internalID: 4068530016900106036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 128
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c7e79f182a7aa60800000000000000
+      internalID: 7685289968251337737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2499579dac70afc00800000000000000
+      internalID: 935068440445950274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 64
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d4d4f8833eeaa50800000000000000
+      internalID: 6534409941423050004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 64
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6136a80d7be8ea640800000000000000
+      internalID: 5093165148731499286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fc4f4cc252a9130800000000000000
+      internalID: 3574210128485076828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b95864273b0d2b00800000000000000
+      internalID: 805312239831112118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f09c0579779cbd0800000000000000
+      internalID: -2609423017305370726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9d9598ced8a1f40800000000000000
+      internalID: 5700024325446949284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: steelmonster_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 76.8
+        height: 64
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342b471a72976c460800000000000000
+      internalID: 7261624660300968515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
