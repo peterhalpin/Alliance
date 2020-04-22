@@ -104,5 +104,12 @@ public class IceController : MonoBehaviourPun
             
         }
    }
-  
+
+   void OnTriggerEnter2D(Collider2D player){
+
+        if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 0){
+            GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
 }
+}
+}
+
