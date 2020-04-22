@@ -185,10 +185,9 @@ public class VisionController : MonoBehaviourPun
   
 
 void OnTriggerEnter2D(Collider2D player){
-
+        Debug.Log("Reached");
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
-            var monster=  GameObject.Find("Mud_Monster");
-            monster.GetComponent<MudMonsterController>().phase++;
+           GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
         }
     
     }
