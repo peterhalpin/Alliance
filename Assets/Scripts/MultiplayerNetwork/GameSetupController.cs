@@ -107,14 +107,14 @@ public class GameSetupController : MonoBehaviourPun
             // the player positions correspoding to each character and each level are listed above in the SetLevelPositions method
             // reference that when changing Vector position for each character
             // comment the bottom line out of if you wish to just add the prefab on the scene
-            Object varPrefab = Resources.Load("Prefabs/Characters/blue", typeof(GameObject));
-            Instantiate(varPrefab, new Vector3(27, -7, 100), Quaternion.identity);
-            //  Object varPrefab2 = Resources.Load("Prefabs/Characters/blue", typeof(GameObject));
-            // Instantiate(varPrefab2, new Vector3(27, -7, 100), Quaternion.identity);
-            //  Object varPrefab3 = Resources.Load("Prefabs/Characters/blek", typeof(GameObject));
-            // Instantiate(varPrefab3, new Vector3(-27, 14, 100), Quaternion.identity);
-            //  Object varPrefab4 = Resources.Load("Prefabs/Characters/green", typeof(GameObject));
-            // Instantiate(varPrefab4, new Vector3(-30, -7, 100), Quaternion.identity);
+            Object varPrefab = Resources.Load("Prefabs/Characters/red", typeof(GameObject));
+            Instantiate(varPrefab, new Vector3(23, 0, 100), Quaternion.identity);
+             Object varPrefab2 = Resources.Load("Prefabs/Characters/blue", typeof(GameObject));
+            Instantiate(varPrefab2, new Vector3(17, 0, 100), Quaternion.identity);
+             Object varPrefab3 = Resources.Load("Prefabs/Characters/blek", typeof(GameObject));
+            Instantiate(varPrefab3, new Vector3(23, 0, 100), Quaternion.identity);
+             Object varPrefab4 = Resources.Load("Prefabs/Characters/green", typeof(GameObject));
+            Instantiate(varPrefab4, new Vector3(23, 0, 100), Quaternion.identity);
             
         }
     }

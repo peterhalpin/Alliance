@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class VisionController : MonoBehaviourPun
 {
-    private Dictionary<string, string> players;
-    private PhotonView myPhotonView;
-    private InfoObject infoObject;
     private BlockController blockcontroller;
-    private string userID;
     private bool testing;
+
+
+    // private Dictionary<string, string> players;
+    // private PhotonView myPhotonView;
+    // private InfoObject infoObject;
+    // private string userID;
     public Vector3 startPos;
 
     public float speed = 2.5f;
@@ -26,12 +28,15 @@ public class VisionController : MonoBehaviourPun
 
     private void Awake() {
         try {
-            myPhotonView = GetComponent<PhotonView>();
-            userID = PhotonNetwork.AuthValues.UserId;
-            infoObject = GameObject.FindObjectOfType<InfoObject>();
+            // myPhotonView = GetComponent<PhotonView>();
+            // userID = PhotonNetwork.AuthValues.UserId;
+            // infoObject = GameObject.FindObjectOfType<InfoObject>();
+            // players = infoObject.GetCharacters();
             blockcontroller = GameObject.FindObjectOfType<BlockController>();        
-            players = infoObject.GetCharacters();
             testing = false;
+            if(blockcontroller == null) {
+                testing = true;
+            }
         } catch {
             Debug.Log("Not online so vision controller will run through different methods. Will still work though.");
             testing = true;
@@ -125,7 +130,7 @@ public class VisionController : MonoBehaviourPun
                 //up
                 if(direction == 1){
                     boxes[2].enabled = true;
-                    blockcontroller.UpdateBlockStatus(2);
+                    blockcontroller.UpdateBlockStatus(2, gameObject.name);
                     animator.SetFloat("MoveX", -.5f);
                     animator.SetFloat("MoveY", .5f);
                 }
@@ -133,7 +138,7 @@ public class VisionController : MonoBehaviourPun
                 //right
                 if(direction == 2){
                     boxes[1].enabled = true;
-                    blockcontroller.UpdateBlockStatus(1);
+                    blockcontroller.UpdateBlockStatus(1, gameObject.name);
                     animator.SetFloat("MoveX", .5f);
                     animator.SetFloat("MoveY", .5f);
                 }
@@ -141,7 +146,7 @@ public class VisionController : MonoBehaviourPun
                 //down
                 if(direction == 3){
                     boxes[3].enabled = true;
-                    blockcontroller.UpdateBlockStatus(3);
+                    blockcontroller.UpdateBlockStatus(3, gameObject.name);
                     animator.SetFloat("MoveX", .5f);
                     animator.SetFloat("MoveY", -.5f);
                 }
@@ -149,7 +154,7 @@ public class VisionController : MonoBehaviourPun
                 //left
                 if(direction == 4){
                     boxes[0].enabled = true;
-                    blockcontroller.UpdateBlockStatus(0);
+                    blockcontroller.UpdateBlockStatus(0, gameObject.name);
                     animator.SetFloat("MoveX", -.5f);
                     animator.SetFloat("MoveY", -.5f);
                 }

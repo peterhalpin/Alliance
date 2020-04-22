@@ -53,22 +53,6 @@ void OnTriggerEnter2D(Collider2D player){
         } else {
             UpdateTilesOnline(player.name, tilemapname, gameObject.name);
         }
-
-
-        // if(player.name == "blue(Clone)" && tilemapname == "F" ){
-        //     isDestroyed = true;
-        //     tilemapses[gameObject.name].SwapTile(fireTile,dirtTile);
-        // }
-
-        // if(player.name == "blek(Clone)" && tilemapname == "B" ){
-        //     isDestroyed = true;
-        //     tilemapses[gameObject.name].SwapTile(brickTile,dirtTile);
-        // }
-
-        // if(player.name == "red(Clone)" && tilemapname == "G" ){
-        //     isDestroyed = true;
-        //     tilemapses[gameObject.name].SwapTile(grassTile,dirtTile);
-        // }
           
 }
 

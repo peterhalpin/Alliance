@@ -86,8 +86,15 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         // chatChannelName = roomName;        
         // channel.ChatChannel("hero");
         // print(playerName.text);
+        if(playerName.text == "") {
+            System.Random rand = new System.Random();
+            int randNum = rand.Next(0, 100000);
+            playerName.text = "RandomPlayer" + randNum;
+        }
         myChatClient.Connect("a6158b28-c73c-4c44-aa95-0629e3a5bf1d", "1.0", new AuthenticationValues(playerName.text));
         connectionState.text = "Connecting to Chat";
+
+
     } 
 
     public void ConnectRandomUserName() {

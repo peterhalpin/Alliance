@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class FinalSwitch : MonoBehaviourPunCallbacks
 {
     private List<Collider2D> colliders = new List<Collider2D>();
+    private List<string> playersOnFinalSwitch; // here b/c the colliders list doesn't work for multiplayer but isn't removed at the moment incase it messes things up
     private InfoObject infoObject;
     private PhotonView myPhotonView;
 
@@ -19,6 +20,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
     private bool testing;
 
     private void Awake() {
+        playersOnFinalSwitch = new List<string>();
         currentScene = SceneManager.GetActiveScene();
         sceneName = currentScene.name;
         try {
@@ -54,12 +56,18 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         if(!colliders.Contains(player)){
             colliders.Add(player);
         }
+
+        if(!playersOnFinalSwitch.Contains(player.name)) {
+            playersOnFinalSwitch.Add(player.name);
+        }
         print(colliders);
         print(colliders.Count);
+        print(player.name);
 
         // changes based on what level we're currently on
         // will need to add more as more levels are added
-        if(colliders.Count == 4) {
+        // if(colliders.Count == 4) {
+        if(playersOnFinalSwitch.Count == 4) {
             if(!testing) {
                 //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
                 gameData.FinishLevelTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
@@ -113,6 +121,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         }
         colliders.Remove(player);
+        playersOnFinalSwitch.Remove(player.name);
 
     }
 

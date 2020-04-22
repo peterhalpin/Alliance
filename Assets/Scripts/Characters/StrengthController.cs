@@ -10,14 +10,28 @@ public class StrengthController : MonoBehaviourPun
     public int direction = 3;
      public BoxCollider2D[] boxes;
     public Vector3 startPos;
-    // Start is called before the first frame update
+
+    private BlockController blockcontroller;
+    private bool testing;
+
+
+
+
    void Start()
    {
+        print(gameObject.name); 
+
        startPos = transform.position;
        animator = GetComponent<Animator>();
        boxes = GetComponents<BoxCollider2D>();
         for(int i=0; i < boxes.Length ; i++){
             boxes[i].enabled = false;
+        }
+        blockcontroller = GameObject.FindObjectOfType<BlockController>();        
+        if(PhotonNetwork.IsConnected && blockcontroller != null) {
+            testing = false;
+        } else {
+            testing = true;
         }
    }
    // Update is called once per frame
@@ -83,6 +97,8 @@ public class StrengthController : MonoBehaviourPun
                 boxes[2].enabled = true;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", .5f);
+                if(!testing)
+                    blockcontroller.UpdateBlockStatus(2, gameObject.name);   
             }
 
             //right
@@ -90,6 +106,8 @@ public class StrengthController : MonoBehaviourPun
                 boxes[1].enabled = true;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", .5f);
+                if(!testing)
+                        blockcontroller.UpdateBlockStatus(1, gameObject.name);    
             }
 
             //down
@@ -97,6 +115,8 @@ public class StrengthController : MonoBehaviourPun
                 boxes[3].enabled = true;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", -.5f);
+                if(!testing)
+                        blockcontroller.UpdateBlockStatus(3, gameObject.name);    
             }
 
             //left
@@ -104,6 +124,8 @@ public class StrengthController : MonoBehaviourPun
                 boxes[0].enabled = true;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", -.5f);
+                if(!testing)
+                        blockcontroller.UpdateBlockStatus(0, gameObject.name);    
             }
 
             

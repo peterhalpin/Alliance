@@ -10,20 +10,28 @@ public class IceController : MonoBehaviourPun
     public BoxCollider2D[] boxes;
     public Vector3 startPos;
     Animator animator;
-    //RigidBody2D rb;
+
+    private BlockController blockcontroller;
+    private bool testing;
+
 
     void Start()
     {
+        print(gameObject.name); 
+
         startPos = transform.position;
         boxes = GetComponents<BoxCollider2D>();
         //rb = GetComponent<RigidBody2D>();
         animator = GetComponent<Animator>();
-        // for(int i=0; i < boxes.Length ; i++){
-        //     boxes[i].enabled = false;
-        // }
-        print(gameObject.name); 
-
-       
+        for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
+        blockcontroller = GameObject.FindObjectOfType<BlockController>();        
+        if(PhotonNetwork.IsConnected && blockcontroller != null) {
+            testing = false;
+        } else {
+            testing = true;
+        }
     }
     // Update is called once per frame
     void Update() {
@@ -87,21 +95,29 @@ public class IceController : MonoBehaviourPun
                 //up
                 if(direction == 1){
                     boxes[2].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(2, gameObject.name);                    
                 }
 
                 //right
                 if(direction == 2){
                     boxes[1].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(1, gameObject.name);          
                 }
 
                 //down
                 if(direction == 3){
                     boxes[3].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(3, gameObject.name);          
                 }
 
                 //left
                 if(direction == 4){
                     boxes[0].enabled = true;
+                    if(!testing)
+                        blockcontroller.UpdateBlockStatus(0, gameObject.name);          
                 }
             
         }
