@@ -2052,7 +2052,7 @@ PrefabInstance:
     - target: {fileID: 2321576763876293796, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}
       propertyPath: maxFullGameWaitTime
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8159718493325342668, guid: c3d76b550ee0c4f3ebcc18e419ddea2a,
         type: 3}

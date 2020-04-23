@@ -101,7 +101,7 @@ public class MudMonsterController : MonoBehaviourPun
                 moveDown = moveDowntemp;
                 if(phase != 2 || phase != 4 ){
                     //testing
-                    // phase--;
+                    phase--;
                 }
                 timerOn = false;
         }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class FireController : MonoBehaviourPun
 {
@@ -15,6 +16,10 @@ public class FireController : MonoBehaviourPun
     private bool testing;
 
 
+     private Dictionary<string, Tilemap> tilemapses = new Dictionary<string, Tilemap>();
+    private TileBase dirtTile;
+    private TileBase wallTile;
+    // Start is called before the first frame update
    void Start()
    {
         print(gameObject.name); 
@@ -39,6 +44,17 @@ public class FireController : MonoBehaviourPun
         // } catch {
         //     testing = true;
         // }
+         var tilemaps = new Tilemap[37];
+         tilemaps = FindObjectsOfType<Tilemap>();
+          for(int i = 0 ; i < tilemaps.Length ; i++ ){
+            tilemapses.Add(tilemaps[i].name, tilemaps[i]);
+          }
+
+          //Setting tiles to swith dirt/wall
+          var tilemapA = tilemapses["BG"];
+          dirtTile =  tilemapA.GetTile(new Vector3Int(-33,17,0));
+          var tilemapB = tilemapses["C_Wall"];
+          wallTile = tilemapB.GetTile(new Vector3Int(-20,13,0));
    }
    // Update is called once per frame
    void Update()
@@ -135,8 +151,9 @@ public class FireController : MonoBehaviourPun
 void OnTriggerEnter2D(Collider2D player){
 
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
-            var monster=  GameObject.Find("Mud_Monster");
-            Destroy(monster);
+            Destroy(GameObject.Find("Mud_Monster"));
+            var ty = tilemapses["C_RSwitch_Wall"];
+            ty.SwapTile(wallTile, dirtTile);
         }
     
     }

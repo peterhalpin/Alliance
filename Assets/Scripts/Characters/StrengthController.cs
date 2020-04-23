@@ -137,8 +137,9 @@ void OnTriggerEnter2D(Collider2D player){
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 1){
             var monster=  GameObject.Find("Mud_Monster");
             monster.GetComponent<MudMonsterController>().phase++;
-            monster.GetComponent<Animator>().enabled = false;
-            monster.GetComponent<SpriteRenderer>().sprite = monster.GetComponent<MudMonsterController>().secondphase.GetComponent<SpriteRenderer>().sprite; 
+            monster.GetComponent<MudMonsterController>().speed = 2.50f;
+            // monster.GetComponent<Animator>().enabled = false;
+            // monster.GetComponent<SpriteRenderer>().sprite = monster.GetComponent<MudMonsterController>().secondphase.GetComponent<SpriteRenderer>().sprite; 
         }
     
     }

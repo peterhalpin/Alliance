@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VisionController : MonoBehaviourPun
 {
@@ -46,21 +47,31 @@ public class VisionController : MonoBehaviourPun
 
     // Start is called before the first frame update
    void Start()
-   {
-        startPos = transform.position;
-        a = GetComponent<AreaEffector2D>();      
-        animator = GetComponent<Animator>();
-        boxes = GetComponents<BoxCollider2D>();
-        block = GameObject.FindGameObjectWithTag("block");
-        a.enabled = false;
-        print(gameObject.name); 
-
+   {    
+      startPos = transform.position;
+      a = GetComponent<AreaEffector2D>();      
+      animator = GetComponent<Animator>();
+      boxes = GetComponents<BoxCollider2D>();
+      block = GameObject.FindGameObjectWithTag("block");
+      a.enabled = false;
    }
 
    // Update is called once per frame
    private void Update() {
 
-        
+
+        if(GameObject.Find("Mud_Monster") != null  && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
+           boxes[0].usedByEffector = false;
+           boxes[1].usedByEffector = false;
+           boxes[2].usedByEffector = false;
+           boxes[3].usedByEffector = false;
+        } else {
+              boxes[0].usedByEffector = true;
+           boxes[1].usedByEffector = true;
+           boxes[2].usedByEffector = true;
+           boxes[3].usedByEffector = true;
+        }
+
         a.enabled = false;
        
         //left box
@@ -192,10 +203,9 @@ public class VisionController : MonoBehaviourPun
   
 
 void OnTriggerEnter2D(Collider2D player){
-
+        Debug.Log("Reached");
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
-            var monster=  GameObject.Find("Mud_Monster");
-            monster.GetComponent<MudMonsterController>().phase++;
+           GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
         }
     
     }
