@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VisionController : MonoBehaviourPun
 {
@@ -41,8 +42,8 @@ public class VisionController : MonoBehaviourPun
 
     // Start is called before the first frame update
    void Start()
-   {
-        startPos = transform.position;
+   {    
+      startPos = transform.position;
       a = GetComponent<AreaEffector2D>();      
       animator = GetComponent<Animator>();
       boxes = GetComponents<BoxCollider2D>();
@@ -53,7 +54,19 @@ public class VisionController : MonoBehaviourPun
    // Update is called once per frame
    private void Update() {
 
-        
+
+        if(GameObject.Find("Mud_Monster") != null  && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
+           boxes[0].usedByEffector = false;
+           boxes[1].usedByEffector = false;
+           boxes[2].usedByEffector = false;
+           boxes[3].usedByEffector = false;
+        } else {
+              boxes[0].usedByEffector = true;
+           boxes[1].usedByEffector = true;
+           boxes[2].usedByEffector = true;
+           boxes[3].usedByEffector = true;
+        }
+
         a.enabled = false;
        
         //left box
