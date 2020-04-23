@@ -137,7 +137,10 @@ void OnTriggerEnter2D(Collider2D player){
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 1){
             var monster=  GameObject.Find("Mud_Monster");
             monster.GetComponent<MudMonsterController>().phase++;
+            //signals second part of monster fight
             monster.GetComponent<MudMonsterController>().speed = 2.50f;
+
+            //Code meant for sprite change
             // monster.GetComponent<Animator>().enabled = false;
             // monster.GetComponent<SpriteRenderer>().sprite = monster.GetComponent<MudMonsterController>().secondphase.GetComponent<SpriteRenderer>().sprite; 
         }

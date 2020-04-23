@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
+using UnityEngine.Tilemaps; //ALWAYS IMPORT THIS WHEN WORKING WITH SWITCHES THAT INTERACT WITH WALLS
 
 //Overall C# Notes
   /*No Hashmaps, Only Dictionary
@@ -27,7 +27,7 @@ public class Switch : MonoBehaviour
         // code to have the switch in default appearance
         gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
         
-        //Easy reference to tilemaps
+        //Easy reference to tilemaps in scene
           var tilemaps = new Tilemap[3];
           tilemaps = FindObjectsOfType<Tilemap>();
           for(int i = 0 ; i < tilemaps.Length ; i++ ){

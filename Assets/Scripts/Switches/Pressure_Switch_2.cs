@@ -67,6 +67,7 @@ public class Pressure_Switch_2 : MonoBehaviour
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
           ison3 = true;
           if(switches_dict["PB"].GetComponent<Pressure_Switch_2>().ison4){
+             //Checks for pressure switch with cube is on 
             var ty = tilemapses["MT_Wall"];
             ty.SwapTile(wallTile,dirtTile);
             var tz = tilemapses["MB_WALL"];
@@ -77,6 +78,7 @@ public class Pressure_Switch_2 : MonoBehaviour
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
           ison4 = true;
           if(switches_dict["PA"].GetComponent<Pressure_Switch_2>().ison3){
+             //Checks for pressure switch with rock is on 
             var ty = tilemapses["MT_Wall"];
             ty.SwapTile(wallTile,dirtTile);
             var tz = tilemapses["MB_Wall"];
@@ -88,6 +90,7 @@ public class Pressure_Switch_2 : MonoBehaviour
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
            ison2 = true;
             if(switches_dict["P1"].GetComponent<Pressure_Switch_2>().ison1){
+               //Checks for pressure switch with fire person is on 
             var ty = tilemapses["BL_Wall"];
             ty.SwapTile(wallTile, dirtTile);
             var tz = tilemapses["BR_Wall"];
@@ -97,6 +100,7 @@ public class Pressure_Switch_2 : MonoBehaviour
           gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOn.GetComponent<SpriteRenderer>().sprite;
            ison1 = true;
            if(switches_dict["P2"].GetComponent<Pressure_Switch_2>().ison2){
+              //Checks for pressure switch with ice person is on 
              var ty = tilemapses["BL_Wall"];
             ty.SwapTile(wallTile, dirtTile);
             var tz = tilemapses["BR_Wall"];
