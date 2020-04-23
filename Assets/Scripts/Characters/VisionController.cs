@@ -33,6 +33,8 @@ public class VisionController : MonoBehaviourPun
             // userID = PhotonNetwork.AuthValues.UserId;
             // infoObject = GameObject.FindObjectOfType<InfoObject>();
             // players = infoObject.GetCharacters();
+            
+            //Find all colliders for this object
             blockcontroller = GameObject.FindObjectOfType<BlockController>();        
             testing = false;
             if(blockcontroller == null) {
@@ -59,6 +61,12 @@ public class VisionController : MonoBehaviourPun
    // Update is called once per frame
    private void Update() {
 
+       //Necessary for Level 4 to actually interact with mud monster
+       //Caveat: This code turns off the "usedByEffector" box in the 2D collider component
+       //temporarily not allowing the magnet person interact with the cube untill the monster goes to phase 3.
+       //This was done because otherwise the monster will not be registered for going into the trigger box belonging
+       //to the magnet person.
+       //No fix has been attempted due to time.
 
         if(GameObject.Find("Mud_Monster") != null  && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
            boxes[0].usedByEffector = false;
@@ -204,6 +212,9 @@ public class VisionController : MonoBehaviourPun
 
 void OnTriggerEnter2D(Collider2D player){
         Debug.Log("Reached");
+        
+         //To do: Add a null check!
+        //Required for Level 4
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
            GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
         }
