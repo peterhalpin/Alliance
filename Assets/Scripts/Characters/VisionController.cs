@@ -6,65 +6,54 @@ using UnityEngine.SceneManagement;
 
 public class VisionController : MonoBehaviourPun
 {
-    private BlockController blockcontroller;
+
+    // private BoxCollider2D b;
+
     private bool testing;
 
+    private float speed;
+    private int direction;
 
-    // private Dictionary<string, string> players;
-    // private PhotonView myPhotonView;
-    // private InfoObject infoObject;
-    // private string userID;
-    public Vector3 startPos;
-
-    public float speed = 2.5f;
-    public AreaEffector2D a;
-    public BoxCollider2D b;
-    public GameObject block;
-    public int direction = 3;
-
-    
-    public BoxCollider2D[] boxes;
-
+    private AreaEffector2D a;
     private Animator animator;
+    private GameObject block;
+    private BlockController blockcontroller;
     private KeyboardShortcuts kbshortcuts;
 
-
+    private BoxCollider2D[] boxes;
 
     private void Awake() {
+        direction = 3;
+        speed = 2.5f;
+        a = GetComponent<AreaEffector2D>();      
+        block = GameObject.FindGameObjectWithTag("block");
+        animator = GetComponent<Animator>();
+        blockcontroller = GameObject.FindObjectOfType<BlockController>();        
+        boxes = GetComponents<BoxCollider2D>();
         kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
 
-        try {
-            // myPhotonView = GetComponent<PhotonView>();
-            // userID = PhotonNetwork.AuthValues.UserId;
-            // infoObject = GameObject.FindObjectOfType<InfoObject>();
-            // players = infoObject.GetCharacters();
-            
-            //Find all colliders for this object
-            blockcontroller = GameObject.FindObjectOfType<BlockController>();        
+        if(PhotonNetwork.IsConnected) {
             testing = false;
-            if(blockcontroller == null) {
-                testing = true;
-            }
-        } catch {
-            Debug.Log("Not online so vision controller will run through different methods. Will still work though.");
+        } else {
             testing = true;
         }
-        
     }
 
-    // Start is called before the first frame update
-   void Start()
-   {    
-      startPos = transform.position;
-      a = GetComponent<AreaEffector2D>();      
-      animator = GetComponent<Animator>();
-      boxes = GetComponents<BoxCollider2D>();
-      block = GameObject.FindGameObjectWithTag("block");
-      a.enabled = false;
+   void Start() {    
+        a.enabled = false;
+        for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
    }
 
    // Update is called once per frame
-   private void Update() {
+    private void Update() {
+        a.enabled = false;
+        block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;        
+
+        for(int i=0; i < boxes.Length ; i++){
+            boxes[i].enabled = false;
+        }
 
        //Necessary for Level 4 to actually interact with mud monster
        //Caveat: This code turns off the "usedByEffector" box in the 2D collider component
@@ -74,73 +63,80 @@ public class VisionController : MonoBehaviourPun
        //No fix has been attempted due to time.
 
         if(GameObject.Find("Mud_Monster") != null  && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
-           boxes[0].usedByEffector = false;
-           boxes[1].usedByEffector = false;
-           boxes[2].usedByEffector = false;
-           boxes[3].usedByEffector = false;
+            boxes[0].usedByEffector = false;
+            boxes[1].usedByEffector = false;
+            boxes[2].usedByEffector = false;
+            boxes[3].usedByEffector = false;
         } else {
-              boxes[0].usedByEffector = true;
-           boxes[1].usedByEffector = true;
-           boxes[2].usedByEffector = true;
-           boxes[3].usedByEffector = true;
+            boxes[0].usedByEffector = true;
+            boxes[1].usedByEffector = true;
+            boxes[2].usedByEffector = true;
+            boxes[3].usedByEffector = true;
         }
 
-        a.enabled = false;
-       
-        //left box
-        boxes[0].enabled = false;
-        //right box
-        boxes[1].enabled = false;
-        //top box
-        boxes[2].enabled = false;
-        //bottom box
-        boxes[3].enabled = false;
-       
-        if(direction == 1){
+
+
+        // //left box
+        // boxes[0].enabled = false;
+        // //right box
+        // boxes[1].enabled = false;
+        // //top box
+        // boxes[2].enabled = false;
+        // //bottom box
+        // boxes[3].enabled = false;
+
+
+        // this part is for changing the animations when the player moves
+        // though this section is basically the same in all four characters, adding this all to one player movement script messes with animatons (more specifically the magnet player)
+        //idle up
+        //idle up
+        if(direction == 1) {
             animator.SetFloat("MoveX", .1f);
             animator.SetFloat("MoveY", .25f);
         }
-        if(direction == 2){
+        //idle right
+        if(direction == 2) {
             animator.SetFloat("MoveX", .25f);
             animator.SetFloat("MoveY", -.1f);
-        }
-        if(direction == 3){
+        } 
+        //idle down
+        if(direction == 3) {
             animator.SetFloat("MoveX", -.1f);
             animator.SetFloat("MoveY", -.25f);
         }
-        if(direction == 4){
+        //idle left
+        if(direction == 4) {
             animator.SetFloat("MoveX", -.25f);
             animator.SetFloat("MoveY", .1f);
         }
-    
-        block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;        
 
-        if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
+        // this is so that player's won't move other characters who don't belong to them, check's if the player is theirs
+        if (PhotonNetwork.IsConnected && !photonView.IsMine) {
             return;
         }
 
         if(kbshortcuts.isInPlayerMap) {
-            if (Input.GetKey(KeyCode.LeftArrow)){
+            if (Input.GetKey(KeyCode.LeftArrow)) {
                 GetComponent<Rigidbody2D>().isKinematic = false;
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 4;
             }
-            if (Input.GetKey(KeyCode.RightArrow)){
+            if (Input.GetKey(KeyCode.RightArrow)) {
                 GetComponent<Rigidbody2D>().isKinematic = false;
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 2;
             }
-            if (Input.GetKey(KeyCode.UpArrow)){
+            if (Input.GetKey(KeyCode.UpArrow)) {
                 transform.position += Vector3.up * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", 0.5f);
                 direction = 1;
             }
-            if (Input.GetKey(KeyCode.DownArrow)){
+            if (Input.GetKey(KeyCode.DownArrow)) {
                 GetComponent<Rigidbody2D>().isKinematic = false;
                 transform.position += Vector3.down * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);

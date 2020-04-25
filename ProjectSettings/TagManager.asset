@@ -13,6 +13,7 @@ TagManager:
   - block
   - MudMonster
   - PlayerCamera
+  - OutGameCamera
   layers:
   - Default
   - TransparentFX

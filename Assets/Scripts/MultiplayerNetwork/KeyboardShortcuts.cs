@@ -5,51 +5,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class KeyboardShortcuts : MonoBehaviourPunCallbacks
-{
-    private PhotonView myPhotonView;
-    private int tabQCount;
-    // private int tabMCount;
-    private bool tabMBool;
-
-
+{ 
     private InfoObject infoObject;
     private ChatHandler chatHandler; 
     private TimerController timerController;
     private GameData gameData;
     public bool isInPlayerMap; // for checking if the player is using the full map or the player map
 
-     
-
-    // [SerializeField]
-    private GameObject main_camera;
-    
-
     private void Awake() {
         infoObject = GameObject.FindObjectOfType<InfoObject>();   
         chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
         timerController = GameObject.FindObjectOfType<TimerController>();
         gameData = GameObject.FindObjectOfType<GameData>();
-        // main_camera = GameObject.FindWithTag("MainCamera").GetComponentInChildren<Camera>();
-        main_camera = GameObject.FindWithTag("MainCamera");
-        // main_camera = Resources.FindObjectsOfTypeAll(typeof(GameObject)).FindWithTag("MainCamera");
-
-
-        tabQCount = 0; 
-        tabMBool = false;
-        isInPlayerMap = true;;
-        // tabMCount = 0;
-
-
-        // name =  this.name;
-
+        isInPlayerMap = true;
     }
 
     private void Start() {
-        // print(name);
-        main_camera.SetActive(false);
         if(PhotonNetwork.IsConnected) {
-            myPhotonView = GetComponent<PhotonView>();
-            if (!myPhotonView.IsMine) {
+            if(!photonView.IsMine) {
+                // this is so that players only see from their character's cameras
+                // the overall map camera is also active but you can only see it whenever your player's camera is inactive
                 this.GetComponentInChildren<Camera>().enabled = false;
             }
         }
@@ -58,8 +33,7 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
     private void Update() {
         // if the player presses the shift and escape key, then we will be brought back to the main menu scene
         if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
-            if (Input.GetKey("tab") && Input.GetKeyUp("q")){ //input.GetKey("a");
-                // tabQCount = 1;                   
+            if (Input.GetKey("tab") && Input.GetKeyUp("q")){
                 infoObject.GoToMainMenu();
                 chatHandler.DisconnectFromChat();
                 Destroy(infoObject.gameObject);
@@ -72,23 +46,23 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
             }
         }   
 
+        // this is for making the player zoom in and out of the map, so that they can view their map or the full screen
+        // if it's in full screen though then they can't move around, that is handled in each character's script though
         if(Input.GetKey("tab") && Input.GetKeyUp("m")) {
-            if(!tabMBool) {
-                tabMBool = true;
-                main_camera.SetActive(true);
-                this.GetComponentInChildren<Camera>().enabled = false;
+            if(isInPlayerMap) {
+                // if not online then photonView.IsMine will fail but the second will work, the second is meant for testing purposes
+                if(photonView.IsMine || !PhotonNetwork.IsConnected)
+                    this.GetComponentInChildren<Camera>().enabled = false;
                 isInPlayerMap = false;
             } else {
-                tabMBool = false;
-                main_camera.SetActive(false);
-                this.GetComponentInChildren<Camera>().enabled = true;
+                if(photonView.IsMine || !PhotonNetwork.IsConnected)
+                    this.GetComponentInChildren<Camera>().enabled = true;
                 isInPlayerMap = true;
             }
-            // main_camera.SetActive(true);   
         }
     }
 
-    // private 
+
 
 
 }

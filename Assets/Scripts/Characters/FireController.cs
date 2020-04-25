@@ -6,57 +6,40 @@ using UnityEngine.Tilemaps;
 
 public class FireController : MonoBehaviourPun
 {
-    public float speed = 2.5f;
-    public Animator animator;
-    public int direction = 3;
-    public BoxCollider2D[] boxes;
-    public Vector3 startPos;
+    private float speed;
+    private int direction;
 
+    private Animator animator;
     private BlockController blockcontroller;
-    private bool testing;
-
-
-     private Dictionary<string, Tilemap> tilemapses = new Dictionary<string, Tilemap>();
+    private KeyboardShortcuts kbshortcuts;
     private TileBase dirtTile;
     private TileBase wallTile;
 
-    private KeyboardShortcuts kbshortcuts;
-
+    private BoxCollider2D[] boxes;
+    private Dictionary<string, Tilemap> tilemapses;
+ 
 
     private void Awake() {
-        kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
+        direction = 3;
+        speed = 2.5f;
+        tilemapses = new Dictionary<string, Tilemap>();
+        animator = GetComponent<Animator>();
         blockcontroller = GameObject.FindObjectOfType<BlockController>();  
-
+        boxes = GetComponents<BoxCollider2D>();
+        kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
     }
 
-   void Start()
-   {
-        startPos = transform.position;
-        boxes = GetComponents<BoxCollider2D>();
-        animator = GetComponent<Animator>();
+    void Start() {
+        var tilemaps = new Tilemap[37];
+        tilemaps = FindObjectsOfType<Tilemap>();
         for(int i=0; i < boxes.Length ; i++){
             boxes[i].enabled = false;
         }
-        if(PhotonNetwork.IsConnected && blockcontroller != null) {
-            testing = false;
-        } else {
-            testing = true;
-        }
-        // try {
-        //     testing = false;
-        //     if(blockcontroller == null) {
-        //         testing = true;
-        //     }
-        // } catch {
-        //     testing = true;
-        // }
-        var tilemaps = new Tilemap[37];
-        tilemaps = FindObjectsOfType<Tilemap>();
         if(tilemaps != null) {
             for(int i = 0 ; i < tilemaps.Length ; i++ ){
                 tilemapses.Add(tilemaps[i].name, tilemaps[i]);
             }
-            //Setting tiles to swith dirt/wall
+            //Setting tiles to swith dirt/wall, this is only called in the 4th level where the characters are able to destroy walls, if future levels have this then this would be needed
             try {
                 var tilemapA = tilemapses["BG"];
                 dirtTile =  tilemapA.GetTile(new Vector3Int(-33,17,0));
@@ -65,19 +48,17 @@ public class FireController : MonoBehaviourPun
             } catch {
                 // not in level 4 so this doesn't need to be called
             }
+        }    
+    }
 
-        }
-
-    
-   }
-   // Update is called once per frame
-   void Update()
-   {
-
+    void Update() {
         for(int i=0; i < boxes.Length ; i++){
             boxes[i].enabled = false;
         }
-       //idle up
+
+        // this part is for changing the animations when the player moves
+        // though this section is basically the same in all four characters, adding this all to one player movement script messes with animatons (more specifically the magnet player)
+        //idle up
         if(direction == 1){
             animator.SetFloat("MoveX", .1f);
             animator.SetFloat("MoveY", .25f);
@@ -98,12 +79,13 @@ public class FireController : MonoBehaviourPun
             animator.SetFloat("MoveY", .1f);
         }
 
-       if (photonView.IsMine == false && PhotonNetwork.IsConnected == true) {
+        // this is so that player's won't move other characters who don't belong to them, check's if the player is theirs
+        if (PhotonNetwork.IsConnected && !photonView.IsMine) {
             return;
         }
 
-        //
-        if(kbshortcuts.isInPlayerMap) {
+        // these are what allows players to move
+        if(kbshortcuts.isInPlayerMap) { // this if statement checks if the player is viewing the whole map or not, if not then they are allowed to move
             if (Input.GetKey(KeyCode.LeftArrow)){
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
@@ -130,50 +112,43 @@ public class FireController : MonoBehaviourPun
             }
         }
        
-
-        if(Input.GetKey("space")){
-
-                //up
-                if(direction == 1){
-                    boxes[2].enabled = true;
-                    if(!testing)
-                        blockcontroller.UpdateBlockStatus(2, gameObject.name);                    
-                }
-
-                //right
-                if(direction == 2){
-                    boxes[1].enabled = true;
-                    if(!testing)
-                        blockcontroller.UpdateBlockStatus(1, gameObject.name);          
-                }
-
-                //down
-                if(direction == 3){
-                    boxes[3].enabled = true;
-                    if(!testing)
-                        blockcontroller.UpdateBlockStatus(3, gameObject.name);          
-                }
-
-                //left
-                if(direction == 4){
-                    boxes[0].enabled = true;
-                    if(!testing)
-                        blockcontroller.UpdateBlockStatus(0, gameObject.name);          
-                }
-            
+        // this is so the player can access the character's super power
+        if(Input.GetKey("space")) {
+            //up
+            if(direction == 1) {
+                boxes[2].enabled = true;
+                if(PhotonNetwork.IsConnected)
+                    blockcontroller.UpdateBlockStatus(2, gameObject.name);
+            // this called so that it goes too the block controller which will then update this on everyone's screen, other wise it won't work
+            }
+            //right
+            if(direction == 2) {
+                boxes[1].enabled = true;
+                if(PhotonNetwork.IsConnected)
+                    blockcontroller.UpdateBlockStatus(1, gameObject.name);          
+            }
+            //down
+            if(direction == 3) {
+                boxes[3].enabled = true;
+                if(PhotonNetwork.IsConnected)
+                    blockcontroller.UpdateBlockStatus(3, gameObject.name);          
+            }
+            //left
+            if(direction == 4) {
+                boxes[0].enabled = true;
+                if(PhotonNetwork.IsConnected)
+                    blockcontroller.UpdateBlockStatus(0, gameObject.name);          
+            }   
         }
-
-   }
-
-void OnTriggerEnter2D(Collider2D player){
-
+    }
+    
+    // this is so the player can attack the mud monster on level 4
+    void OnTriggerEnter2D(Collider2D player) {
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
             Destroy(GameObject.Find("Mud_Monster"));
             var ty = tilemapses["C_RSwitch_Wall"];
             ty.SwapTile(wallTile, dirtTile);
         }
-    
     }
-    
 
 }
