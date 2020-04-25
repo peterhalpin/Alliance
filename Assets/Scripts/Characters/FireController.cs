@@ -19,18 +19,24 @@ public class FireController : MonoBehaviourPun
      private Dictionary<string, Tilemap> tilemapses = new Dictionary<string, Tilemap>();
     private TileBase dirtTile;
     private TileBase wallTile;
-    // Start is called before the first frame update
+
+    private KeyboardShortcuts kbshortcuts;
+
+
+    private void Awake() {
+        kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
+        blockcontroller = GameObject.FindObjectOfType<BlockController>();  
+
+    }
+
    void Start()
    {
-        print(gameObject.name); 
-
         startPos = transform.position;
         boxes = GetComponents<BoxCollider2D>();
         animator = GetComponent<Animator>();
         for(int i=0; i < boxes.Length ; i++){
             boxes[i].enabled = false;
         }
-        blockcontroller = GameObject.FindObjectOfType<BlockController>();        
         if(PhotonNetwork.IsConnected && blockcontroller != null) {
             testing = false;
         } else {
@@ -44,17 +50,25 @@ public class FireController : MonoBehaviourPun
         // } catch {
         //     testing = true;
         // }
-         var tilemaps = new Tilemap[37];
-         tilemaps = FindObjectsOfType<Tilemap>();
-          for(int i = 0 ; i < tilemaps.Length ; i++ ){
-            tilemapses.Add(tilemaps[i].name, tilemaps[i]);
-          }
+        var tilemaps = new Tilemap[37];
+        tilemaps = FindObjectsOfType<Tilemap>();
+        if(tilemaps != null) {
+            for(int i = 0 ; i < tilemaps.Length ; i++ ){
+                tilemapses.Add(tilemaps[i].name, tilemaps[i]);
+            }
+            //Setting tiles to swith dirt/wall
+            try {
+                var tilemapA = tilemapses["BG"];
+                dirtTile =  tilemapA.GetTile(new Vector3Int(-33,17,0));
+                var tilemapB = tilemapses["C_Wall"];
+                wallTile = tilemapB.GetTile(new Vector3Int(-20,13,0));
+            } catch {
+                // not in level 4 so this doesn't need to be called
+            }
 
-          //Setting tiles to swith dirt/wall
-          var tilemapA = tilemapses["BG"];
-          dirtTile =  tilemapA.GetTile(new Vector3Int(-33,17,0));
-          var tilemapB = tilemapses["C_Wall"];
-          wallTile = tilemapB.GetTile(new Vector3Int(-20,13,0));
+        }
+
+    
    }
    // Update is called once per frame
    void Update()
@@ -88,31 +102,34 @@ public class FireController : MonoBehaviourPun
             return;
         }
 
-
-        if (Input.GetKey(KeyCode.LeftArrow)){
-            transform.position += Vector3.left * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", -.5f);
-            animator.SetFloat("MoveY", 0);
-            direction = 4;
+        //
+        if(kbshortcuts.isInPlayerMap) {
+            if (Input.GetKey(KeyCode.LeftArrow)){
+                transform.position += Vector3.left * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", 0);
+                direction = 4;
+            }
+            if (Input.GetKey(KeyCode.RightArrow)){
+                transform.position += Vector3.right * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", 0);
+                direction = 2;
+            }
+            if (Input.GetKey(KeyCode.UpArrow)){
+                transform.position += Vector3.up * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", 0.5f);
+                direction = 1;
+            }
+            if (Input.GetKey(KeyCode.DownArrow)){
+                transform.position += Vector3.down * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", -.5f);
+                direction = 3;
+            }
         }
-        if (Input.GetKey(KeyCode.RightArrow)){
-            transform.position += Vector3.right * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", .5f);
-            animator.SetFloat("MoveY", 0);
-            direction = 2;
-        }
-        if (Input.GetKey(KeyCode.UpArrow)){
-            transform.position += Vector3.up * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", 0);
-            animator.SetFloat("MoveY", 0.5f);
-            direction = 1;
-        }
-        if (Input.GetKey(KeyCode.DownArrow)){
-            transform.position += Vector3.down * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", 0);
-            animator.SetFloat("MoveY", -.5f);
-            direction = 3;
-        }
+       
 
         if(Input.GetKey("space")){
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class KeyBoardShortcuts : MonoBehaviourPunCallbacks
+public class KeyboardShortcuts : MonoBehaviourPunCallbacks
 {
     private PhotonView myPhotonView;
     private int tabQCount;
@@ -16,7 +16,8 @@ public class KeyBoardShortcuts : MonoBehaviourPunCallbacks
     private ChatHandler chatHandler; 
     private TimerController timerController;
     private GameData gameData;
-    // private string name;
+    public bool isInPlayerMap; // for checking if the player is using the full map or the player map
+
      
 
     // [SerializeField]
@@ -35,6 +36,7 @@ public class KeyBoardShortcuts : MonoBehaviourPunCallbacks
 
         tabQCount = 0; 
         tabMBool = false;
+        isInPlayerMap = true;;
         // tabMCount = 0;
 
 
@@ -75,14 +77,20 @@ public class KeyBoardShortcuts : MonoBehaviourPunCallbacks
                 tabMBool = true;
                 main_camera.SetActive(true);
                 this.GetComponentInChildren<Camera>().enabled = false;
+                isInPlayerMap = false;
             } else {
                 tabMBool = false;
                 main_camera.SetActive(false);
                 this.GetComponentInChildren<Camera>().enabled = true;
+                isInPlayerMap = true;
             }
-            main_camera.SetActive(true);   
+            // main_camera.SetActive(true);   
         }
     }
+
+    // private 
+
+
 }
 
 

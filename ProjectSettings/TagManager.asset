@@ -12,6 +12,7 @@ TagManager:
   - Door Top
   - block
   - MudMonster
+  - PlayerCamera
   layers:
   - Default
   - TransparentFX

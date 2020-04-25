@@ -21,13 +21,18 @@ public class VisionController : MonoBehaviourPun
     public BoxCollider2D b;
     public GameObject block;
     public int direction = 3;
+
     
     public BoxCollider2D[] boxes;
 
-    Animator animator;
+    private Animator animator;
+    private KeyboardShortcuts kbshortcuts;
+
 
 
     private void Awake() {
+        kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
+
         try {
             // myPhotonView = GetComponent<PhotonView>();
             // userID = PhotonNetwork.AuthValues.UserId;
@@ -114,33 +119,36 @@ public class VisionController : MonoBehaviourPun
             return;
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow)){
-            GetComponent<Rigidbody2D>().isKinematic = false;
-            transform.position += Vector3.left * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", -.5f);
-            animator.SetFloat("MoveY", 0);
-            direction = 4;
+        if(kbshortcuts.isInPlayerMap) {
+            if (Input.GetKey(KeyCode.LeftArrow)){
+                GetComponent<Rigidbody2D>().isKinematic = false;
+                transform.position += Vector3.left * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", 0);
+                direction = 4;
+            }
+            if (Input.GetKey(KeyCode.RightArrow)){
+                GetComponent<Rigidbody2D>().isKinematic = false;
+                transform.position += Vector3.right * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", 0);
+                direction = 2;
+            }
+            if (Input.GetKey(KeyCode.UpArrow)){
+                transform.position += Vector3.up * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", 0.5f);
+                direction = 1;
+            }
+            if (Input.GetKey(KeyCode.DownArrow)){
+                GetComponent<Rigidbody2D>().isKinematic = false;
+                transform.position += Vector3.down * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", -.5f);
+                direction = 3;
+            }
         }
-        if (Input.GetKey(KeyCode.RightArrow)){
-            GetComponent<Rigidbody2D>().isKinematic = false;
-            transform.position += Vector3.right * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", .5f);
-            animator.SetFloat("MoveY", 0);
-            direction = 2;
-        }
-        if (Input.GetKey(KeyCode.UpArrow)){
-            transform.position += Vector3.up * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", 0);
-            animator.SetFloat("MoveY", 0.5f);
-            direction = 1;
-        }
-        if (Input.GetKey(KeyCode.DownArrow)){
-            GetComponent<Rigidbody2D>().isKinematic = false;
-            transform.position += Vector3.down * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", 0);
-            animator.SetFloat("MoveY", -.5f);
-            direction = 3;
-        }
+
         if(Input.GetKey("space")){
             a.enabled = true;
 

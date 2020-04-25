@@ -1,0 +1,118 @@
+Team: asdf
+
+System: dd Joined the chat!
+   Lobby 0:2
+dd: asdf
+   Lobby 0:5
+dd: 
+   Lobby 0:5
+dd: 
+   Lobby 0:6
+dd: 
+   Lobby 0:6
+
+
+Team: sdf
+
+System: dd Joined the chat!
+   Lobby 0:7
+dd: asdf
+   Lobby 0:9
+dd: 
+   Lobby 0:10
+dd: 
+   Lobby 0:10
+dd: 
+   Lobby 0:10
+dd: 
+   Lobby 0:11
+dd: 
+   Lobby 0:11
+dd: 
+   Lobby 0:11
+dd: asdfd
+   Lobby 0:13
+
+
+Team: asdf
+
+System: sdf Joined the chat!
+   Lobby 0:2
+sdf: asdf
+   Lobby 0:4
+
+
+Team: sdf
+
+System: asdf Joined the chat!
+   Lobby 0:2
+asdf: sdf
+   Lobby 0:5
+
+
+Team: ff
+
+System: sdf Joined the chat!
+   Lobby 0:2
+
+
+Team: kk
+
+System: kk Joined the chat!
+   Lobby 0:2
+kk: kk
+   Lobby 0:5
+
+
+Team: asdf
+
+System: dd Joined the chat!
+   Lobby 0:2
+dd: joined
+   Lobby 0:6
+
+
+Team: asdf
+
+System: afd Joined the chat!
+   Lobby 0:4
+afd: dd
+   Lobby 0:17
+
+
+Team: ss
+
+System: ss Joined the chat!
+   Lobby 0:5
+
+
+Team: z
+
+System: RandomPlayer35512 Joined the chat!
+   Lobby 0:5
+
+
+Team: zz
+
+System: RandomPlayer61703 Joined the chat!
+   Lobby 0:4
+RandomPlayer61703: zxczxc
+   Lobby 0:16
+RandomPlayer61703: asdf
+   Lobby 0:18
+RandomPlayer61703: sdfdsfdf
+   Lobby 0:20
+RandomPlayer61703: e
+   Lobby 0:22
+RandomPlayer61703: e
+   Lobby 0:23
+RandomPlayer61703: esdfsadf
+   Lobby 0:26
+
+
+Team: wdf
+
+System: RandomPlayer80851 Joined the chat!
+   Lobby 0:3
+RandomPlayer80851: kkkkl
+   Lobby 0:7

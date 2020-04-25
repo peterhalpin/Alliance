@@ -13,7 +13,14 @@ public class IceController : MonoBehaviourPun
 
     private BlockController blockcontroller;
     private bool testing;
+    private KeyboardShortcuts kbshortcuts;
 
+
+
+    private void Awake() {
+        kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
+
+    }
 
     void Start()
     {
@@ -64,30 +71,31 @@ public class IceController : MonoBehaviourPun
             return;
         }
        
-
-        if (Input.GetKey(KeyCode.LeftArrow)){
-            transform.position += Vector3.left * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", -.5f);
-            animator.SetFloat("MoveY", 0);
-            direction = 4;
-        }
-        if (Input.GetKey(KeyCode.RightArrow)){
-            transform.position += Vector3.right * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", .5f);
-            animator.SetFloat("MoveY", 0);
-            direction = 2;
-        }
-        if (Input.GetKey(KeyCode.UpArrow)){
-            transform.position += Vector3.up * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", 0);
-            animator.SetFloat("MoveY", 0.5f);
-            direction = 1;
-        }
-        if (Input.GetKey(KeyCode.DownArrow)){
-            transform.position += Vector3.down * speed * Time.deltaTime;
-            animator.SetFloat("MoveX", 0);
-            animator.SetFloat("MoveY", -.5f);
-            direction = 3;
+        if(kbshortcuts.isInPlayerMap) {
+            if (Input.GetKey(KeyCode.LeftArrow)){
+                transform.position += Vector3.left * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", 0);
+                direction = 4;
+            }
+            if (Input.GetKey(KeyCode.RightArrow)){
+                transform.position += Vector3.right * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", 0);
+                direction = 2;
+            }
+            if (Input.GetKey(KeyCode.UpArrow)){
+                transform.position += Vector3.up * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", 0.5f);
+                direction = 1;
+            }
+            if (Input.GetKey(KeyCode.DownArrow)){
+                transform.position += Vector3.down * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", -.5f);
+                direction = 3;
+            }
         }
 
         if(Input.GetKey("space")){
