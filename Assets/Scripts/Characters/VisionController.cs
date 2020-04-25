@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class VisionController : MonoBehaviourPun
 {
-
-    // private BoxCollider2D b;
-
-    private bool testing;
-
     private float speed;
     private int direction;
 
@@ -31,12 +26,6 @@ public class VisionController : MonoBehaviourPun
         blockcontroller = GameObject.FindObjectOfType<BlockController>();        
         boxes = GetComponents<BoxCollider2D>();
         kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
-
-        if(PhotonNetwork.IsConnected) {
-            testing = false;
-        } else {
-            testing = true;
-        }
     }
 
    void Start() {    
@@ -62,33 +51,26 @@ public class VisionController : MonoBehaviourPun
        //to the magnet person.
        //No fix has been attempted due to time.
 
-        if(GameObject.Find("Mud_Monster") != null  && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
-            boxes[0].usedByEffector = false;
-            boxes[1].usedByEffector = false;
-            boxes[2].usedByEffector = false;
-            boxes[3].usedByEffector = false;
+        if(GameObject.Find("Mud_Monster") != null  && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2) {
+            for(int i=0; i < boxes.Length ; i++){
+                boxes[i].usedByEffector = false;
+            }
+            // boxes[0].usedByEffector = false;
+            // boxes[1].usedByEffector = false;
+            // boxes[2].usedByEffector = false;
+            // boxes[3].usedByEffector = false;
         } else {
-            boxes[0].usedByEffector = true;
-            boxes[1].usedByEffector = true;
-            boxes[2].usedByEffector = true;
-            boxes[3].usedByEffector = true;
+            for(int i=0; i < boxes.Length ; i++){
+                boxes[i].usedByEffector = true;
+            }
+            // boxes[0].usedByEffector = true;
+            // boxes[1].usedByEffector = true;
+            // boxes[2].usedByEffector = true;
+            // boxes[3].usedByEffector = true;
         }
-
-
-
-        // //left box
-        // boxes[0].enabled = false;
-        // //right box
-        // boxes[1].enabled = false;
-        // //top box
-        // boxes[2].enabled = false;
-        // //bottom box
-        // boxes[3].enabled = false;
-
 
         // this part is for changing the animations when the player moves
         // though this section is basically the same in all four characters, adding this all to one player movement script messes with animatons (more specifically the magnet player)
-        //idle up
         //idle up
         if(direction == 1) {
             animator.SetFloat("MoveX", .1f);
@@ -145,79 +127,51 @@ public class VisionController : MonoBehaviourPun
             }
         }
 
-        if(Input.GetKey("space")){
+        if(Input.GetKey("space")) {
             a.enabled = true;
-
-            if(!testing) {
-
-                //up
-                if(direction == 1){
-                    boxes[2].enabled = true;
+            //up
+            if(direction == 1){
+                boxes[2].enabled = true;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", .5f);
+                if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(2, gameObject.name);
-                    animator.SetFloat("MoveX", -.5f);
-                    animator.SetFloat("MoveY", .5f);
-                }
+            // this called so that it goes too the block controller which will then update this on everyone's screen, other wise it won't work
+            }
 
-                //right
-                if(direction == 2){
-                    boxes[1].enabled = true;
+            //right
+            if(direction == 2){
+                boxes[1].enabled = true;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", .5f);
+                if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(1, gameObject.name);
-                    animator.SetFloat("MoveX", .5f);
-                    animator.SetFloat("MoveY", .5f);
-                }
+            }
 
-                //down
-                if(direction == 3){
-                    boxes[3].enabled = true;
+            //down
+            if(direction == 3){
+                boxes[3].enabled = true;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", -.5f);
+                if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(3, gameObject.name);
-                    animator.SetFloat("MoveX", .5f);
-                    animator.SetFloat("MoveY", -.5f);
-                }
+            }
 
-                //left
-                if(direction == 4){
-                    boxes[0].enabled = true;
+            //left
+            if(direction == 4){
+                boxes[0].enabled = true;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", -.5f);
+                if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(0, gameObject.name);
-                    animator.SetFloat("MoveX", -.5f);
-                    animator.SetFloat("MoveY", -.5f);
-                }
-            } else {
-
-                if(direction == 1){
-                    boxes[2].enabled = true;
-                    animator.SetFloat("MoveX", -.5f);
-                    animator.SetFloat("MoveY", .5f);
-                }
-
-                //right
-                if(direction == 2){
-                    boxes[1].enabled = true;
-                    animator.SetFloat("MoveX", .5f);
-                    animator.SetFloat("MoveY", .5f);
-                }
-
-                //down
-                if(direction == 3){
-                    boxes[3].enabled = true;
-                    animator.SetFloat("MoveX", .5f);
-                    animator.SetFloat("MoveY", -.5f);
-                }
-
-                //left
-                if(direction == 4){
-                    boxes[0].enabled = true;
-                    animator.SetFloat("MoveX", -.5f);
-                    animator.SetFloat("MoveY", -.5f);
-                }
             }
         }
-   }
+    }
   
 
-void OnTriggerEnter2D(Collider2D player){
-        Debug.Log("Reached");
-        
-         //To do: Add a null check!
+    // this is so the player can attack the mud monster on level 4
+    void OnTriggerEnter2D(Collider2D player){
+        //To do: Add a null check!
         //Required for Level 4
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
            GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;

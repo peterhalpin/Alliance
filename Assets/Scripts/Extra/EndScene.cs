@@ -9,7 +9,7 @@ public class EndScene : MonoBehaviour
 {
 
     [SerializeField]
-    private Text _time;
+    public Text _time;
     private string minutes;
     private string seconds;
 

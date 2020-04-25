@@ -56,3 +56,15 @@ Team: ,,
 
 System: RandomPlayer10701 Joined the chat!
    Lobby 0:5
+
+
+Team: asdf
+
+System: RandomPlayer21982 Joined the chat!
+   Lobby 0:4
+
+
+Team: df
+
+System: RandomPlayer28479 Joined the chat!
+   Lobby 0:4

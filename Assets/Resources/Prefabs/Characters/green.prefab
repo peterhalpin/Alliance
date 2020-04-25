@@ -123,13 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9748809c4f54c8ab591979187eb37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPos: {x: 0, y: 0, z: 0}
-  speed: 2.5
-  a: {fileID: 0}
-  b: {fileID: 0}
-  block: {fileID: 0}
-  direction: 3
-  boxes: []
 --- !u!50 &2488155190276004906
 Rigidbody2D:
   serializedVersion: 4

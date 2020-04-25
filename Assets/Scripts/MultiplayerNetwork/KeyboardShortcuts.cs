@@ -31,7 +31,8 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
     }
 
     private void Update() {
-        // if the player presses the shift and escape key, then we will be brought back to the main menu scene
+        // if the player presses the tab and Q key, then we will be brought back to the main menu scene
+        // only gets called if player is playing online, not if testing via scene
         if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
             if (Input.GetKey("tab") && Input.GetKeyUp("q")){
                 infoObject.GoToMainMenu();

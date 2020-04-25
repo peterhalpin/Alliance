@@ -9,7 +9,7 @@ public class CreateRoomMenu : MonoBehaviourPunCallbacks
 {
 
     [SerializeField]
-    private Text _roomName;
+    public Text _roomName;
     [SerializeField]
     public int roomSize; //manually set the number of players in the room at one time.
 

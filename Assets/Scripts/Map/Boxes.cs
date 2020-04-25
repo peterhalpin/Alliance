@@ -11,7 +11,7 @@ public class Boxes : MonoBehaviourPun
     private PhotonView myPhotonView;
     private InfoObject infoObject;
     private BlockController blockcontroller;
-    private bool called;
+    // private bool called;
     
     public BoxCollider2D[] greenBoxes;
     public GameObject green;
@@ -22,7 +22,7 @@ public class Boxes : MonoBehaviourPun
 
     private void Awake() {
         blockcontroller = GameObject.FindObjectOfType<BlockController>();
-        called = false;
+        // called = false;
     }
 
     private void Start() {

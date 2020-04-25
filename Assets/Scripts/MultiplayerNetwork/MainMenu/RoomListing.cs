@@ -11,7 +11,7 @@ public class RoomListing : MonoBehaviour, IPointerClickHandler
     public ChatController chatController;
 
     [SerializeField]
-    private Text _text;
+    public Text _text;
 
     private int clickCount;
 

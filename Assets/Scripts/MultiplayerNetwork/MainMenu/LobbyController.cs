@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class LobbyController : MonoBehaviourPunCallbacks
 {
     [SerializeField]
-    private Text _text;
+    public Text _text;
     [SerializeField]
-    private GameObject createOrJoinRoomCanvas; //button used for creating and joining a game.
+    public GameObject createOrJoinRoomCanvas; //button used for creating and joining a game.
 
     public override void OnConnectedToMaster()
     {

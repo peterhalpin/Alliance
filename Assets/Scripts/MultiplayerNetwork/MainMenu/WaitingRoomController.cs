@@ -14,13 +14,13 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
 
 
     [SerializeField]
-    private int multiplayerSceneIndex;
+    public int multiplayerSceneIndex;
     [SerializeField]
-    private int menuSceneIndex;
+    public int menuSceneIndex;
     [SerializeField]
-    private Text roomCountDisplay;
+    public Text roomCountDisplay;
     [SerializeField]
-    private Text timerToStartDisplay;
+    public Text timerToStartDisplay;
 
     private PhotonView myPhotonView;
     private int playerCount;
@@ -38,7 +38,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
 
     //countdown timer to reset variables
     [SerializeField]
-    private float maxFullGameWaitTime;
+    public float maxFullGameWaitTime;
     private List<string> playerslist;
     private Dictionary<string, string> map;
     private Queue<string> charTypes;

@@ -12,7 +12,7 @@ public class Interact_Walls : MonoBehaviourPunCallbacks {
     private TileBase brickTile;
 
     private TileBase grassTile;
-    private bool isDestroyed;
+    // private bool isDestroyed;
 
     private PhotonView myPhotonView;
     private bool testing;
@@ -26,7 +26,7 @@ public class Interact_Walls : MonoBehaviourPunCallbacks {
                 testing = true;
         }
 
-        isDestroyed = false;
+        // isDestroyed = false;
 
         //filling out dictionary of all tilemaps
         var tilemaps = FindObjectsOfType<Tilemap>();
@@ -55,17 +55,17 @@ public class Interact_Walls : MonoBehaviourPunCallbacks {
     [PunRPC]
     private void UpdateTilesOnline(string playerName, string tileMapName, string gameObjectName) {
     if(playerName == "blue(Clone)" && tileMapName == "F" ){
-            isDestroyed = true;
+            // isDestroyed = true;
             tilemapses[gameObjectName].SwapTile(fireTile,dirtTile);
         }
 
         if(playerName == "blek(Clone)" && tileMapName == "B" ){
-            isDestroyed = true;
+            // isDestroyed = true;
             tilemapses[gameObjectName].SwapTile(brickTile,dirtTile);
         }
 
         if(playerName == "red(Clone)" && tileMapName == "G" ){
-            isDestroyed = true;
+            // isDestroyed = true;
             tilemapses[gameObjectName].SwapTile(grassTile,dirtTile);
         }
 
