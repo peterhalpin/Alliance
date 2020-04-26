@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class BlockController : MonoBehaviourPunCallbacks
 {
-    private photonView myPhotonView;
+    private PhotonView myPhotonView;
     private BoxCollider2D[] boxes;
     private AreaEffector2D a;
     private GameObject block;
