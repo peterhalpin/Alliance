@@ -126,8 +126,12 @@ public class VisionController : MonoBehaviourPun
                 direction = 3;
             }
         }
-
+        if(Input.GetKeyUp("c")){
+            a.forceMagnitude = a.forceMagnitude *-1;
+            
+        }
         if(Input.GetKey("space")) {
+            
             a.enabled = true;
             //up
             if(direction == 1){

@@ -8,6 +8,7 @@ public class Boxes : MonoBehaviourPun
     private string userID;
     private Dictionary<string, string> players;
     private List<Collider2D> colliders = new List<Collider2D>();
+    
     private PhotonView myPhotonView;
     private InfoObject infoObject;
     private BlockController blockcontroller;
@@ -18,6 +19,7 @@ public class Boxes : MonoBehaviourPun
     public AreaEffector2D a;
     public CapsuleCollider2D cap;
     public Rigidbody2D rb;
+
 
 
     private void Awake() {
@@ -50,6 +52,8 @@ public class Boxes : MonoBehaviourPun
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            colliders.Add(col);
+
         }
         if(col == greenBoxes[1]){
             a.forceAngle = 180;
@@ -57,6 +61,7 @@ public class Boxes : MonoBehaviourPun
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            colliders.Add(col);
         }
         if(col == greenBoxes[2]){
             a.forceAngle = 270;
@@ -64,6 +69,7 @@ public class Boxes : MonoBehaviourPun
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            colliders.Add(col);
         }
         if(col == greenBoxes[3]){
             a.forceAngle = 90;
@@ -71,11 +77,17 @@ public class Boxes : MonoBehaviourPun
             rb.constraints = RigidbodyConstraints2D.FreezePositionX;
             rb.constraints = RigidbodyConstraints2D.FreezePositionY;
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            colliders.Add(col);
         }
 
         
         
     }
+
+     void OnTriggerExit2D(Collider2D col){
+         colliders.Remove(col);
+         
+     }
 
 
 }
