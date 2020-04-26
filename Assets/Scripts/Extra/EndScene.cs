@@ -58,7 +58,6 @@ public class EndScene : MonoBehaviour
     public void OnClick() {
         if(!testing) {
             SendData();
-            infoObject.GoToMainMenu();
             Destroy(infoObject.gameObject);
             Destroy(timerController.gameObject);
             Destroy(chatHandler.gameObject);

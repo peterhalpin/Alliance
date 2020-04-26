@@ -7,129 +7,70 @@ using UnityEngine.SceneManagement;
 
 public class FinalSwitch : MonoBehaviourPunCallbacks
 {
-    private List<Collider2D> colliders = new List<Collider2D>();
-    private List<string> playersOnFinalSwitch; // here b/c the colliders list doesn't work for multiplayer but isn't removed at the moment incase it messes things up
-    private InfoObject infoObject;
-    private PhotonView myPhotonView;
 
     private GameData gameData;
-    private TimerController timerController;
     private Scene currentScene;
-    string sceneName;
-
-    private bool testing;
+    private TimerController timerController;
+    private List<string> playersOnFinalSwitch; // keeps track on who's the final switch
 
     private void Awake() {
         playersOnFinalSwitch = new List<string>();
         currentScene = SceneManager.GetActiveScene();
-        sceneName = currentScene.name;
-        try {
-            infoObject = GameObject.FindObjectOfType<InfoObject>();
-            myPhotonView = GetComponent<PhotonView>();
-            testing = false;
-            if(infoObject == null) {
-                testing = true;
-            }
-        //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
+        if(PhotonNetwork.IsConnected) {
             gameData = GameObject.FindObjectOfType<GameData>();
             timerController = GameObject.FindObjectOfType<TimerController>();
-        //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
-        } catch {
-            Debug.Log("We must be testing");
-            testing = true;
-        }
-
-        
+        }        
     }
 
-    void OnTriggerEnter2D(Collider2D player)
-    {
-        try {
+    void OnTriggerEnter2D(Collider2D player) {
+        if(PhotonNetwork.IsConnected) {
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.ActivateSwitchTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
             gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
-        } catch {
-            Debug.Log("Game data not collected because you are testing or gameData object was not created.");
         }
-
-        if(!colliders.Contains(player)){
-            colliders.Add(player);
-        }
-
-        if(!playersOnFinalSwitch.Contains(player.name)) {
+        if(!playersOnFinalSwitch.Contains(player.name))
             playersOnFinalSwitch.Add(player.name);
-        }
-        print(colliders);
-        print(colliders.Count);
-        print(player.name);
-
         // changes based on what level we're currently on
         // will need to add more as more levels are added
-        // if(colliders.Count == 4) {
-        if(playersOnFinalSwitch.Count == 4) {
-            if(!testing) {
+        if(playersOnFinalSwitch.Count == 2) {
+            // if(!testing) {
+            if(PhotonNetwork.IsConnected) {
                 //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
                 gameData.FinishLevelTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
                 gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
                  //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
-                // if(infoObject.GetLevel() == 1) { //go to level 2
-                if(sceneName == "TutorialLevel") { //go to level 2
-                    colliders.Clear();
-                    infoObject.UpdateLevel(true);
-                    UpdateLevel(3);
-                // } else if (infoObject.GetLevel() == 2) { // go to level 3
-                } else if (sceneName == "Level2") { // go to level 3
-                    colliders.Clear();
-                    infoObject.UpdateLevel(true);
-                    UpdateLevel(4);
-                // } else if (infoObject.GetLevel() == 3) { // go to level 4
-                } else if (sceneName == "Level3") { // go to level 4
-                    colliders.Clear();
-                    infoObject.UpdateLevel(true);
-                    UpdateLevel(5);
-                // } else if (infoObject.GetLevel() == 4) { // end scene
-                } else if (sceneName == "Level4") { // end scene
-                    colliders.Clear();
-                    infoObject.UpdateLevel(true);
-                    UpdateLevel(6);
-                } else {
-                    Debug.LogError("Level is possibly wrong, possibly error in incrementing or decrementing the infoOjbect level attribute.");
-                }
+            }
+            if(currentScene.name == "TutorialLevel") { //go to level 2
+                UpdateLevel(3);
+            } else if (currentScene.name == "Level2") { // go to level 3
+                UpdateLevel(4);
+            } else if (currentScene.name == "Level3") { // go to level 4
+                UpdateLevel(5);
+            } else if (currentScene.name == "Level4") { // end scene
+                UpdateLevel(6);
             } else {
-                if(sceneName == "TutorialLevel") { //go to level 2
-                    SceneManager.LoadScene("Level2");
-                } else if (sceneName == "Level2") { // go to level 3
-                    SceneManager.LoadScene("Level3");
-                } else if (sceneName == "Level3") { // go to level 4
-                    SceneManager.LoadScene("Level4");
-                } else if (sceneName == "Level4") { // end scene
-                    SceneManager.LoadScene("EndScene");
-                } else {
-                    print("Scene Name: " + sceneName);
-                    Debug.LogError("Error loading the next scence or trouble with pressing the final switch.");
-                }
+                Debug.LogError("Level is possibly wrong, possibly error in incrementing or decrementing the infoOjbect level attribute.");
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D player){
-        if(!testing) {
+        if(PhotonNetwork.IsConnected) {
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.DeactivateSwitchTime(currentScene.name + " FinalSwitch left by " + player.name, timerController.GetTime());
             gameData.GameInteraction(currentScene.name + " Player " + player.name + " got OFF the FINAL switch", timerController.GetTime());
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         }
-        colliders.Remove(player);
         playersOnFinalSwitch.Remove(player.name);
-
     }
 
     private void UpdateLevel(int sceneIndexNum) {
-        if (!PhotonNetwork.IsMasterClient) {
-            return;
-        }
-        PhotonNetwork.LoadLevel(sceneIndexNum);
+        // if not connected then use scene manager to load next scene, if is then use photon network
+        if(!PhotonNetwork.IsConnected)
+            SceneManager.LoadScene(sceneIndexNum); // only needs to run this because LoadScene forces all previous AsyncOperations to complete so doesn't finish the rest of the method, , use LoadSceneAsync if this is not what you want
+        if (PhotonNetwork.IsMasterClient)
+            PhotonNetwork.LoadLevel(sceneIndexNum);
     }
 }
 

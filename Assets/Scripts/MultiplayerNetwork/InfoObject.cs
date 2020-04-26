@@ -5,50 +5,28 @@ using UnityEngine;
 
 public class InfoObject : MonoBehaviourPun
 {
-    private PhotonView myPhotonView;    
-    private Dictionary<string, string> players;
     public int level;
+    // private PhotonView myPhotonView;    
+    private Dictionary<string, string> players;
 
     private void Awake() {
-        myPhotonView = GetComponent<PhotonView>();
+        // myPhotonView = GetComponent<PhotonView>();
         players = new Dictionary<string, string>();
-        // level = 0;
     }
 
     private void Start() {
         DontDestroyOnLoad(transform.gameObject);
-        
     }
 
+    // gets called in the waiting room controller to update the player corresponding with their character
+    // stored in the infoObject because it gameSetupController uses this to assign players to characters each time
+    // otherwise keeping players from being destroyed would be too much data to pass/impossible
     public void UpdatePlayerList(Dictionary<string, string> map) {
         players = map;
     }
 
     public Dictionary<string, string> GetCharacters() {
         return players;
-    }
-
-    public int GetLevel() {
-        return level;
-    }
-
-    public void UpdateLevel(bool increaseOrDecreaseLevelCount) {
-        Debug.Log("before: " + level);
-        //if its true then increase, if false then decrease
-        // myPhotonView.RPC("UpdateLevelForEveryone", RpcTarget.All, increaseOrDecreaseLevelCount);
-        if(increaseOrDecreaseLevelCount) {
-            level++;
-        Debug.Log("after: " + level);
-        } else {
-            // this is here in the case we want to implement going back a level, but won't need for now, maybe in future versions
-            // for whoever picks this project up
-            level--;
-        }
-    }
-
-    public void GoToMainMenu() {
-        // this updates the level 0 because we're going to the main menu
-        level = 0;
     }
 
 }

@@ -116,13 +116,13 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         roomCountDisplay.text = playerCount + ":" + roomSize;
         if(playerCount == roomSize) {
             readyToStart = true;
-            infoObject.UpdateLevel(true);
+            // infoObject.UpdateLevel(true);
         } 
         else {
             readyToStart = false;
-            if(infoObject.GetLevel() == 1) {
-                infoObject.UpdateLevel(false);
-            }
+            // if(infoObject.GetLevel() == 1) {
+            //     infoObject.UpdateLevel(false);
+            // }
         }
     }
 
@@ -214,8 +214,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     }
 
     [PunRPC]
-    private void RPC_SendTimer(float timeIn)
-    {
+    private void RPC_SendTimer(float timeIn) {
         //RPC for syncing the countdown timer to those that join after it has started
         timerToStartGame = timeIn;
         // notFullGameTimer = timeIn;

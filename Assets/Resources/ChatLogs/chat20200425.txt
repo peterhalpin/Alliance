@@ -68,3 +68,27 @@ Team: df
 
 System: RandomPlayer28479 Joined the chat!
    Lobby 0:4
+
+
+Team: sdf
+
+System: RandomPlayer41118 Joined the chat!
+   Lobby 0:5
+
+
+Team: dd
+
+System: RandomPlayer33132 Joined the chat!
+   Lobby 0:3
+
+
+Team: sdf
+
+System: RandomPlayer4222 Joined the chat!
+   Lobby 0:5
+
+
+Team: sdf
+
+System: RandomPlayer40405 Joined the chat!
+   Lobby 0:4

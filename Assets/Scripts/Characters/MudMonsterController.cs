@@ -30,7 +30,7 @@ public class MudMonsterController : MonoBehaviourPun
     //indicates what phase 
     public int phase;
 
-    Rigidbody2D rigidbody2D;
+    // private Rigidbody2D rigidbody2D;
 
 [SerializeField]
   public GameObject secondphase;
@@ -40,7 +40,7 @@ public class MudMonsterController : MonoBehaviourPun
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        // rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.SetFloat("MoveX", 0);
         animator.SetFloat("MoveY", 0);

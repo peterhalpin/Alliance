@@ -35,7 +35,6 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
         // only gets called if player is playing online, not if testing via scene
         if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
             if (Input.GetKey("tab") && Input.GetKeyUp("q")){
-                infoObject.GoToMainMenu();
                 chatHandler.DisconnectFromChat();
                 Destroy(infoObject.gameObject);
                 Destroy(chatHandler.gameObject);
