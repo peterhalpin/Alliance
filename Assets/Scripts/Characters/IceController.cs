@@ -119,12 +119,26 @@ public class IceController : MonoBehaviourPun
         }
     }
 
+   
+
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player) {
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 0){
-            GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+            // GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+            photonView.RPC("MudMonsterAttack", RpcTarget.All);
+            
         }
     }
+
+    [PunRPC]
+    private void MudMonsterAttack() {
+        GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+    }
+    
+
+
+
 
 }
 

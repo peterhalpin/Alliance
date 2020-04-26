@@ -23,7 +23,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
     }
 
     void OnTriggerEnter2D(Collider2D player) {
-        if(PhotonNetwork.IsConnected) {
+        if(PhotonNetwork.IsConnected && gameData != null) {
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.ActivateSwitchTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
             gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
@@ -33,9 +33,9 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
             playersOnFinalSwitch.Add(player.name);
         // changes based on what level we're currently on
         // will need to add more as more levels are added
-        if(playersOnFinalSwitch.Count == 2) {
+        if(playersOnFinalSwitch.Count == 4) {
             // if(!testing) {
-            if(PhotonNetwork.IsConnected) {
+            if(PhotonNetwork.IsConnected && gameData != null) {
                 //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
                 gameData.FinishLevelTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
                 gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
@@ -56,7 +56,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
     }
 
     void OnTriggerExit2D(Collider2D player){
-        if(PhotonNetwork.IsConnected) {
+        if(PhotonNetwork.IsConnected && gameData != null) {
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.DeactivateSwitchTime(currentScene.name + " FinalSwitch left by " + player.name, timerController.GetTime());
             gameData.GameInteraction(currentScene.name + " Player " + player.name + " got OFF the FINAL switch", timerController.GetTime());

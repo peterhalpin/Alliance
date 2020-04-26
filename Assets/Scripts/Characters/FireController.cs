@@ -145,10 +145,27 @@ public class FireController : MonoBehaviourPun
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player) {
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
-            Destroy(GameObject.Find("Mud_Monster"));
-            var ty = tilemapses["C_RSwitch_Wall"];
-            ty.SwapTile(wallTile, dirtTile);
+
+            // Destroy(GameObject.Find("Mud_Monster"));
+            // var ty = tilemapses["C_RSwitch_Wall"];
+            // ty.SwapTile(wallTile, dirtTile);
+
+            photonView.RPC("MudMonsterAttack", RpcTarget.All);
+
+
+
         }
     }
+
+    [PunRPC]
+    private void MudMonsterAttack() {
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+
+        Destroy(GameObject.Find("Mud_Monster"));
+        var ty = tilemapses["C_RSwitch_Wall"];
+        ty.SwapTile(wallTile, dirtTile);
+
+    }
+
 
 }

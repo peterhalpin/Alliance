@@ -174,10 +174,21 @@ public class VisionController : MonoBehaviourPun
         //To do: Add a null check!
         //Required for Level 4
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
-           GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+        //    GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+            photonView.RPC("MudMonsterAttack", RpcTarget.All);
+
+           
         }
-    
     }
+
+    [PunRPC]
+    private void MudMonsterAttack() {
+        GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+
+    }
+
+
 
 }
     

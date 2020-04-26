@@ -40,10 +40,10 @@ public class GameSetupController : MonoBehaviourPun
         // values passed into Vector3 need to be integers, otherwise it won't work
         // there might be a work around that though ^
         if(currentScene.name == "TutorialLevel") { 
-            playerPosition[0] = new Vector3(0, 0, 0); // strength
-            playerPosition[1] = new Vector3(0, 0, 0); // ice
-            playerPosition[2] = new Vector3(0, 0, 0); // magnet
-            playerPosition[3] = new Vector3(0, 0, 0); // fire
+            playerPosition[0] = new Vector3(-9, 6, 100); // strength
+            playerPosition[1] = new Vector3(9, -6, 100); // ice
+            playerPosition[2] = new Vector3(9, 6, 100); // magnet
+            playerPosition[3] = new Vector3(-9, -6, 100); // fire
         } else if (currentScene.name == "Level2") {
             playerPosition[0] = new Vector3(11, 7, 0); // strength
             playerPosition[1] = new Vector3(-8, 6, 0); // ice

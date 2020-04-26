@@ -6,11 +6,9 @@ using UnityEngine;
 public class InfoObject : MonoBehaviourPun
 {
     public int level;
-    // private PhotonView myPhotonView;    
     private Dictionary<string, string> players;
 
     private void Awake() {
-        // myPhotonView = GetComponent<PhotonView>();
         players = new Dictionary<string, string>();
     }
 

@@ -47,7 +47,8 @@ public class EndScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _time.text = "Finished in: " + minutes + ":" + seconds;
+        if(minutes != null && seconds != null)
+            _time.text = "Finished in: " + minutes + ":" + seconds;
     }
 
     public void SendData() {

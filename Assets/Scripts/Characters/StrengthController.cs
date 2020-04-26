@@ -127,17 +127,30 @@ public class StrengthController : MonoBehaviourPun
         }
     }
 
+
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player){
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 1){
-            var monster = GameObject.Find("Mud_Monster");
-            monster.GetComponent<MudMonsterController>().phase++;
             //signals second part of monster fight
-            monster.GetComponent<MudMonsterController>().speed = 2.50f;
+            // GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+            // GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().speed = 2.50f;
+            
+            photonView.RPC("MudMonsterAttack", RpcTarget.All);
+
+
             //Code meant for sprite change
             // monster.GetComponent<Animator>().enabled = false;
             // monster.GetComponent<SpriteRenderer>().sprite = monster.GetComponent<MudMonsterController>().secondphase.GetComponent<SpriteRenderer>().sprite; 
         }
     }
+
+    [PunRPC]
+    private void MudMonsterAttack() {
+        GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+        GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().speed = 2.50f;
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+
+    }
+
  
 }

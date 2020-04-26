@@ -6,15 +6,15 @@ using UnityEngine;
 
 public class BlockController : MonoBehaviourPunCallbacks
 {
-    private PhotonView myPhotonView;
+    private photonView myPhotonView;
     private BoxCollider2D[] boxes;
     private AreaEffector2D a;
     private GameObject block;
     private bool logCalled;
 
     private void Awake() {
-        myPhotonView = GetComponent<PhotonView>();   
         logCalled = false;
+        myPhotonView = GetComponent<PhotonView>(); 
     }
 
     // this object might not be used
@@ -26,7 +26,7 @@ public class BlockController : MonoBehaviourPunCallbacks
 
     public void UpdateBlockStatus(int blockNum, string playerName) {        
         myPhotonView.RPC("PullObjectsForEveryone", RpcTarget.All, playerName);                
-        myPhotonView.RPC("UpdateBlockForEveryone", RpcTarget.All, blockNum, playerName);        
+        myPhotonView.RPC("UpdateBlockForEveryone", RpcTarget.All, blockNum, playerName);  
     }
 
 
@@ -39,7 +39,7 @@ public class BlockController : MonoBehaviourPunCallbacks
             boxes = GameObject.FindWithTag("VisionPlayer").GetComponents<BoxCollider2D>();
             if(block != null && a != null && boxes != null && !logCalled) {
                 Debug.Log("Is In Game!!!!! Nothing to worry about");
-            logCalled = true;
+                logCalled = true;
             }
         } else if(playerName == "blek(Clone)") {
             boxes = GameObject.FindWithTag("StrengthPlayer").GetComponents<BoxCollider2D>();

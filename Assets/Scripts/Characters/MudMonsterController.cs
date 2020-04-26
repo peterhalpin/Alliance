@@ -32,14 +32,12 @@ public class MudMonsterController : MonoBehaviourPun
 
     // private Rigidbody2D rigidbody2D;
 
-[SerializeField]
-  public GameObject secondphase;
+    [SerializeField]
+    public GameObject secondphase;
     private float waitTime = 5.0f;
     private float timer = 0.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         // rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.SetFloat("MoveX", 0);
@@ -54,45 +52,41 @@ public class MudMonsterController : MonoBehaviourPun
         moveRighttemp = false;
         moveUptemp = false;
         moveDowntemp = false;
-        try {
-            // Don't really need this
+        // try {
+        //     // Don't really need this
 
-            // strPlayer = GameObject.FindWithTag("StrengthPlayer");
-            // strPos = strPlayer.transform.position;
-            // magPlayer = GameObject.FindWithTag("VisionPlayer");
-            // magPos = magPlayer.transform.position;
-            // icePlayer = GameObject.FindWithTag("IcePlayer");
-            // icePos = icePlayer.transform.position;
-            // firePlayer = null;
-            // firePos = firePlayer.transform.position;
-        } catch {
-            Debug.Log("Testing mode!");
-        }
+        //     // strPlayer = GameObject.FindWithTag("StrengthPlayer");
+        //     // strPos = strPlayer.transform.position;
+        //     // magPlayer = GameObject.FindWithTag("VisionPlayer");
+        //     // magPos = magPlayer.transform.position;
+        //     // icePlayer = GameObject.FindWithTag("IcePlayer");
+        //     // icePos = icePlayer.transform.position;
+        //     // firePlayer = null;
+        //     // firePos = firePlayer.transform.position;
+        // } catch {
+        //     Debug.Log("Testing mode!");
+        // }
         
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-            if (phase == 1 || phase == 3) {
-                if (timerOn == false){
-                var curr = phase;
+    void Update() {
+        if(PhotonNetwork.IsMasterClient) {
+        if (phase == 1 || phase == 3) {
+            if (timerOn == false) {
+                // var curr = phase;
                 moveLefttemp = moveLeft;
                 moveRighttemp = moveRight;
                 moveUptemp = moveUp;
                 moveDowntemp = moveDown;
                 moveLeft = false;
-                 moveRight = false;
-                 moveUp = false;
-                 moveDown = false;
-                }
-                
-                timerOn = true;
-
-                 timer += Time.deltaTime;
-                 
-                 if (timer > waitTime){
+                moveRight = false;
+                moveUp = false;
+                moveDown = false;
+            }
+            timerOn = true;
+            timer += Time.deltaTime;
+            if (timer > waitTime) {
             // Remove the recorded 2 seconds.
                 timer = timer - waitTime;
                 moveLeft = moveLefttemp;
@@ -104,9 +98,8 @@ public class MudMonsterController : MonoBehaviourPun
                     phase--;
                 }
                 timerOn = false;
-        }
-
             }
+        }
         // if(PhotonNetwork.IsMasterClient) {
             if(moveLeft){
                 if(transform.position.x >= -6.75){
@@ -157,13 +150,13 @@ public class MudMonsterController : MonoBehaviourPun
             }
             //rigidbody2D.MovePosition(position);
             // rigidbody2D.MovePosition(position);
-        // }
+        }
 
     }
 
 
 //Changed to find at runtime
-    void OnCollisionEnter2D(Collision2D col){
+    void OnCollisionEnter2D(Collision2D col) {
         var name = col.gameObject.name;
         if(name == "red(Clone)"){
             GameObject.Find("red(Clone)").transform.position = new Vector3(30, 14, 100);

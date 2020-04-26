@@ -1,0 +1,50 @@
+Team: jointhis
+
+System: dd Joined the chat!
+   Lobby 0:34
+
+
+Team: dfsdf
+
+System: asdf Joined the chat!
+   Lobby 1:16
+
+
+Team: sdf
+
+System: dfsd Joined the chat!
+   Lobby 2:9
+dfsd: dfsdf
+   Lobby 2:30
+
+
+Team: asdfsdf
+
+System: sdf Joined the chat!
+   Lobby 3:50
+
+
+Team: aasd
+
+System: dd Joined the chat!
+   Lobby 5:29
+
+
+Team: asdf
+
+System: aa Joined the chat!
+   Lobby 0:18
+aa: ddd
+   Lobby 1:57
+
+
+Team: kjkl 
+
+System: RandomPlayer13168 Joined the chat!
+   Lobby 0:17
+
+
+Team: asd
+
+System: kl Joined the chat!
+   Lobby 0:41
