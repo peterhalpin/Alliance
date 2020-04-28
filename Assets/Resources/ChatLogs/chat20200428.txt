@@ -161,3 +161,31 @@ Team: dylan
 
 System: test1 Joined the chat!
    4:27:17 PM
+
+
+Team: est
+
+System: test1 Joined the chat!
+   4:36:27 PM
+test1: hello
+   4:36:38 PM
+test1: test
+   4:36:41 PM
+
+
+Team: test
+
+System: gy Joined the chat!
+   4:42:10 PM
+
+
+Team: test
+
+System: kgu Joined the chat!
+   4:44:58 PM
+
+
+Team: test
+
+System: kjgy Joined the chat!
+   4:47:54 PM
