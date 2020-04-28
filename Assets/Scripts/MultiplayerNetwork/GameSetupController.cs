@@ -87,6 +87,8 @@ public class GameSetupController : MonoBehaviourPun
             Instantiate(varPrefab, new Vector3(0, 0, 0), Quaternion.identity);
              Object varPrefab2 = Resources.Load("Prefabs/Characters/blue", typeof(GameObject));
             Instantiate(varPrefab2, new Vector3(3, 0, 0), Quaternion.identity);
+             Object varPrefab3 = Resources.Load("Prefabs/Characters/blek", typeof(GameObject));
+             Instantiate(varPrefab3, new Vector3(6, 0, 0), Quaternion.identity);
             //  Object varPrefab3 = Resources.Load("Prefabs/Characters/blek", typeof(GameObject));
             // Instantiate(varPrefab3, new Vector3(0, 3, 0), Quaternion.identity);
             //  Object varPrefab4 = Resources.Load("Prefabs/Characters/green", typeof(GameObject));

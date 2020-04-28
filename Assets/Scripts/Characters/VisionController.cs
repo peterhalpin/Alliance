@@ -137,7 +137,7 @@ public class VisionController : MonoBehaviourPun
                     if(a.forceMagnitude > 0) {
                         blockcontroller.UpdateBlockStatus(2, gameObject.name);
                     } else {
-                        blockcontroller.UpdateBlockStatus(, gameObject.name);
+                        blockcontroller.UpdateBlockStatus(3, gameObject.name);
                     }
                 }
                     
