@@ -121,7 +121,7 @@ public class VisionController : MonoBehaviourPun
             }
         }
 
-        if(Input.GetKey("tab") && Input.GetKeyUp("c")){
+        if(Input.GetKey("tab") && Input.GetKeyUp("c")) {
             myPhotonView.RPC("SwitchPushPull", RpcTarget.All);
         }
         

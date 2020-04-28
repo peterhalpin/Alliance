@@ -59,7 +59,7 @@ public class BlockController : MonoBehaviourPunCallbacks
         if(playerName == "green(Clone)") {
             a.enabled = true;
             boxes[blockNumber].enabled = true;
-            block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+            // block.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         } else if(playerName == "blek(Clone)" || playerName == "red(Clone)" || playerName == "blue(Clone)") {
             boxes[blockNumber].enabled = true;
         } else {
