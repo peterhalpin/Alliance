@@ -23,7 +23,7 @@ public class SceneDetector : MonoBehaviour
 
         if (sceneName == "Lobby")
         {
-            //print("sceneDetector lobby");
+            print("sceneDetector lobby");
             chatHandler.PrintMessage("Welcome to the Lobby!");
         }
         else if (sceneName == "TutorialLevel")

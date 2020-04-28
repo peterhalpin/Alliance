@@ -69,7 +69,7 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         }
 
         //Enter to submit chat
-        if (msgInput.text != "" && Input.GetKey(KeyCode.Return))
+        if (msgInput.text != "" && Input.GetKeyUp(KeyCode.Return))
         {
             SendMessage();
         }
