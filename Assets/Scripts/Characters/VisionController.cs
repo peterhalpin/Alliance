@@ -14,6 +14,7 @@ public class VisionController : MonoBehaviourPun
     private GameObject block;
     private BlockController blockcontroller;
     private KeyboardShortcuts kbshortcuts;
+    private PhotonView myPhotonView;
 
     private BoxCollider2D[] boxes;
 
@@ -22,6 +23,7 @@ public class VisionController : MonoBehaviourPun
         speed = 2.5f;
         a = GetComponent<AreaEffector2D>();      
         block = GameObject.FindGameObjectWithTag("block");
+        myPhotonView = GetComponent<PhotonView>(); 
         animator = GetComponent<Animator>();
         blockcontroller = GameObject.FindObjectOfType<BlockController>();        
         boxes = GetComponents<BoxCollider2D>();
@@ -55,18 +57,10 @@ public class VisionController : MonoBehaviourPun
             for(int i=0; i < boxes.Length ; i++){
                 boxes[i].usedByEffector = false;
             }
-            // boxes[0].usedByEffector = false;
-            // boxes[1].usedByEffector = false;
-            // boxes[2].usedByEffector = false;
-            // boxes[3].usedByEffector = false;
         } else {
             for(int i=0; i < boxes.Length ; i++){
                 boxes[i].usedByEffector = true;
             }
-            // boxes[0].usedByEffector = true;
-            // boxes[1].usedByEffector = true;
-            // boxes[2].usedByEffector = true;
-            // boxes[3].usedByEffector = true;
         }
 
         // this part is for changing the animations when the player moves
@@ -126,10 +120,11 @@ public class VisionController : MonoBehaviourPun
                 direction = 3;
             }
         }
-        if(Input.GetKeyUp("c") && Input.GetKey("tab")){
-            a.forceMagnitude = a.forceMagnitude *-1;
-            
+
+        if(Input.GetKey("tab") && Input.GetKeyUp("c")){
+            myPhotonView.RPC("SwitchPushPull", RpcTarget.All);
         }
+        
         if(Input.GetKey("space")) {
             
             a.enabled = true;
@@ -138,8 +133,14 @@ public class VisionController : MonoBehaviourPun
                 boxes[2].enabled = true;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", .5f);
-                if(PhotonNetwork.IsConnected)
-                    blockcontroller.UpdateBlockStatus(2, gameObject.name);
+                if(PhotonNetwork.IsConnected) {
+                    if(a.forceMagnitude > 0) {
+                        blockcontroller.UpdateBlockStatus(2, gameObject.name);
+                    } else {
+                        blockcontroller.UpdateBlockStatus(, gameObject.name);
+                    }
+                }
+                    
             // this called so that it goes too the block controller which will then update this on everyone's screen, other wise it won't work
             }
 
@@ -148,8 +149,13 @@ public class VisionController : MonoBehaviourPun
                 boxes[1].enabled = true;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", .5f);
-                if(PhotonNetwork.IsConnected)
-                    blockcontroller.UpdateBlockStatus(1, gameObject.name);
+                if(PhotonNetwork.IsConnected) {
+                    if(a.forceMagnitude > 0) {
+                        blockcontroller.UpdateBlockStatus(1, gameObject.name);
+                    } else {
+                        blockcontroller.UpdateBlockStatus(0, gameObject.name);
+                    }
+                }
             }
 
             //down
@@ -157,8 +163,13 @@ public class VisionController : MonoBehaviourPun
                 boxes[3].enabled = true;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", -.5f);
-                if(PhotonNetwork.IsConnected)
-                    blockcontroller.UpdateBlockStatus(3, gameObject.name);
+                if(PhotonNetwork.IsConnected) {
+                                        if(a.forceMagnitude > 0) {
+                        blockcontroller.UpdateBlockStatus(3, gameObject.name);
+                    } else {
+                        blockcontroller.UpdateBlockStatus(2, gameObject.name);
+                    }
+                }
             }
 
             //left
@@ -166,20 +177,25 @@ public class VisionController : MonoBehaviourPun
                 boxes[0].enabled = true;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", -.5f);
-                if(PhotonNetwork.IsConnected)
-                    blockcontroller.UpdateBlockStatus(0, gameObject.name);
+                if(PhotonNetwork.IsConnected) {
+                    if(a.forceMagnitude > 0) {
+                        blockcontroller.UpdateBlockStatus(0, gameObject.name);
+                    } else {
+                        blockcontroller.UpdateBlockStatus(1, gameObject.name);
+                    }
+                }
             }
         }
     }
   
 
     // this is so the player can attack the mud monster on level 4
-    void OnTriggerEnter2D(Collider2D player){
+    void OnTriggerEnter2D(Collider2D player) {
         //To do: Add a null check!
         //Required for Level 4
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
         //    GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
-            photonView.RPC("MudMonsterAttack", RpcTarget.All);
+            myPhotonView.RPC("MudMonsterAttack", RpcTarget.All);
 
            
         }
@@ -192,7 +208,11 @@ public class VisionController : MonoBehaviourPun
 
     }
 
-
+    [PunRPC]
+    private void SwitchPushPull() {
+        // multiplied by -1 too switch direction of block
+        a.forceMagnitude = a.forceMagnitude *-1;
+    }
 
 }
     
