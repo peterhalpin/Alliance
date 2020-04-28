@@ -69,7 +69,7 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         }
 
         //Enter to submit chat
-        if (msgInput.text != "" && Input.GetKey(KeyCode.Return))
+        if (msgInput.text != "" && Input.GetKeyUp(KeyCode.Return))
         {
             SendMessage();
         }
@@ -118,6 +118,8 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         //Create new Log file (loghander script handles duplicate files)
         logHandler.CreateText(chatChannelName);
         logHandler.LogMessage("System", playerName.text + " Joined the chat!");
+
+        msgBox.text += "Welcome to Alliance! \n Controls:" + "\n" + "WASD = Move" + "\n" + "Space = Special Ability" + "\n" + "TAB + M = Full Map" + "\n" + "TAB + C = toggle magnet push/pull" + "\n\n";
 
     }
 

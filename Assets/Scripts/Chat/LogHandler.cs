@@ -9,7 +9,6 @@ public class LogHandler : MonoBehaviour
 {
 
     private string path;
-    public SceneDetector sceneDetector;
 
     public void Awake()
     {
@@ -36,8 +35,8 @@ public class LogHandler : MonoBehaviour
 
     public void LogMessage(string user, string message)
     {
-        //File.AppendAllText(path, user + ": " + message + "\n" + "   " + DateTime.Now.ToString("h:mm:ss tt") + "\n" );
-        File.AppendAllText(path, user + ": " + message + "\n" + "   " + sceneDetector.GetSceneName() +  " " + sceneDetector.GetTime() + "\n");
+        File.AppendAllText(path, user + ": " + message + "\n" + "   " + DateTime.Now.ToString("h:mm:ss tt") + "\n" );
+        
     }
 
 }
