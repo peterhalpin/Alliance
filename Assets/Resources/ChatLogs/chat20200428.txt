@@ -77,3 +77,27 @@ dylan: 14
 dylan: 15
    2:50:20 PM
 
+
+
+Team: test
+
+System: dylan Joined the chat!
+   3:23:12 PM
+
+
+Team: est
+
+System: dylan Joined the chat!
+   3:27:31 PM
+
+
+Team: test
+
+System: dylan Joined the chat!
+   3:28:03 PM
+
+
+Team: eset2
+
+System: sdfasd Joined the chat!
+   3:28:36 PM
