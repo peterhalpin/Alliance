@@ -1617,6 +1617,21 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1488558707059285893, guid: 3620bfcaabe224d80bbd9c81344c996e,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488558707059285893, guid: 3620bfcaabe224d80bbd9c81344c996e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488558707059285893, guid: 3620bfcaabe224d80bbd9c81344c996e,
+        type: 3}
+      propertyPath: m_FontData.m_RichText
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2822139454204293630, guid: 3620bfcaabe224d80bbd9c81344c996e,
         type: 3}
       propertyPath: m_Name
