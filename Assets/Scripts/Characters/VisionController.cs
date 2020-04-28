@@ -126,7 +126,7 @@ public class VisionController : MonoBehaviourPun
                 direction = 3;
             }
         }
-        if(Input.GetKeyUp("c")){
+        if(Input.GetKeyUp("c") && Input.GetKey("tab")){
             a.forceMagnitude = a.forceMagnitude *-1;
             
         }

@@ -1,0 +1,12 @@
+Team: hello
+
+System: dom Joined the chat!
+   Lobby 0:15
+dom: whats up
+   Lobby 0:34
+dom: lets go boys
+   Lobby 0:53
+dom: lets win!
+   Lobby 1:1
+dom: jvjvj
+   Lobby 1:28
