@@ -32,8 +32,10 @@ public class Two_Person_Switch2 : MonoBehaviour
 
         if(colliders.Count > 1 && !isDestroyed){
             isDestroyed = true;
+            //make doors "open"
+            //switches tiles to make it look like the wall "dissappeared" 
             tilemapses["C_Switch_Wall"].SwapTile(wallTile,dirtTile);
-            //make doors open
+            
 
         }
 
