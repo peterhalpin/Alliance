@@ -155,7 +155,6 @@ public class FireController : MonoBehaviourPun
     [PunRPC]
     private void MudMonsterAttack() {
         print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
-
         Destroy(GameObject.Find("Mud_Monster"));
         var ty = tilemapses["C_RSwitch_Wall"];
         ty.SwapTile(wallTile, dirtTile);

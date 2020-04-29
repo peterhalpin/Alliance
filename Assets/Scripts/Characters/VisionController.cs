@@ -210,6 +210,9 @@ public class VisionController : MonoBehaviourPun
     private void MudMonsterAttack() {
         GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
         print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+        for(int i=0; i < boxes.Length ; i++){
+                boxes[i].usedByEffector = true;
+            }
 
     }
 
