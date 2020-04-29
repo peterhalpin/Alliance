@@ -118,11 +118,13 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         myChatClient.SetOnlineStatus(ChatUserStatus.Online);
         myChatClient.PublishMessage(chatChannelName, "Joined the chat!");
 
+        msgBox.text += "Welcome to Alliance! \nControls:" + "\n" + "Arrow Keys = Move" + "\n" + "Space = Special ability" + "\n" + "TAB + M = Full map" + "\n" + "TAB + C = Toggle magnet push/pull" + "\n\n";
+
         //Create new Log file (loghander script handles duplicate files) --- reference LogHandler script for method definitions
         logHandler.CreateText(chatChannelName);
         logHandler.LogMessage("System", playerName.text + " Joined the chat!");
 
-        msgBox.text += "Welcome to Alliance! \nControls:" + "\n" + "Arrow Keys = Move" + "\n" + "Space = Special ability" + "\n" + "TAB + M = Full map" + "\n" + "TAB + C = Toggle magnet push/pull" + "\n\n";
+        
 
     }
 
