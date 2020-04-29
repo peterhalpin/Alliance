@@ -21,10 +21,12 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     public Text roomCountDisplay;
     [SerializeField]
     public Text timerToStartDisplay;
+    [SerializeField]
+    public int roomSize;
+
 
     private PhotonView myPhotonView;
     private int playerCount;
-    private int roomSize;
 
 
     
@@ -111,8 +113,10 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         // displays player count
         // triggers countdown timer
         playerCount = PhotonNetwork.PlayerList.Length;
+
         roomSize = PhotonNetwork.CurrentRoom.MaxPlayers;
         //roomSize = 2; // this is just for testing
+        
         roomCountDisplay.text = playerCount + ":" + roomSize;
         if(playerCount == roomSize) {
             readyToStart = true;

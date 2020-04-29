@@ -105,6 +105,7 @@ System: sdfasd Joined the chat!
 
 Team: test1
 
+
 System: dylan Joined the chat!
    3:33:10 PM
 
@@ -116,6 +117,7 @@ System: dylan Joined the chat!
 
 
 Team: doms room
+
 
 System: dylan Joined the chat!
    3:39:14 PM

@@ -121,8 +121,13 @@ public class VisionController : MonoBehaviourPun
             }
         }
 
-        if(Input.GetKey("tab") && Input.GetKeyUp("c")){
-            myPhotonView.RPC("SwitchPushPull", RpcTarget.All);
+        if(Input.GetKey("tab") && Input.GetKeyDown("c") || Input.GetKey("c") && Input.GetKeyDown("tab")) {
+            Debug.Log("switched magnet player's push and pull");
+            if(PhotonNetwork.IsConnected) {
+                myPhotonView.RPC("SwitchPushPull", RpcTarget.All);
+            } else {
+                a.forceMagnitude = a.forceMagnitude *-1;
+            }
         }
         
         if(Input.GetKey("space")) {
