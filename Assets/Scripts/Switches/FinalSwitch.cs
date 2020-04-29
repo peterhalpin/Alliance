@@ -1,5 +1,6 @@
 ﻿using Photon.Pun;
 using Photon.Realtime;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +27,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         if(PhotonNetwork.IsConnected && gameData != null) {
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.ActivateSwitchTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
-            gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
+            gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch at time " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         }
         if(!playersOnFinalSwitch.Contains(player.name))
@@ -38,9 +39,10 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
             if(PhotonNetwork.IsConnected && gameData != null) {
                 //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
                 gameData.FinishLevelTime(currentScene.name + " FinalSwitch pressed by " + player.name, timerController.GetTime());
-                gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch", timerController.GetTime());
+                gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the FINAL switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
                  //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             }
+            // you want to change the index based on how you build the game and which scenes you have in which order
             if(currentScene.name == "TutorialLevel") { //go to level 2
                 UpdateLevel(3);
             } else if (currentScene.name == "Level2") { // go to level 3
@@ -59,7 +61,7 @@ public class FinalSwitch : MonoBehaviourPunCallbacks
         if(PhotonNetwork.IsConnected && gameData != null) {
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.DeactivateSwitchTime(currentScene.name + " FinalSwitch left by " + player.name, timerController.GetTime());
-            gameData.GameInteraction(currentScene.name + " Player " + player.name + " got OFF the FINAL switch", timerController.GetTime());
+            gameData.GameInteraction(currentScene.name + " Player " + player.name + " got OFF the FINAL switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
             //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         }
         playersOnFinalSwitch.Remove(player.name);

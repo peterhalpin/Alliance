@@ -208,7 +208,13 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     }
 
-
+    //methods for detecting scene changes
+    
+    // this might be redundant
+    // method below this method calls this one
+    // you might be able to just call myChatClient.Disconnect() from DisconnectFromChat
+    // didn't do that ^ because wasn't sure if OnApplicationQuit was part of the IChatClientlistener interface 
+    // so just kept it but you might want to check so you can remove the redundant method
     void OnApplicationQuit()
     {
         if (myChatClient != null)

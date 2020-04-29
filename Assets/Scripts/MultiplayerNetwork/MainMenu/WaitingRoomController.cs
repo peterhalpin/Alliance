@@ -48,8 +48,9 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
     // these two objects are prefabs that are in the scene
     // its how you transfer variables/data from one object to the next
     private InfoObject infoObject;
-    private ChatController chatController;
+    private LogHandler logHandler;
     private ChatHandler chatHandler;
+    private ChatController chatController;
 
     // Start is called before the first frame update
     private void Awake() {
@@ -57,8 +58,9 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         map = new Dictionary<string, string>();
         charTypes = new Queue<string>();
         infoObject = GameObject.FindObjectOfType<InfoObject>();
-        chatController = GameObject.FindObjectOfType<ChatController>();
+        logHandler = GameObject.FindObjectOfType<LogHandler>();
         chatHandler = GameObject.FindObjectOfType<ChatHandler>();
+        chatController = GameObject.FindObjectOfType<ChatController>();
     }
 
     private void Start()
@@ -183,6 +185,7 @@ public class WaitingRoomController : MonoBehaviourPunCallbacks
         Destroy(infoObject.gameObject);
         Destroy(chatController.gameObject);
         Destroy(chatHandler.gameObject);        
+        Destroy(logHandler.gameObject);
         PhotonNetwork.LeaveRoom(true);
         SceneManager.LoadScene(menuSceneIndex);
     }

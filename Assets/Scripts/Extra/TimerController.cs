@@ -52,10 +52,12 @@ public class TimerController : MonoBehaviour
     }    
 
     public string GetMinutes() {
+        print(minutes);
         return minutes;
     }
 
     public string GetSeconds() {
+        print(seconds);
         return seconds;
     }
 

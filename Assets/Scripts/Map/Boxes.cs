@@ -5,12 +5,8 @@ using UnityEngine;
 
 public class Boxes : MonoBehaviourPun
 {
-    private string userID;
-    private Dictionary<string, string> players;
     private List<Collider2D> colliders = new List<Collider2D>();
     
-    private PhotonView myPhotonView;
-    private InfoObject infoObject;
     private BlockController blockcontroller;
     // private bool called;
     
@@ -42,6 +38,7 @@ public class Boxes : MonoBehaviourPun
         green = GameObject.FindWithTag("VisionPlayer");
         greenBoxes = green.GetComponents<BoxCollider2D>();
         a = green.GetComponent<AreaEffector2D>();
+        
         cap = green.GetComponent<CapsuleCollider2D>();
         rb = green.GetComponent<Rigidbody2D>();
         

@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class InfoObject : MonoBehaviourPun
 {
-    public int level;
+
+    public string fileName;
+
     private Dictionary<string, string> players;
 
     private void Awake() {
+        fileName = "";
         players = new Dictionary<string, string>();
     }
 

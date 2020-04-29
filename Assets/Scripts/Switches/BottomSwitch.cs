@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +28,7 @@ public class BottomSwitch : MonoBehaviour
     {       
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         gameData.ActivateSwitchTime(currentScene.name + " BottomSwitch pressed by " + player.name, timerController.GetTime());
-        gameData.GameInteraction(currentScene.name + " Player" + player.name + "stepped ON the BOTTOM switch", timerController.GetTime());
+        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the BOTTOM switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         if(!colliders.Contains(player)){
             colliders.Add(player);
@@ -42,7 +43,7 @@ public class BottomSwitch : MonoBehaviour
             Destroy(bottomDoor[1]);
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.DoorOpen(currentScene.name + " BottomDoor open", timerController.GetTime());
-            gameData.GameInteraction(currentScene.name + " BOTTOM door open: both top players stepped on the bottom switch", timerController.GetTime());
+            gameData.GameInteraction(currentScene.name + " BOTTOM door open: both top players stepped on the bottom switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         
         }
@@ -53,7 +54,7 @@ public class BottomSwitch : MonoBehaviour
         colliders.Remove(player);
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         gameData.DeactivateSwitchTime(currentScene.name + " BottomSwitch left by " + player.name, timerController.GetTime());
-        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped OFF the BOTTOM switch", timerController.GetTime());
+        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped OFF the BOTTOM switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
     }
 }

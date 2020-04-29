@@ -1,11 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.IO;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 
-public class EndScene : MonoBehaviour
+
+public class EndScene : MonoBehaviourPun
 {
 
     [SerializeField]
@@ -13,62 +16,57 @@ public class EndScene : MonoBehaviour
     private string minutes;
     private string seconds;
 
-    private TimerController timerController;
+    private Email mail;
     private InfoObject infoObject;
     private ChatHandler chatHandler; 
     private GameData gameData;
-
-    private bool testing;
+    private LogHandler logHandler;
+    private TimerController timerController;
 
 
     private void Awake() {
-        try {
-            timerController = GameObject.FindObjectOfType<TimerController>();
-            minutes = timerController.GetMinutes();
-            seconds = timerController.GetSeconds();
+        if(PhotonNetwork.IsConnected) {
+            mail = GameObject.FindObjectOfType<Email>();
+            gameData = GameObject.FindObjectOfType<GameData>();
+            logHandler = GameObject.FindObjectOfType<LogHandler>();
             infoObject = GameObject.FindObjectOfType<InfoObject>();   
             chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
-            gameData = GameData.FindObjectOfType<GameData>();
-            testing = false;
-            if(timerController == null) {
-                testing = true;
-                print("You must be testing!!!");
-            } else {
-                print("You must NOT be testing!!!");
-            } 
-        }
-        catch {
-            Debug.Log("Cannot find timer, must be because you are testing and are not loading the game from tutorial.");
-            testing = true;
-            print("You must be testing!!!");
+            timerController = GameObject.FindObjectOfType<TimerController>();
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        if(minutes != null && seconds != null)
+    private void Start() {
+        // show time taken to complete game
+        if(PhotonNetwork.IsConnected) {
+            minutes = timerController.GetMinutes();
+            seconds = timerController.GetSeconds();
             _time.text = "Finished in: " + minutes + ":" + seconds;
+            mail.SendEmail(infoObject.fileName); // send email
+            logHandler.DeleteFile(infoObject.fileName); // delete the data file
+        }
     }
 
+    // don't really need this if we're sending email 
     public void SendData() {
         // this is where we write the code to send all of the game data to the database
-        Debug.LogWarning(gameData.GetFullLog());;
+        // if new team makes a database and uses that then they would want to probably use this
+        // not enough time so we just decided to send emails with some data
+        Debug.Log(gameData.GetFullLog());;
     }
 
     public void OnClick() {
-        if(!testing) {
-            SendData();
-            Destroy(infoObject.gameObject);
-            Destroy(timerController.gameObject);
-            Destroy(chatHandler.gameObject);
+        if(PhotonNetwork.IsConnected) {
             Destroy(gameData.gameObject);
+            Destroy(logHandler.gameObject);
+            Destroy(infoObject.gameObject);
+            Destroy(chatHandler.gameObject);
+            Destroy(timerController.gameObject);
             SceneManager.LoadScene(0);
             PhotonNetwork.LeaveRoom(true);
         } else {
             SceneManager.LoadScene(0);            
-        }
 
+        }
         Debug.Log("Going back to the main menu!");
     }
 

@@ -84,9 +84,24 @@ public class GameData : MonoBehaviour
         gameInteraction.Add(logCount + ": " + interaction, time);
     }
 
-    public Dictionary<string, float> GetFullLog() {
-        return gameInteraction;
-    } 
+    // public Dictionary<string, float> GetFullLog() {
+    //     return gameInteraction;
+    // } 
+
+    public string GetFullLog() {
+        // the logs of when a player did something and the time is stored in a dictionary
+        // here we need to go through it all and store it in a string so that we can send it to an email
+
+        string fullLog = "";
+
+        foreach(KeyValuePair<string, float> entry in gameInteraction) {
+            fullLog += entry.Key + " at game time " + entry.Value + "\n\n";
+
+        }
+
+        return fullLog;
+
+    }
 
 
     
