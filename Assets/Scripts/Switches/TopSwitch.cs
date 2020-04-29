@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,7 +28,7 @@ public class TopSwitch : MonoBehaviour
     {
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         gameData.ActivateSwitchTime(currentScene.name + " TopSwitch pressed by " + player.name, timerController.GetTime());
-        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the TOP switch", timerController.GetTime());
+        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped ON the TOP switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         if(!colliders.Contains(player) && player.name != "Boulder" && player.name != "Block"){
             colliders.Add(player);
@@ -41,7 +42,7 @@ public class TopSwitch : MonoBehaviour
             Destroy(topDoor[1]);
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
             gameData.DoorOpen(currentScene.name + " TopDoor open", timerController.GetTime());
-            gameData.GameInteraction(currentScene.name + " TOP door open: both top players stepped on the top switch", timerController.GetTime());
+            gameData.GameInteraction(currentScene.name + " TOP door open: both top players stepped on the top switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
 
         } 
@@ -51,7 +52,7 @@ public class TopSwitch : MonoBehaviour
         colliders.Remove(player);
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
         gameData.DeactivateSwitchTime(currentScene.name + " TopSwitch left by " + player.name, timerController.GetTime());
-        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped OFF the TOP switch", timerController.GetTime());
+        gameData.GameInteraction(currentScene.name + " Player " + player.name + " stepped OFF the TOP switch " + DateTime.Now.ToString("h:mm:ss tt") + ", " , timerController.GetTime());
         //DATA COLLECTION CODE-------------------------------------------------------------------------------------------------------------------------------------
 
         

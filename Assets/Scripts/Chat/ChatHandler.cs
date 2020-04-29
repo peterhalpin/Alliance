@@ -119,7 +119,7 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         logHandler.CreateText(chatChannelName);
         logHandler.LogMessage("System", playerName.text + " Joined the chat!");
 
-        msgBox.text += "Welcome to Alliance! \n Controls:" + "\n" + "WASD = Move" + "\n" + "Space = Special Ability" + "\n" + "TAB + M = Full Map" + "\n" + "TAB + C = toggle magnet push/pull" + "\n\n";
+        msgBox.text += "Welcome to Alliance! \n Controls:" + "\n" + "Arrow Keys = Move" + "\n" + "Space = Special Ability" + "\n" + "TAB + M = Full Map" + "\n" + "TAB + C = toggle magnet push/pull" + "\n\n";
 
     }
 
@@ -192,7 +192,8 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     //methods for detecting scene changes
     
-
+    // this might be redundant
+    // method below calls this just in case 
     void OnApplicationQuit()
     {
         if (myChatClient != null)

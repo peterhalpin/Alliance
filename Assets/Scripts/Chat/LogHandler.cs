@@ -9,9 +9,13 @@ public class LogHandler : MonoBehaviour
 {
 
     private string path;
+    private InfoObject infoObject;
+    private ChatController chatController;
 
     public void Awake()
     {
+        infoObject = GameObject.FindObjectOfType<InfoObject>();   
+        chatController = GameObject.FindObjectOfType<ChatController>();
         DontDestroyOnLoad(transform.gameObject);
     }
     
@@ -20,7 +24,9 @@ public class LogHandler : MonoBehaviour
     {
 
         //Path of the file Assets/Resources/ChatLogs/chat{date}.txt
-        path = Application.dataPath + "/Resources/ChatLogs/" + "chat" + DateTime.Now.ToString("yyyyMMdd") + ".txt";
+        string fileName = chatController.GetTeamName() + "_Chat&GameData_" + DateTime.Now.ToString("yyyy-MM-dd") + "_" +DateTime.Now.ToString("h;mm;ss_tt") + ".txt";
+        infoObject.fileName = fileName;
+        path = Application.dataPath + "/Resources/ChatLogs/" + fileName;
 
         if (!File.Exists(path))     //create new file if it doesnt e
         {
@@ -37,6 +43,10 @@ public class LogHandler : MonoBehaviour
     {
         File.AppendAllText(path, user + ": " + message + "\n" + "   " + DateTime.Now.ToString("h:mm:ss tt") + "\n" );
         
+    }
+
+    public void DeleteFile(string fileName) {
+        File.Delete(Application.dataPath + "/Resources/ChatLogs/" + fileName);
     }
 
 }

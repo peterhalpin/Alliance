@@ -8,12 +8,14 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
 { 
     private InfoObject infoObject;
     private ChatHandler chatHandler; 
+    private LogHandler logHandler;
     private TimerController timerController;
     private GameData gameData;
     public bool isInPlayerMap; // for checking if the player is using the full map or the player map
 
     private void Awake() {
         infoObject = GameObject.FindObjectOfType<InfoObject>();   
+        logHandler = GameObject.FindObjectOfType<LogHandler>();
         chatHandler = GameObject.FindObjectOfType<ChatHandler>();   
         timerController = GameObject.FindObjectOfType<TimerController>();
         gameData = GameObject.FindObjectOfType<GameData>();
@@ -40,6 +42,7 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
                 Destroy(chatHandler.gameObject);
                 Destroy(timerController.gameObject);
                 Destroy(gameData.gameObject);
+                Destroy(logHandler.gameObject);
                 SceneManager.LoadScene(0);
                 PhotonNetwork.LeaveRoom(true);
                 Debug.Log("Leaving the photon room");
