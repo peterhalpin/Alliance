@@ -81,6 +81,7 @@ public class MudMonsterController : MonoBehaviourPun
             }
         }
 
+        //Changes appearance of sprite at halfway point
         if(phase >= 3) {
             gameObject.GetComponent<SpriteRenderer>().color =  new Color(0.3f, 0.4f, 0.6f, 1.0f);
         }
