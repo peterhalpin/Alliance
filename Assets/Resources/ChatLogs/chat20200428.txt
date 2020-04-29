@@ -243,3 +243,9 @@ dylan: test
    11:31:39 PM
 dylan: fsefsef
    11:31:41 PM
+
+
+Team: sfe
+
+System: dylan Joined the chat!
+   11:44:55 PM

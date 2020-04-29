@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using Photon.Chat;
+using System.Security.Cryptography.X509Certificates;
 
 #if PHOTON_UNITY_NETWORKING
 using Photon.Pun;
@@ -16,13 +17,15 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 {
     private string chatChannelName;
 
-
     public ChatClient myChatClient;         //main "connection point" to chat API
     public ChatChannel channel;
     public InputField playerName;
     public Text connectionState;
     public InputField msgInput;
     public Text msgBox;
+
+    public Button hideButton;
+    public Button showButton;
 
     public GameObject introPanel;
     public GameObject chatPanel;
@@ -190,8 +193,21 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     }
 
-    //methods for detecting scene changes
-    
+    //methods to show/hide the chat. Invoked by the Show/Hide Chat buttons
+    public void HideChat()
+    {
+        chatPanel.gameObject.SetActive(false);
+        hideButton.gameObject.SetActive(false);
+        showButton.gameObject.SetActive(true);
+    }
+    public void ShowChat()
+    {
+        showButton.gameObject.SetActive(false);
+        chatPanel.gameObject.SetActive(true);
+        hideButton.gameObject.SetActive(true);
+
+    }
+
 
     void OnApplicationQuit()
     {
