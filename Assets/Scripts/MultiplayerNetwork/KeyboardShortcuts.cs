@@ -33,8 +33,8 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
     private void Update() {
         // if the player presses the tab and Q key, then we will be brought back to the main menu scene
         // only gets called if player is playing online, not if testing via scene
-        if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
-            if (Input.GetKey("tab") && Input.GetKeyUp("q")){
+        if(Input.GetKey("tab") && Input.GetKeyDown("q") || Input.GetKey("q") && Input.GetKeyDown("tab")) {
+            if (PhotonNetwork.IsConnected && PhotonNetwork.InRoom) {
                 chatHandler.DisconnectFromChat();
                 Destroy(infoObject.gameObject);
                 Destroy(chatHandler.gameObject);
@@ -48,7 +48,7 @@ public class KeyboardShortcuts : MonoBehaviourPunCallbacks
 
         // this is for making the player zoom in and out of the map, so that they can view their map or the full screen
         // if it's in full screen though then they can't move around, that is handled in each character's script though
-        if(Input.GetKey("tab") && Input.GetKeyUp("m")) {
+        if(Input.GetKey("tab") && Input.GetKeyDown("m") || Input.GetKey("m") && Input.GetKeyDown("tab")) {
             if(isInPlayerMap) {
                 // if not online then photonView.IsMine will fail but the second will work, the second is meant for testing purposes
                 if(photonView.IsMine || !PhotonNetwork.IsConnected)
