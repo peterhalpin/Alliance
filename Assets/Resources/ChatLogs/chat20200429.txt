@@ -2,3 +2,29 @@ Team: test
 
 System: dylan Joined the chat!
    12:19:49 AM
+
+
+Team: test
+
+System: dylan Joined the chat!
+   2:05:54 AM
+dylan: 1
+   2:05:57 AM
+dylan: 3
+   2:05:58 AM
+dylan: 5
+   2:05:58 AM
+dylan: 7
+   2:06:00 AM
+dylan: 8
+   2:06:05 AM
+dylan: 9
+   2:06:09 AM
+dylan: 10
+   2:06:12 AM
+dylan: 11
+   2:06:15 AM
+dylan: 12
+   2:06:17 AM
+dylan: 13
+   2:06:19 AM
