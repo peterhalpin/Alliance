@@ -36,6 +36,8 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
     private ChatController chatController;  //Game object with script to carry over Team name
     public LogHandler logHandler;           //Game object with script to handle logging each chat message
 
+    private String tempMsg;
+
 
     // Awake is the first thing called. 
 
@@ -131,14 +133,11 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
 
     public void SendMessage()       //uploads message and logs it to text file
     {
-        myChatClient.PublishMessage(chatChannelName, msgInput.text);
-        logHandler.LogMessage(playerName.text, msgInput.text);
+        tempMsg = msgInput.text;
         msgInput.text = "";
+        myChatClient.PublishMessage(chatChannelName, tempMsg);
+        logHandler.LogMessage(playerName.text, tempMsg);
 
-        while (msgInput.text != "")
-        {
-            msgInput.text = "";
-        }
     }
 
     public void PrintMessage(string message)            //Might not be needed now. You can use this to send messages (from the game) to the chat from other scripts
