@@ -51,8 +51,10 @@ public class MudMonsterController : MonoBehaviourPun
     }
 
     void Update() {
-        if(PhotonNetwork.IsMasterClient) {
+        // if(PhotonNetwork.IsMasterClient) {
         if (phase == 1 || phase == 3) {
+            //saves current movement in temp variables
+            //so that when it starts moving it can return to its current path
             if (timerOn == false) {
                 moveLefttemp = moveLeft;
                 moveRighttemp = moveRight;
@@ -65,8 +67,8 @@ public class MudMonsterController : MonoBehaviourPun
             }
             timerOn = true;
             timer += Time.deltaTime;
+            //When the timer is up this section activates
             if (timer > waitTime) {
-            // Remove the recorded 2 seconds.
                 timer = timer - waitTime;
                 moveLeft = moveLefttemp;
                 moveRight = moveRighttemp;
@@ -78,6 +80,11 @@ public class MudMonsterController : MonoBehaviourPun
                 timerOn = false;
             }
         }
+
+        if(phase >= 3) {
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color(0.3f, 0.4f, 0.6f, 1.0f);
+        }
+
         // if(PhotonNetwork.IsMasterClient) {
             if(moveLeft){
                 if(transform.position.x >= -6.75){
@@ -128,7 +135,7 @@ public class MudMonsterController : MonoBehaviourPun
             }
             //rigidbody2D.MovePosition(position);
             // rigidbody2D.MovePosition(position);
-        }
+        // }
 
     }
 
