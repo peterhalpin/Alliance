@@ -18,19 +18,15 @@ public class MudMonsterController : MonoBehaviourPun
     public bool moveRighttemp;
     public bool moveUptemp;
     public bool moveDowntemp;
-    // public GameObject magPlayer;
-    // public GameObject firePlayer;
-    // public GameObject icePlayer;
-    // public GameObject strPlayer;
-    // public Vector3 magPos;
-    // public Vector3 icePos;
-    // public Vector3 firePos;
-    // public Vector3 strPos;
 
-    //indicates what phase 
+    //indicates what phase  the monster is on 
     public int phase;
+    //if phase = 0 -> ice must interact
+    //if phase = 1 -> strength must interact
+    //if phase = 2 -> magnet must interact
+    //if phase = 3 -> fire must interact
 
-    // private Rigidbody2D rigidbody2D;
+    //phase variable is modified by the fire/ice/magnet/strength scripts
 
     [SerializeField]
     public GameObject secondphase;
@@ -38,7 +34,6 @@ public class MudMonsterController : MonoBehaviourPun
     private float timer = 0.0f;
 
     void Start() {
-        // rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.SetFloat("MoveX", 0);
         animator.SetFloat("MoveY", 0);
@@ -52,21 +47,6 @@ public class MudMonsterController : MonoBehaviourPun
         moveRighttemp = false;
         moveUptemp = false;
         moveDowntemp = false;
-        // try {
-        //     // Don't really need this
-
-        //     // strPlayer = GameObject.FindWithTag("StrengthPlayer");
-        //     // strPos = strPlayer.transform.position;
-        //     // magPlayer = GameObject.FindWithTag("VisionPlayer");
-        //     // magPos = magPlayer.transform.position;
-        //     // icePlayer = GameObject.FindWithTag("IcePlayer");
-        //     // icePos = icePlayer.transform.position;
-        //     // firePlayer = null;
-        //     // firePos = firePlayer.transform.position;
-        // } catch {
-        //     Debug.Log("Testing mode!");
-        // }
-        
 
     }
 
@@ -74,7 +54,6 @@ public class MudMonsterController : MonoBehaviourPun
         if(PhotonNetwork.IsMasterClient) {
         if (phase == 1 || phase == 3) {
             if (timerOn == false) {
-                // var curr = phase;
                 moveLefttemp = moveLeft;
                 moveRighttemp = moveRight;
                 moveUptemp = moveUp;
@@ -94,7 +73,6 @@ public class MudMonsterController : MonoBehaviourPun
                 moveUp = moveUptemp;
                 moveDown = moveDowntemp;
                 if(phase != 2 || phase != 4 ){
-                    //testing
                     phase--;
                 }
                 timerOn = false;
@@ -156,7 +134,9 @@ public class MudMonsterController : MonoBehaviourPun
 
 
 //Changed to find at runtime
+
     void OnCollisionEnter2D(Collision2D col) {
+        //Resets players to original position
         var name = col.gameObject.name;
         if(name == "red(Clone)"){
             GameObject.Find("red(Clone)").transform.position = new Vector3(30, 14, 100);
@@ -174,7 +154,6 @@ public class MudMonsterController : MonoBehaviourPun
 
     }
 
-    //Interactions with Monster
     
 
 
