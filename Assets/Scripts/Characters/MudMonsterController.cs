@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class MudMonsterController : MonoBehaviourPun
 {
+    private PhotonView myPhotonView;
+
     public float speed = 5.0f;
     public Animator animator;
     public bool moveLeft;
@@ -33,6 +35,10 @@ public class MudMonsterController : MonoBehaviourPun
     private float waitTime = 5.0f;
     private float timer = 0.0f;
 
+    private void Awake() {
+        myPhotonView = GetComponent<PhotonView>(); 
+    }
+
     void Start() {
         animator = GetComponent<Animator>();
         animator.SetFloat("MoveX", 0);
@@ -51,88 +57,14 @@ public class MudMonsterController : MonoBehaviourPun
     }
 
     void Update() {
-        if(!PhotonNetwork.IsConnected || PhotonNetwork.IsMasterClient) {
-            if (phase == 1 || phase == 3) {
-                if (timerOn == false) {
-                    moveLefttemp = moveLeft;
-                    moveRighttemp = moveRight;
-                    moveUptemp = moveUp;
-                    moveDowntemp = moveDown;
-                    moveLeft = false;
-                    moveRight = false;
-                    moveUp = false;
-                    moveDown = false;
-                }
-                timerOn = true;
-                timer += Time.deltaTime;
-                if (timer > waitTime) {
-                // Remove the recorded 2 seconds.
-                    timer = timer - waitTime;
-                    moveLeft = moveLefttemp;
-                    moveRight = moveRighttemp;
-                    moveUp = moveUptemp;
-                    moveDown = moveDowntemp;
-                    if(phase != 2 || phase != 4 ){
-                        phase--;
-                    }
-                    timerOn = false;
-                }
-            }
-            if(moveLeft){
-                if(transform.position.x >= -6.75){
-                    transform.position += Vector3.left * speed * Time.deltaTime;
-                    animator.SetFloat("MoveX", -.5f);
-                    animator.SetFloat("MoveY", 0);
-                }
-                else{
-                    moveLeft = false;
-                    moveDown = true;
-                    
-                }
-            }
-            if(moveDown){
-                if(transform.position.y >= -2.92){
-                    transform.position += Vector3.down * speed * Time.deltaTime;
-                    animator.SetFloat("MoveX", 0);
-                    animator.SetFloat("MoveY", -.5f);
-                }
-                else{
-                    moveDown = false;
-                    moveRight = true;
-                    
-                }
-            }
-            if(moveRight){
-                if(transform.position.x <= 11.375){
-                    transform.position += Vector3.right * speed *Time.deltaTime;
-                    animator.SetFloat("MoveX", .5f);
-                    animator.SetFloat("MoveY", 0);
-                }
-                else{
-                    moveRight = false;
-                    moveUp = true;
-                }
-                
-            }
-            if(moveUp){
-                if(transform.position.y <= 9.56){
-                    transform.position += Vector3.up * speed *Time.deltaTime;
-                    animator.SetFloat("MoveX", 0);
-                    animator.SetFloat("MoveY", .5f);
-                }
-                else{
-                    moveUp = false;
-                    moveLeft = true;
-                }
-            }
-            //rigidbody2D.MovePosition(position);
-            // rigidbody2D.MovePosition(position);
-        }
+        if(!PhotonNetwork.IsConnected)
+            MudMonsterUpdate();
+        if(PhotonNetwork.IsConnected && PhotonNetwork.IsMasterClient)
+            myPhotonView.RPC("OnlineMudMonsterUpdate", RpcTarget.All);                
     }
 
 
-//Changed to find at runtime
-
+    //Changed to find at runtime
     void OnCollisionEnter2D(Collision2D col) {
         //Resets players to original position
         var name = col.gameObject.name;
@@ -148,8 +80,92 @@ public class MudMonsterController : MonoBehaviourPun
         if(name == "blek(Clone)"){
             GameObject.Find("blek(Clone)").transform.position = new Vector3(-27, 14, 100);
         }
-        
+    }
 
+
+    private void MudMonsterUpdate() {
+        if (phase == 1 || phase == 3) {
+            if (timerOn == false) {
+                moveLefttemp = moveLeft;
+                moveRighttemp = moveRight;
+                moveUptemp = moveUp;
+                moveDowntemp = moveDown;
+                moveLeft = false;
+                moveRight = false;
+                moveUp = false;
+                moveDown = false;
+            }
+            timerOn = true;
+            timer += Time.deltaTime;
+            if (timer > waitTime) {
+            // Remove the recorded 2 seconds.
+                timer = timer - waitTime;
+                moveLeft = moveLefttemp;
+                moveRight = moveRighttemp;
+                moveUp = moveUptemp;
+                moveDown = moveDowntemp;
+                if(phase != 2 || phase != 4 ){
+                    phase--;
+                }
+                timerOn = false;
+            }
+        }
+        //Changes appearance of sprite at halfway point
+        if(phase >= 3) {
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color(0.3f, 0.4f, 0.6f, 1.0f);
+        }
+        if(moveLeft){
+            if(transform.position.x >= -6.75){
+                transform.position += Vector3.left * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", 0);
+            }
+            else{
+                moveLeft = false;
+                moveDown = true;
+                
+            }
+        }
+        if(moveDown){
+            if(transform.position.y >= -2.92){
+                transform.position += Vector3.down * speed * Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", -.5f);
+            }
+            else{
+                moveDown = false;
+                moveRight = true;
+                
+            }
+        }
+        if(moveRight){
+            if(transform.position.x <= 11.375){
+                transform.position += Vector3.right * speed *Time.deltaTime;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", 0);
+            }
+            else{
+                moveRight = false;
+                moveUp = true;
+            }
+            
+        }
+        if(moveUp){
+            if(transform.position.y <= 9.56){
+                transform.position += Vector3.up * speed *Time.deltaTime;
+                animator.SetFloat("MoveX", 0);
+                animator.SetFloat("MoveY", .5f);
+            }
+            else{
+                moveUp = false;
+                moveLeft = true;
+            }
+        }
+    }
+
+    [PunRPC]
+    private void OnlineMudMonsterUpdate() {
+        MudMonsterUpdate();
     }
 
     

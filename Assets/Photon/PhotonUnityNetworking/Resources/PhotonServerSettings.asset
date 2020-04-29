@@ -42,6 +42,7 @@ MonoBehaviour:
   - UpdateTilesOnline
   - FinishedGameTime
   - GetMinutesAndSeconds
+  - OnlineMudMonsterUpdate
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1
