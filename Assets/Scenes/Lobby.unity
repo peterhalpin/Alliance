@@ -1405,6 +1405,11 @@ PrefabInstance:
       propertyPath: logHandler
       value: 
       objectReference: {fileID: 1772978662}
+    - target: {fileID: 4085474107203849222, guid: 3620bfcaabe224d80bbd9c81344c996e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4085474107251168662, guid: 3620bfcaabe224d80bbd9c81344c996e,
         type: 3}
       propertyPath: m_AnchorMax.x
