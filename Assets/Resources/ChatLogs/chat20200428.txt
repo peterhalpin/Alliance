@@ -189,3 +189,55 @@ Team: test
 
 System: kjgy Joined the chat!
    4:47:54 PM
+
+
+Team: test
+
+System: testUnity Joined the chat!
+   4:58:41 PM
+
+
+Team: test
+
+System: dylan Joined the chat!
+   9:11:39 PM
+
+
+Team: dylan
+
+System: dylan Joined the chat!
+   11:28:07 PM
+dylan: hello
+   11:28:13 PM
+dylan: 
+   11:28:13 PM
+dylan: dfesf
+   11:28:17 PM
+dylan: d
+   11:28:20 PM
+dylan: dfsef
+   11:28:24 PM
+dylan: sfe
+   11:28:28 PM
+dylan: sefsef
+   11:28:29 PM
+dylan: sefsegseg
+   11:28:31 PM
+dylan: fsefse
+   11:28:32 PM
+dylan: daefsefse
+   11:28:39 PM
+dylan: awdawd
+   11:28:46 PM
+
+
+Team: test
+
+System: dylan Joined the chat!
+   11:31:35 PM
+dylan: hello
+   11:31:37 PM
+dylan: test
+   11:31:39 PM
+dylan: fsefsef
+   11:31:41 PM
