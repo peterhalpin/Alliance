@@ -134,6 +134,11 @@ public class ChatHandler : MonoBehaviour, IChatClientListener
         myChatClient.PublishMessage(chatChannelName, msgInput.text);
         logHandler.LogMessage(playerName.text, msgInput.text);
         msgInput.text = "";
+
+        while (msgInput.text != "")
+        {
+            msgInput.text = "";
+        }
     }
 
     public void PrintMessage(string message)            //Might not be needed now. You can use this to send messages (from the game) to the chat from other scripts
