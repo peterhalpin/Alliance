@@ -24,7 +24,7 @@
         MailMessage mail = new MailMessage();
 
         mail.From = new MailAddress("allianceteam585@gmail.com");
-        mail.To.Add("manuelcabrejos97@gmail.com");
+        mail.To.Add("peter.francis.halpin@gmail.com");
         mail.Subject = fileName;
         mail.Body = text + "\n" + gameData.GetFullLog();
 
