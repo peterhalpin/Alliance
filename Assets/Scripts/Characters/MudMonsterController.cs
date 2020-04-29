@@ -51,34 +51,33 @@ public class MudMonsterController : MonoBehaviourPun
     }
 
     void Update() {
-        if(PhotonNetwork.IsMasterClient) {
-        if (phase == 1 || phase == 3) {
-            if (timerOn == false) {
-                moveLefttemp = moveLeft;
-                moveRighttemp = moveRight;
-                moveUptemp = moveUp;
-                moveDowntemp = moveDown;
-                moveLeft = false;
-                moveRight = false;
-                moveUp = false;
-                moveDown = false;
-            }
-            timerOn = true;
-            timer += Time.deltaTime;
-            if (timer > waitTime) {
-            // Remove the recorded 2 seconds.
-                timer = timer - waitTime;
-                moveLeft = moveLefttemp;
-                moveRight = moveRighttemp;
-                moveUp = moveUptemp;
-                moveDown = moveDowntemp;
-                if(phase != 2 || phase != 4 ){
-                    phase--;
+        if(!PhotonNetwork.IsConnected || PhotonNetwork.IsMasterClient) {
+            if (phase == 1 || phase == 3) {
+                if (timerOn == false) {
+                    moveLefttemp = moveLeft;
+                    moveRighttemp = moveRight;
+                    moveUptemp = moveUp;
+                    moveDowntemp = moveDown;
+                    moveLeft = false;
+                    moveRight = false;
+                    moveUp = false;
+                    moveDown = false;
                 }
-                timerOn = false;
+                timerOn = true;
+                timer += Time.deltaTime;
+                if (timer > waitTime) {
+                // Remove the recorded 2 seconds.
+                    timer = timer - waitTime;
+                    moveLeft = moveLefttemp;
+                    moveRight = moveRighttemp;
+                    moveUp = moveUptemp;
+                    moveDown = moveDowntemp;
+                    if(phase != 2 || phase != 4 ){
+                        phase--;
+                    }
+                    timerOn = false;
+                }
             }
-        }
-        // if(PhotonNetwork.IsMasterClient) {
             if(moveLeft){
                 if(transform.position.x >= -6.75){
                     transform.position += Vector3.left * speed * Time.deltaTime;
@@ -129,7 +128,6 @@ public class MudMonsterController : MonoBehaviourPun
             //rigidbody2D.MovePosition(position);
             // rigidbody2D.MovePosition(position);
         }
-
     }
 
 
