@@ -195,14 +195,20 @@ public class VisionController : MonoBehaviourPun
   
 
     // this is so the player can attack the mud monster on level 4
-    void OnTriggerEnter2D(Collider2D player) {
-        //To do: Add a null check!
-        //Required for Level 4
+    void OnTriggerEnter2D(Collider2D player) { //Required for Level 4
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+        print(player.name);
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 2){
-        //    GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
-            myPhotonView.RPC("MudMonsterAttack", RpcTarget.All);
+            if(PhotonNetwork.IsConnected) {
+                photonView.RPC("MudMonsterAttack", RpcTarget.All);
 
-           
+            } else {
+                GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+                print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+                for(int i=0; i < boxes.Length ; i++){
+                    boxes[i].usedByEffector = true;
+                }
+            }           
         }
     }
 
@@ -212,7 +218,7 @@ public class VisionController : MonoBehaviourPun
         print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
         for(int i=0; i < boxes.Length ; i++){
                 boxes[i].usedByEffector = true;
-            }
+        }
 
     }
 

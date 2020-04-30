@@ -48,7 +48,6 @@ public class Pressure_Switch_3 : MonoBehaviour
    
    //Switching the tiles to wall when pressure is removed
      void OnTriggerExit2D(Collider2D col) {
-              Debug.Log(col.name);
          if(col.name == "Cube"){
             gameObject.GetComponent<SpriteRenderer>().sprite = SwitchOff.GetComponent<SpriteRenderer>().sprite;
             isOn = false;

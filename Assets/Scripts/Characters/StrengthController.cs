@@ -63,25 +63,25 @@ public class StrengthController : MonoBehaviourPun
         }
 
         if(kbshortcuts.isInPlayerMap) {
-            if (Input.GetKey(KeyCode.LeftArrow)){
+            if (Input.GetKey("j")){
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 4;
             }
-            if (Input.GetKey(KeyCode.RightArrow)){
+            if (Input.GetKey("l")){
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 2;
             }
-            if (Input.GetKey(KeyCode.UpArrow)){
+            if (Input.GetKey("i")){
                 transform.position += Vector3.up * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", 0.5f);
                 direction = 1;
             }
-            if (Input.GetKey(KeyCode.DownArrow)){
+            if (Input.GetKey("k")){
                 transform.position += Vector3.down * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", -.5f);
@@ -90,7 +90,7 @@ public class StrengthController : MonoBehaviourPun
         }
 
         // this is so the player can access the character's super power
-        if(Input.GetKey("space")){
+        if(Input.GetKey("c")){
             ///up
             if(direction == 1){
                 boxes[2].enabled = true;
@@ -129,14 +129,17 @@ public class StrengthController : MonoBehaviourPun
 
 
     // this is so the player can attack the mud monster on level 4
-    void OnTriggerEnter2D(Collider2D player){
+    void OnTriggerEnter2D(Collider2D player) {
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+        print(player.name);
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 1){
-            //signals second part of monster fight
-            // GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
-            // GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().speed = 2.50f;
-            
-            photonView.RPC("MudMonsterAttack", RpcTarget.All);
-
+            if(PhotonNetwork.IsConnected) {
+                photonView.RPC("MudMonsterAttack", RpcTarget.All);
+            } else {
+                GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+                GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().speed = 2.50f;
+                print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+            }
 
             //Code meant for sprite change
             // monster.GetComponent<Animator>().enabled = false;

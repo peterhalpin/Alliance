@@ -86,25 +86,25 @@ public class FireController : MonoBehaviourPun
 
         // these are what allows players to move
         if(kbshortcuts.isInPlayerMap) { // this if statement checks if the player is viewing the whole map or not, if not then they are allowed to move
-            if (Input.GetKey(KeyCode.LeftArrow)){
+            if (Input.GetKey("a")){
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 4;
             }
-            if (Input.GetKey(KeyCode.RightArrow)){
+            if (Input.GetKey("d")){
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 2;
             }
-            if (Input.GetKey(KeyCode.UpArrow)){
+            if (Input.GetKey("w")){
                 transform.position += Vector3.up * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", 0.5f);
                 direction = 1;
             }
-            if (Input.GetKey(KeyCode.DownArrow)){
+            if (Input.GetKey("s")){
                 transform.position += Vector3.down * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", -.5f);
@@ -113,7 +113,7 @@ public class FireController : MonoBehaviourPun
         }
        
         // this is so the player can access the character's super power
-        if(Input.GetKey("space")) {
+        if(Input.GetKey("z")) {
             //up
             if(direction == 1) {
                 boxes[2].enabled = true;
@@ -144,18 +144,24 @@ public class FireController : MonoBehaviourPun
     
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player) {
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+        print(player.name);
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
-            photonView.RPC("MudMonsterAttack", RpcTarget.All);
-
-
-
+            if(PhotonNetwork.IsConnected) {
+                photonView.RPC("MudMonsterAttack", RpcTarget.All);
+            } else {
+                print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+                Destroy(GameObject.Find("Mud_Monster").gameObject);
+                var ty = tilemapses["C_RSwitch_Wall"];
+                ty.SwapTile(wallTile, dirtTile);
+            }
         }
     }
 
     [PunRPC]
     private void MudMonsterAttack() {
         print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
-        Destroy(GameObject.Find("Mud_Monster"));
+        Destroy(GameObject.Find("Mud_Monster").gameObject);
         var ty = tilemapses["C_RSwitch_Wall"];
         ty.SwapTile(wallTile, dirtTile);
 

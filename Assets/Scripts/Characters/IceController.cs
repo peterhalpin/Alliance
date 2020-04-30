@@ -63,25 +63,25 @@ public class IceController : MonoBehaviourPun
         }
        
         if(kbshortcuts.isInPlayerMap) {
-            if (Input.GetKey(KeyCode.LeftArrow)){
+            if (Input.GetKey("f")){
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 4;
             }
-            if (Input.GetKey(KeyCode.RightArrow)){
+            if (Input.GetKey("h")){
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 2;
             }
-            if (Input.GetKey(KeyCode.UpArrow)){
+            if (Input.GetKey("t")){
                 transform.position += Vector3.up * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", 0.5f);
                 direction = 1;
             }
-            if (Input.GetKey(KeyCode.DownArrow)){
+            if (Input.GetKey("g")){
                 transform.position += Vector3.down * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", -.5f);
@@ -90,7 +90,7 @@ public class IceController : MonoBehaviourPun
         }
 
         // this is so the player can access the character's super power
-        if(Input.GetKey("space")) {
+        if(Input.GetKey("x")) {
             //up
             if(direction == 1){
                 boxes[2].enabled = true;
@@ -123,9 +123,15 @@ public class IceController : MonoBehaviourPun
 
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player) {
+        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+        print(player.name);
         if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 0){
-            photonView.RPC("MudMonsterAttack", RpcTarget.All);
-            
+            if(PhotonNetwork.IsConnected) {
+                photonView.RPC("MudMonsterAttack", RpcTarget.All);
+            } else {
+                GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+                print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+            }
         }
     }
 
