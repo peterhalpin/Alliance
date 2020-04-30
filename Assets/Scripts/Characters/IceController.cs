@@ -63,25 +63,25 @@ public class IceController : MonoBehaviourPun
         }
        
         if(kbshortcuts.isInPlayerMap) {
-            if (Input.GetKey("f")){
+            if (Input.GetKey(KeyCode.LeftArrow)){
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 4;
             }
-            if (Input.GetKey("h")){
+            if (Input.GetKey(KeyCode.RightArrow)){
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 2;
             }
-            if (Input.GetKey("t")){
+            if (Input.GetKey(KeyCode.UpArrow)){
                 transform.position += Vector3.up * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", 0.5f);
                 direction = 1;
             }
-            if (Input.GetKey("g")){
+            if (Input.GetKey(KeyCode.DownArrow)){
                 transform.position += Vector3.down * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", -.5f);
@@ -90,7 +90,7 @@ public class IceController : MonoBehaviourPun
         }
 
         // this is so the player can access the character's super power
-        if(Input.GetKey("x")) {
+        if(Input.GetKey("space")) {
             //up
             if(direction == 1){
                 boxes[2].enabled = true;

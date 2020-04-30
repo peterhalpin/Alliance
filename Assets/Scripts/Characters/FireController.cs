@@ -86,25 +86,25 @@ public class FireController : MonoBehaviourPun
 
         // these are what allows players to move
         if(kbshortcuts.isInPlayerMap) { // this if statement checks if the player is viewing the whole map or not, if not then they are allowed to move
-            if (Input.GetKey("a")){
+            if (Input.GetKey(KeyCode.LeftArrow)){
                 transform.position += Vector3.left * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", -.5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 4;
             }
-            if (Input.GetKey("d")){
+            if (Input.GetKey(KeyCode.RightArrow)){
                 transform.position += Vector3.right * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", .5f);
                 animator.SetFloat("MoveY", 0);
                 direction = 2;
             }
-            if (Input.GetKey("w")){
+            if (Input.GetKey(KeyCode.UpArrow)){
                 transform.position += Vector3.up * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", 0.5f);
                 direction = 1;
             }
-            if (Input.GetKey("s")){
+            if (Input.GetKey(KeyCode.DownArrow)){
                 transform.position += Vector3.down * speed * Time.deltaTime;
                 animator.SetFloat("MoveX", 0);
                 animator.SetFloat("MoveY", -.5f);
@@ -113,7 +113,7 @@ public class FireController : MonoBehaviourPun
         }
        
         // this is so the player can access the character's super power
-        if(Input.GetKey("z")) {
+        if(Input.GetKey("space")) {
             //up
             if(direction == 1) {
                 boxes[2].enabled = true;
