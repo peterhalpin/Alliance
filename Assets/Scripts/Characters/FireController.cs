@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class FireController : MonoBehaviourPun
 {
@@ -12,6 +13,7 @@ public class FireController : MonoBehaviourPun
     private Animator animator;
     private BlockController blockcontroller;
     private KeyboardShortcuts kbshortcuts;
+    private Scene currentScene;
     private TileBase dirtTile;
     private TileBase wallTile;
 
@@ -22,8 +24,9 @@ public class FireController : MonoBehaviourPun
     private void Awake() {
         direction = 3;
         speed = 2.5f;
-        tilemapses = new Dictionary<string, Tilemap>();
         animator = GetComponent<Animator>();
+        currentScene = SceneManager.GetActiveScene();
+        tilemapses = new Dictionary<string, Tilemap>();
         blockcontroller = GameObject.FindObjectOfType<BlockController>();  
         boxes = GetComponents<BoxCollider2D>();
         kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
@@ -140,20 +143,35 @@ public class FireController : MonoBehaviourPun
                     blockcontroller.UpdateBlockStatus(0, gameObject.name);          
             }   
         }
+
+        if(Input.GetKey("tab") && Input.GetKeyDown("d") || Input.GetKey("d") && Input.GetKeyDown("tab")) {
+            if (currentScene.name == "Level4") {
+                if(PhotonNetwork.IsConnected) {
+                    photonView.RPC("MudMonsterAttack", RpcTarget.All);
+                } else {
+                    print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+                    Destroy(GameObject.Find("Mud_Monster").gameObject);
+                    var ty = tilemapses["C_RSwitch_Wall"];
+                    ty.SwapTile(wallTile, dirtTile);
+                }
+            }
+        }
     }
     
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player) {
-        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
-        print(player.name);
-        if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
-            if(PhotonNetwork.IsConnected) {
-                photonView.RPC("MudMonsterAttack", RpcTarget.All);
-            } else {
-                print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
-                Destroy(GameObject.Find("Mud_Monster").gameObject);
-                var ty = tilemapses["C_RSwitch_Wall"];
-                ty.SwapTile(wallTile, dirtTile);
+        if (currentScene.name == "Level4") {
+            print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+            print(player.name);
+            if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 3){
+                if(PhotonNetwork.IsConnected) {
+                    photonView.RPC("MudMonsterAttack", RpcTarget.All);
+                } else {
+                    print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+                    Destroy(GameObject.Find("Mud_Monster").gameObject);
+                    var ty = tilemapses["C_RSwitch_Wall"];
+                    ty.SwapTile(wallTile, dirtTile);
+                }
             }
         }
     }

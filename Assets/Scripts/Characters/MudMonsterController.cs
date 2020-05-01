@@ -104,15 +104,24 @@ public class MudMonsterController : MonoBehaviourPun
                 moveRight = moveRighttemp;
                 moveUp = moveUptemp;
                 moveDown = moveDowntemp;
-                if(phase != 2 || phase != 4 ){
+                if(phase != 2 || phase != 4 ){  
                     phase--;
                 }
                 timerOn = false;
             }
         }
         //Changes appearance of sprite at halfway point
-        if(phase >= 2) {
-            gameObject.GetComponent<SpriteRenderer>().color =  new Color(0.3f, 0.4f, 0.6f, 1.0f);
+        if(phase == 0) {
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color32(29, 127, 252, 255); // blue
+        } else if (phase == 1) {
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color(1, 1, 1, 1); // brown
+        } else if (phase == 2) {
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color(0, 1, 0, 1); //green
+        } else if (phase == 3) {
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color32(255, 33, 33, 255); //red
+        } else {
+            // this shouldn't be called but is here just in case, then we know there's something wrong with the phases
+            gameObject.GetComponent<SpriteRenderer>().color =  new Color(0.3f, 0.4f, 0.6f, 1.0f); //silver
         }
         if(moveLeft){
             if(transform.position.x >= -6.75){

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class IceController : MonoBehaviourPun
 {
@@ -9,6 +10,7 @@ public class IceController : MonoBehaviourPun
     private int direction;
 
     private Animator animator;
+    private Scene currentScene;
     private BlockController blockcontroller;
     private KeyboardShortcuts kbshortcuts;
 
@@ -18,6 +20,7 @@ public class IceController : MonoBehaviourPun
         direction = 3;
         speed = 2.5f;
         animator = GetComponent<Animator>();
+        currentScene = SceneManager.GetActiveScene();
         blockcontroller = GameObject.FindObjectOfType<BlockController>();        
         boxes = GetComponents<BoxCollider2D>();
         kbshortcuts = GameObject.FindObjectOfType<KeyboardShortcuts>();
@@ -123,14 +126,16 @@ public class IceController : MonoBehaviourPun
 
     // this is so the player can attack the mud monster on level 4
     void OnTriggerEnter2D(Collider2D player) {
-        print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
-        print(player.name);
-        if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 0){
-            if(PhotonNetwork.IsConnected) {
-                photonView.RPC("MudMonsterAttack", RpcTarget.All);
-            } else {
-                GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
-                print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+        if (currentScene.name == "Level4") {
+            print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+            print(player.name);
+            if(player.name == "Mud_Monster" && GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase == 0){
+                if(PhotonNetwork.IsConnected) {
+                    photonView.RPC("MudMonsterAttack", RpcTarget.All);
+                } else {
+                    GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase++;
+                    print(GameObject.Find("Mud_Monster").GetComponent<MudMonsterController>().phase);
+                }
             }
         }
     }
