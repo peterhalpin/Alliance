@@ -104,9 +104,9 @@ public class MudMonsterController : MonoBehaviourPun
                 moveRight = moveRighttemp;
                 moveUp = moveUptemp;
                 moveDown = moveDowntemp;
-                if(phase != 2 || phase != 4 ){  
-                    phase--;
-                }
+                // if(phase != 2 || phase != 4 ){  
+                //     phase--;
+                // }
                 timerOn = false;
             }
         }
