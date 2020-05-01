@@ -623,7 +623,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Congratulations you finised the game!
+  m_Text: Congratulations! You finished the game!
 --- !u!222 &1133561896
 CanvasRenderer:
   m_ObjectHideFlags: 0

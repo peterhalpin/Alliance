@@ -120,6 +120,8 @@ public class FireController : MonoBehaviourPun
             //up
             if(direction == 1) {
                 boxes[2].enabled = true;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", .5f);
                 if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(2, gameObject.name);
             // this called so that it goes too the block controller which will then update this on everyone's screen, other wise it won't work
@@ -127,18 +129,24 @@ public class FireController : MonoBehaviourPun
             //right
             if(direction == 2) {
                 boxes[1].enabled = true;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", .5f);
                 if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(1, gameObject.name);          
             }
             //down
             if(direction == 3) {
                 boxes[3].enabled = true;
+                animator.SetFloat("MoveX", .5f);
+                animator.SetFloat("MoveY", -.5f);
                 if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(3, gameObject.name);          
             }
             //left
             if(direction == 4) {
                 boxes[0].enabled = true;
+                animator.SetFloat("MoveX", -.5f);
+                animator.SetFloat("MoveY", -.5f);
                 if(PhotonNetwork.IsConnected)
                     blockcontroller.UpdateBlockStatus(0, gameObject.name);          
             }   
