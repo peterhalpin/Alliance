@@ -84,32 +84,32 @@ public class MudMonsterController : MonoBehaviourPun
 
 
     private void MudMonsterUpdate() {
-        if (phase == 1 || phase == 3) {
-            if (timerOn == false) {
-                moveLefttemp = moveLeft;
-                moveRighttemp = moveRight;
-                moveUptemp = moveUp;
-                moveDowntemp = moveDown;
-                moveLeft = false;
-                moveRight = false;
-                moveUp = false;
-                moveDown = false;
-            }
-            timerOn = true;
-            timer += Time.deltaTime;
-            if (timer > waitTime) {
-            // Remove the recorded 2 seconds.
-                timer = timer - waitTime;
-                moveLeft = moveLefttemp;
-                moveRight = moveRighttemp;
-                moveUp = moveUptemp;
-                moveDown = moveDowntemp;
-                // if(phase != 2 || phase != 4 ){  
-                //     phase--;
-                // }
-                timerOn = false;
-            }
-        }
+        // if (phase == 1 || phase == 3) {
+        //     if (timerOn == false) {
+        //         moveLefttemp = moveLeft;
+        //         moveRighttemp = moveRight;
+        //         moveUptemp = moveUp;
+        //         moveDowntemp = moveDown;
+        //         moveLeft = false;
+        //         moveRight = false;
+        //         moveUp = false;
+        //         moveDown = false;
+        //     }
+        //     timerOn = true;
+        //     timer += Time.deltaTime;
+        //     if (timer > waitTime) {
+        //     // Remove the recorded 2 seconds.
+        //         timer = timer - waitTime;
+        //         moveLeft = moveLefttemp;
+        //         moveRight = moveRighttemp;
+        //         moveUp = moveUptemp;
+        //         moveDown = moveDowntemp;
+        //         if(phase != 2 || phase != 4 ){  
+        //             phase--;
+        //         }
+        //         timerOn = false;
+        //     }
+        // }
         //Changes appearance of sprite at halfway point
         if(phase == 0) {
             gameObject.GetComponent<SpriteRenderer>().color =  new Color32(29, 127, 252, 255); // blue
