@@ -28,6 +28,6 @@ add commit summary
 press commit to
 press push
 
-
-
+# Documentation: 
+All application documentation is provided in this document: https://tinyurl.com/y587g33u
 
